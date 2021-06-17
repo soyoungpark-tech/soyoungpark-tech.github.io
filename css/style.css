@@ -78,13 +78,14 @@ body {
     font-family: var(--body-font);
     /* background: var(--primary-color); */
     color: var(--font-color);
+    min-height: 100vh;
     /* font-size: 16px; */
 }
 #particles-js {
     position: absolute;
     height: 100%;
     width: 100%;
-    /* z-index: -1; */
+    /* z-index: ; */
   }
   .clearfix:after {
     content: "";
@@ -179,19 +180,22 @@ div {
 
 /* ========================= layout ========================= */
 .wrap {
-    max-width: 1920px;
+  padding: 0 12px;
+  max-width: 1140px;
+  /* min-height: 100vh; */
+  margin: 0 auto;
   }
-  .inner {
+.inner {
     max-width: 1440px;
     margin: 0 auto;
-  }
-  .container {
+}
+/* .container {
     margin: 0 auto;
     min-height: 100vh;
-    /* padding-bottom: 100px; */
+    padding-bottom: 100px;
     padding: 0 12px;
     max-width: 1140px;
-  }
+} */
   /* header {
     height: 100px;
   } */
@@ -230,7 +234,7 @@ div {
     margin: 50px 0;
 }
 .division__line:after {
-    content: "SKILL";
+    content: "";
     font-family: Work Sans, sans-serif;
     font-size: 14px;
     color: var(--primary-color);
@@ -241,7 +245,7 @@ div {
     transform: translate(-10%, 50%);
   }
   .division__line {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   /* ========================= header ========================= */
 .header {
@@ -316,15 +320,15 @@ div {
     color: var(--primary-color);
     display: none;
 }
-/* ========================= profile page ========================= */
-.profile {
+/* ========================= home page ========================= */
+.home {
     padding-top: 78px;
 }
-.profile-pic img {
+.home-pic img {
     width: 700px;
 }
 
-.profile__about {
+.home__about {
     padding: 72px 0px 72px 100px;
     display: flex;
     flex-direction: column;
@@ -332,7 +336,7 @@ div {
     max-height: 100%;
     position: relative;
   }
-  .profile__about:before {
+  .home__about:before {
     content: "";
     width: 175px;
     height: 4px;
@@ -341,7 +345,7 @@ div {
     left: -100px;
     top: 100px;
   }
-  .profile__about-desc p {
+  .home__about-desc p {
     line-height: 27px;
     font-size: var(--h3-font-size);
     font-weight: 300;
@@ -356,22 +360,122 @@ div {
     border: 1px solid var(--hover-color);
     color: var(--hover-color);
   }
-/* ========================= profile about social ========================= */
-.profile-about-social {
+/* ========================= home about social ========================= */
+.home-about-social {
     display: flex;
-  }
-  
-  .profile-about-social a {
+}
+.home-about-social a {
     margin-right: 30px;
-  }
-  .profile-about-social i {
+}
+.home-about-social i {
     font-size: 20px;
-  }
-  .github-link:hover {
+}
+.github-link:hover {
     color: var(--hover-color);
     border: 1px solid var(--hover-color);
-  }
-  .blog-link:hover {
+}
+.blog-link:hover {
     color: var(--hover-color);
     border: 1px solid var(--hover-color);
-  }
+}
+  /* ========================= skills desc section ========================= */
+.skills {
+    margin-bottom: var(--mb-3);
+}
+.skills__desc_container {
+    /* padding: 1rem; */
+    margin: var(--mb-1);
+    flex: 1;
+}
+.skills__desc_container i {
+    flex: 1;
+}
+.skills__desc_container p {
+    flex: 8;
+    line-height: 2rem;
+    padding-bottom: var(--mb-1);
+    margin: 0 var(--mb-1);
+}
+.skills__list {
+    margin: var(--mb-1);
+    flex: 1;
+}
+  /* ========================= skills percent section ========================= */
+.skills__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills__item {
+    display: flex;
+    width: 50%;
+    flex-shrink: 0;
+    flex-direction: column;
+    margin-bottom: var(--mb-1-5);
+    padding-right: var(--mb-1-5);
+}
+.skills__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+    cursor: pointer;
+}
+.skills__title {
+    display: flex;
+    align-items: center;
+}
+.skills__title i {
+    margin-right: var(--mb-1);
+}
+.skill__icon,
+.skill__icon--arrow {
+    font-size: var(--h1-font-size);
+    color: var(--primary-color);
+    transition: .3s;
+}
+.skill__icon--arrow.active {
+    transform: rotate(180deg);
+}
+.skill__progress {
+    padding-left: 3.2rem;
+    margin-bottom: var(--mb-1);
+}
+.skill__titles {
+    display: flex;
+    justify-content: space-between;
+}
+.skill__titles h3 {
+    font-weight: var(--small-font-size);
+}
+
+.skill__data {
+    display: none;
+}
+
+.skill__bar {
+    height: 8px;
+    border-radius: .5rem;
+    overflow: hidden;
+    background: var(--primary-color-lighter);
+}
+.skill_percent {
+    display: block;
+    width: 80%;
+    height: 100%;
+    background: var(--primary-color);
+}
+/* ========================= about section ========================= */
+.about {
+    background: var(--primary-color);
+
+}
+.about__desc {
+    font-weight: var(--font-semi-bold);
+    flex: 5;
+    line-height: 30px;
+    margin: var(--mb-3);
+}
+.about__pic {
+    margin: var(--mb-3);
+    flex: 5;
+}
