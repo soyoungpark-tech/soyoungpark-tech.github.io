@@ -1,1 +1,377 @@
 @charset "utf-8";
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+
+/* ----------------------- main color ----------------------- */
+/* 
+    hsl(hue, saturation, lightness) 
+    hue(색조) : 0 ~ 360 ( 0: 빨간색, 120: 녹색, 240: 파란색 )
+    saturation(채도) : 0 ~ 100 (0: 회색, 100: 원색)
+    lightness(명도) : 0 ~ 100 (0: 검정색, 50: 중간, 100: 흰색)
+*/
+    --hue-color: 201;
+
+/* ----------------------- colors ----------------------- */
+    /* --primary-color: hsl(var(--hue-color), 69%, 61%);
+    --primary-color-lighter: hsl(var(--hue-color), 92%, 85%);
+
+    --black-color: hsl(var(--hue-color), 8%, 15%);
+    --gray-color: hsl(var(--hue-color), 8%, 45%);
+    --white-color: #FFF;
+    --body-color: hsl(var(--hue-color), 60%, 99%); */
+
+    /* --main-bg-color: #242527; */
+    --border-color: #8d98a133;
+    --hover-color: #007bff;
+    
+    --primary-color: #fbd46d;
+    --secondary-color: #FFCF09;
+    --white-color: #FFF;
+    --font-color: #2B2B28;
+
+
+
+/* ----------------------- typography ----------------------- */
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+
+/* ----------------------- font-weight ----------------------- */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+/* ----------------------- margin bottom ----------------------- */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+/* ----------------------- z index ----------------------- */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/* ----------------------- dark-theme ----------------------- */
+body.dark-theme {
+    --black-color: hsl(var(--hue-color), 8%, 95%); /* 흰색으로 바뀝니다 */
+    --body-color: hsl(var(--hue-color), 28%, 12%); /* 어두운 색으로 바뀝니다 */
+}
+
+/* ----------------------- reset ----------------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: var(--body-font);
+    /* background: var(--primary-color); */
+    color: var(--font-color);
+    /* font-size: 16px; */
+}
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* z-index: -1; */
+  }
+  .clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+h1,h2,h3,h4 {
+    color: var(--black-color);
+    font-weight: var(--font-semi-bold);
+}
+h1 {
+    font-size: var(--h1-font-size);
+}
+h2 {
+    font-size: var(--h2-font-size);
+}
+h3 {
+    font-size: var(--h3-font-size);
+}
+ul {
+    list-style: none;
+}
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+    border-style: none;
+}
+button {
+    border: none;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+i {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+div {
+    display: block;
+}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  em,
+  strong {
+    font-weight: 700;
+  }
+
+/* ========================= reusable, common css ========================= */
+.section__title--wrap {
+    text-align: center;
+}
+.section__title {
+    font-size: var(--h1-font-size);
+}
+.section__subtitle {
+    font-size: var(--normal-font-size);
+    color: var(--gray-color);
+    margin-bottom: var(--mb-3);
+}
+.link-button {
+    border: thin solid var(--border-color);
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+.link-button-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: thin solid var(--border-color);
+  }
+
+/* ========================= layout ========================= */
+.wrap {
+    max-width: 1920px;
+  }
+  .inner {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .container {
+    margin: 0 auto;
+    min-height: 100vh;
+    /* padding-bottom: 100px; */
+    padding: 0 12px;
+    max-width: 1140px;
+  }
+  /* header {
+    height: 100px;
+  } */
+  footer {
+    height: 100px;
+  }
+.flex {
+    display: flex;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .flex-center-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .skill-box-style {
+    padding-bottom: 80px;
+    margin: 0 auto;
+}
+
+/* ========================= cut line ========================= */
+.division__line:before {
+    content: "";
+    display: block;
+    width: 50%;
+    background: var(--primary-color);
+    height: 1px;
+}
+.division__line {
+    position: relative;
+    margin: 50px 0;
+}
+.division__line:after {
+    content: "SKILL";
+    font-family: Work Sans, sans-serif;
+    font-size: 14px;
+    color: var(--primary-color);
+    padding-left: 14px;
+    position: absolute;
+    right: 45%;
+    bottom: 50%;
+    transform: translate(-10%, 50%);
+  }
+  .division__line {
+    margin-bottom: 100px;
+  }
+  /* ========================= header ========================= */
+.header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    z-index: var(--z-fixed);
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+.header-inner {
+    max-width: 1140px;
+    height: 3rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--black-color);
+}
+#logo {
+    color: var(--black-color);
+}
+.nav__container {
+    background: var(--white-color);
+    margin-left: auto;
+}
+.nav__list {
+    justify-content: flex-end;
+}
+.nav__item {
+    font-weight: var(--font-semi-bold);
+}
+.nav__item:hover,
+.nav__item.active
+{
+    color: var(--primary-color);
+}
+.nav__btns {
+    color: var(--black-color);
+}
+.nav__item {
+    margin-right: var(--mb-1-5);
+    color: var(--black-color);
+}
+.nav__icon {
+    font-size: 1.5rem;
+    margin-left: var(--mb-0-75);
+    
+    display: none;
+}
+.change-theme {
+    font-weight: var(--font-medium);
+    font-size: 1.2rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+}
+.change-theme:hover {
+    color: var(--primary-color);
+}
+#buttonLight {
+    display: none;
+}
+#buttonDark {
+    display: block;
+}
+#navToggle {
+    display: none;
+}
+.nav__close {
+    color: var(--primary-color);
+    display: none;
+}
+/* ========================= profile page ========================= */
+.profile {
+    padding-top: 78px;
+}
+.profile-pic img {
+    width: 700px;
+}
+
+.profile__about {
+    padding: 72px 0px 72px 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+  }
+  .profile__about:before {
+    content: "";
+    width: 175px;
+    height: 4px;
+    position: absolute;
+    background: var(--primary-color);
+    left: -100px;
+    top: 100px;
+  }
+  .profile__about-desc p {
+    line-height: 27px;
+    font-size: var(--h3-font-size);
+    font-weight: 300;
+    margin: var(--mb-2) 0;
+  }
+/* ========================= resume button ========================= */
+.resume-link {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .resume-link:hover {
+    border: 1px solid var(--hover-color);
+    color: var(--hover-color);
+  }
+/* ========================= profile about social ========================= */
+.profile-about-social {
+    display: flex;
+  }
+  
+  .profile-about-social a {
+    margin-right: 30px;
+  }
+  .profile-about-social i {
+    font-size: 20px;
+  }
+  .github-link:hover {
+    color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+  }
+  .blog-link:hover {
+    color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+  }

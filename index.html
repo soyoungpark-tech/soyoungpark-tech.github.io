@@ -4,11 +4,114 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 <title>박소영 포트폴리오 사이트</title>
 </head>
 <body>
 
-    <h1>박소영 포트폴리오 사이트</h1>
+    <div id="particles-js">
+
+    </div>
+    <header class="header" id="header">
+        <div class="header-inner flex">
+            <a href="#" id="logo">
+                박소영
+            </a>
+            <div class="nav__container">
+                <ul class="nav__list flex">
+                    <li class="nav__item">
+                        <a href="#" data-link="#home" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#skills" class="nav__link">
+                            <i class="uil uil-file nav__icon"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i>
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>
+                            Portfolio
+                        </a>
+                    </li>
+                    <i class="uil uil-times nav__close" id="navClose"></i>
+                </ul>
+            </div>
+            <div class="nav__btns flex">
+                <i class="uil uil-sun change-theme" id="buttonLight"></i>
+                <i class="uil uil-moon change-theme" id="buttonDark"></i>
+                <i class="uil uil-apps" id="navToggle"></i>
+            </div>
+        </div>
+    </header>
+    <div class="wrap">
+        <main class="inner container">
+            <!-- <div class="container"> -->
+                <section class="profile flex">
+                    <div class="profile-pic">
+                        <img src="./images/my-img.JPG" alt="my-img">
+                    </div>
+                    <div class="profile__about">
+                        <div class="profile__about-desc">
+                            <h1>
+                                1일 1페이지 구현하는
+                                <br>
+                                박소영입니다.
+                            </h1>
+                            <br>
+                            <p>
+                                개방적이고 적극적으로 자세로 사용자의 피드백을 수용하며 
+                                끊임없이 새로운 기술을 습득하겠습니다.
+                            </p>
+                        </div>
+                        <div class="profoile-aobut-resume">
+                            <a href="./박소영_이력서.pdf" class="resume-link link-button" download="resume">
+                                resumé
+                            </a>
+                        </div>
+                        <div class="profile-about-social">
+                            <a href="https://github.com/soyoungpark-tech" class="github-link link-button-circle ">
+                                <i class="xi-github-alt"></i>
+                            </a>
+                            <a href="https://blog.naver.com/thdud4961" class="blog-link link-button-circle ">
+                                <i class="xi-naver-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <div class="division__line"></div>
+                <section class="project">
+                    <div class="skill-line skill-line-work"></div>
+                    <div class="project-list-box">
+                        <ul class="project-list">
+                            <li class="project l-col-6-12">
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            <!-- </div> -->
+        </main>
+    </div>
+
+
+    <script>
+        // AOS.init();
+      </script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script><script  src="./js/script.js"></script>
     
 </body>
 </html>
