@@ -227,13 +227,13 @@ div {
     display: block;
     width: 50%;
     background: var(--primary-color);
-    height: 1px;
+    height: 3px;
 }
 .division__line {
     position: relative;
     margin: 50px 0;
 }
-.division__line:after {
+/* .division__line:after {
     content: "";
     font-family: Work Sans, sans-serif;
     font-size: 14px;
@@ -243,7 +243,7 @@ div {
     right: 45%;
     bottom: 50%;
     transform: translate(-10%, 50%);
-  }
+  } */
   .division__line {
     margin-bottom: 80px;
   }
@@ -322,7 +322,8 @@ div {
 }
 /* ========================= home page ========================= */
 .home {
-    padding-top: 78px;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
 }
 .home-pic img {
     width: 700px;
@@ -339,7 +340,7 @@ div {
   .home__about:before {
     content: "";
     width: 175px;
-    height: 4px;
+    height: 3px;
     position: absolute;
     background: var(--primary-color);
     left: -100px;
@@ -472,7 +473,7 @@ div {
     background: var(--primary-color);
 }
 /* ========================= about section ========================= */
-.about {
+.about__bg {
     background: var(--primary-color);
     
 }
@@ -489,18 +490,24 @@ div {
 
 /* ========================= works section ========================= */
 .works {
+    width: 80%;
     position: relative;
 }
 .slider-for img {
     padding: 1rem;
-    width: 100%;
+    /* width: 100%; */
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* height: 600px; */
 }
-.slider-for {
-    /* border: 1px solid #000; */
+.slick__slider_container {
+    height: 500px;
 }
-.slider-nav {
-    /* border: 1px solid #000; */
+.slider-for {
+    width: 100%;
+    height: 500px;
 }
 
 .slick-dots {
