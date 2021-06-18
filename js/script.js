@@ -292,25 +292,25 @@ $(function(){
     });
     
     /* ================= slick banner works modal ================= */
-    var $modal = $('.modal');
-        var $overlay = $('.overlay');
-        var $btn = $('button');
-        var $btnClose = $('.close__modal');
+    // var $modal = $('.modal');
+    //     var $overlay = $('.overlay');
+    //     var $btn = $('button');
+    //     var $btnClose = $('.close__modal');
 
-            // $overlay.hide();
-            $btn.click(function(){
-                $overlay.fadeIn();
-            })
-            $btnClose.click(function(){
-                $overlay.fadeOut();
-            })
-            $overlay.click(function(e){
-                // target은 내가 클릭한 객체
-                // currentTarget은 이벤트가 발생한 객체
-                if(e.target == e.currentTarget){
-                    $(this).fadeOut();
-                }
-            })
+    //         // $overlay.hide();
+    //         $btn.click(function(){
+    //             $overlay.fadeIn();
+    //         })
+    //         $btnClose.click(function(){
+    //             $overlay.fadeOut();
+    //         })
+    //         $overlay.click(function(e){
+    //             // target은 내가 클릭한 객체
+    //             // currentTarget은 이벤트가 발생한 객체
+    //             if(e.target == e.currentTarget){
+    //                 $(this).fadeOut();
+    //             }
+    //         })
 
 
 })

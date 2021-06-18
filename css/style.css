@@ -606,7 +606,7 @@ div {
     margin: 1rem 0;
 }
 /* works modal */
-.overlay {
+/* .overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -644,4 +644,4 @@ div {
     padding-bottom: 4px;
     border: 1px solid #eee;
     cursor: pointer;
-}
+} */
