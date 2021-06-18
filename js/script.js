@@ -184,6 +184,33 @@ $(function(){
     })
 
     /* ================= navbar ===================== */
+    const icons = document.querySelectorAll('.icon');
+icons.forEach (icon => {  
+  icon.addEventListener('click', (event) => {
+    icon.classList.toggle("open");
+  });
+    var $navToggle = $('.nav-icon-7'),
+        $navList = $('.nav__list'),
+        $dimmed = $('#dimmed');
+    
+    $navToggle.click(function(){
+        $dimmed.toggleClass('visible');
+        $(this).toggleClass('active');
+        $navList.toggleClass('visible');
+    })
+
+     // dimmed effect
+     $dimmed.click(function(){
+        $(this).removeClass('visible');
+        $($gnb).removeClass('visible');
+        $toggle.removeClass('active');
+    })
+});
+
+
+
+
+    /* ================= navbar ===================== */
     var $navItem = $('.nav__item');
     $navItem.click(function(e){
         e.preventDefault();
@@ -197,9 +224,9 @@ $(function(){
     })
 
     /* nav toggle */
-    $('#navToggle, .nav__close').click(function(){
-        $('.nav__container').toggleClass('visible');
-    })
+    // $('#navToggle, .nav__close').click(function(){
+    //     $('.nav__container').toggleClass('visible');
+    // })
 
       /* ================= About ================= */
       // 1. 카운트할 셀렉터만 기입하면 자동으로 됩나다

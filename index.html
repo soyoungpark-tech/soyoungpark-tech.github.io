@@ -25,14 +25,17 @@
     <!-- <div id="particles-js"></div> -->
     <header class="header" id="header">
         <div class="header-inner flex">
-            <a href="#" id="logo">
-                박소영
-            </a>
+            <div class="icon nav-icon-7">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="nav__container">
-                <ul class="nav__list flex">
+                <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#" data-link="#home" class="nav__link">
-                            <i class="uil uil-estate nav__icon"></i> Home
+                            <i class="uil uil-estate nav__icon"></i>
+                            Home
                         </a>
                     </li>
                     <li class="nav__item">
@@ -58,18 +61,16 @@
                             Works
                         </a>
                     </li>
-                    <i class="uil uil-times nav__close" id="navClose"></i>
+                    <li class="nav__item">
+                        <a href="#" data-link="#Works" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>
+                            Design Works
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="nav__btns flex">
-                <i class="uil uil-sun change-theme" id="buttonLight"></i>
-                <i class="uil uil-moon change-theme" id="buttonDark"></i>
-                <i class="uil uil-apps" id="navToggle"></i>
-            </div>
-        </div>
     </header>
     <main>
-        <!-- <div class="wrap"> -->
         <section class="home flex wrap" id="home">
             <div class="home-pic">
                 <img src="./images/my-img.JPG" alt="my-img">
@@ -293,7 +294,34 @@
     </section>
 </div>
     <div class="division__line"></div>
+    <section class="qualification wrap" id="qualification">
+        <h1 class="section__title--wrap">Qualification</h1>
+        <div class="qualification__container">
+            <div class="qualification__info flex-center-space-between">
+                <div>
+                    <h2 class="qualification__info--title stoudyCount">720</h2>
+                    <span class="qualification__info--name">학습 시간</span>
+                </div>
+                <div>
+                    <h2 class="qualification__info--title pracCount">100</h2>
+                    <span class="qualification__info--name">실습 시간</span>
+                </div>
+                <div>
+                    <h2 class="qualification__info--title projectCount">08</h2>
+                    <span class="qualification__info--name">프로젝트</span>
+                </div>
+            </div>
+            <div class="qualification__history">
+                
+            </div>
+        </div>
+    </section>
+    <div class="division__line"></div>
 <section class="works wrap" id="works">
+    <h1 class="section__title--wrap">Works</h1>
+        <h3 class="section__subtitle section__title--wrap">
+            Renewal, Responsive, Creation
+        </h3>
         <div class="slider-for">
             <div>
                 <img src="./images/balenciaga-mockup.png" alt="balenciaga-mockup" class="flex-center">
@@ -317,7 +345,7 @@
         <div class="slider-nav">
             <div>
                 <div class="slider__desc">
-                    <h1>발렌시아가 랜딩페이지 리뉴얼</h1>
+                    <h3>발렌시아가 랜딩페이지 리뉴얼</h3>
                     <p>
                         데스크탑 + 반응형
                         <br>
@@ -332,7 +360,7 @@
             </div>
             <div>
                 <div class="slider__desc">
-                    <h1>코뮤 모바일 앱디자인</h1>
+                    <h3>코뮤 모바일 앱디자인</h3>
                     <p>
                         데스크탑 + 반응형(서브페이지)
                         <br>
@@ -346,7 +374,7 @@
             </div>
             <div>
                 <div class="slider__desc">
-                    <h1>대구국제마라톤 리뉴얼</h1>
+                    <h3>대구국제마라톤 리뉴얼</h3>
                     <p>
                         데스크탑 + 반응형(서브페이지)
                         <br>
@@ -360,7 +388,7 @@
             </div>
             <div>
                 <div class="slider__desc">
-                    <h1>대구 범물성당 랜딩홈페이지</h1>
+                    <h3>대구 범물성당 랜딩홈페이지</h3>
                     <p>
                         데스크탑 + 반응형
                         <br>
@@ -374,7 +402,7 @@
             </div>
             <div>
                 <div class="slider__desc">
-                    <h1>서울대학교암병원 클론코딩</h1>
+                    <h3>서울대학교암병원 클론코딩</h3>
                     <p>
                         HTML, CSS, jQuery, javaScript
                         <br>

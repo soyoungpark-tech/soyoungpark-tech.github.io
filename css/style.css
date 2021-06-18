@@ -28,6 +28,7 @@
     
     --primary-color: #fbd46d;
     --secondary-color: #FFCF09;
+    --primary-dark-color: #2b2301;
     --white-color: #FFF;
     --font-color: #2B2B28;
 
@@ -189,16 +190,6 @@ div {
     max-width: 1440px;
     margin: 0 auto;
 }
-/* .container {
-    margin: 0 auto;
-    min-height: 100vh;
-    padding-bottom: 100px;
-    padding: 0 12px;
-    max-width: 1140px;
-} */
-  /* header {
-    height: 100px;
-  } */
   footer {
     height: 200px;
   }
@@ -238,82 +229,98 @@ div {
     margin-bottom: 80px;
 }
   /* ========================= header ========================= */
-.header {
+/* nav-icon-7 */
+header {
     position: fixed;
-    left: 0;
-    width: 100%;
-    background: var(--white-color);
-    z-index: var(--z-fixed);
-    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    right: 0;
+    top: 0;
 }
-.header-inner {
-    max-width: 1140px;
-    height: 3rem;
-    padding: 0 2rem;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--black-color);
-}
-#logo {
-    color: var(--black-color);
-}
-.nav__container {
-    background: var(--white-color);
-    margin-left: auto;
-}
-.nav__list {
-    justify-content: flex-end;
-}
-.nav__item {
-    font-weight: var(--font-semi-bold);
-}
-.nav__item:hover,
-.nav__item.active
-{
-    color: var(--primary-color);
-}
-.nav__btns {
-    color: var(--black-color);
-}
-.nav__item {
-    margin-right: var(--mb-1-5);
-    color: var(--black-color);
-}
-.nav__icon {
-    font-size: 1.5rem;
-    margin-left: var(--mb-0-75);
-    
-    display: none;
-}
-.change-theme {
-    font-weight: var(--font-medium);
-    font-size: 1.2rem;
+.nav-icon-7{
+    width: 35px;
+    height: 30px;
+    margin: 10px 10px;
+    position: relative;
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3px;
+    display: inline-block;
+    margin-left: auto;
+    z-index: var(--z-fixed);
+  }
+  .nav-icon-7 span{
+    background-color: var(--font-color);
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    width:100%;
+    height: 4px;
+  }
+  .nav-icon-7 span:nth-child(1){
+    top:0px;
+    left: 0px;
+  }
+  .nav-icon-7 span:nth-child(2){
+    top:13px;
+    left: 0px;
+  }
+  .nav-icon-7 span:nth-child(3){
+    bottom:0px;
+    left: 0px;
+  }
+  .nav-icon-7:not(.open):hover span:nth-child(1){
+    transform: scaleX(.8);
+  }
+  .nav-icon-7:not(.open):hover span:nth-child(2){
+    transform: scaleX(.5);
+  }
+  .nav-icon-7:not(.open):hover span:nth-child(3){
+    transform: scaleX(.8);
+  }
+  .nav-icon-7.open span:nth-child(1){
+    transform: rotate(90deg);
+    top: 13PX;
+  }
+  .nav-icon-7.open span:nth-child(2){
+    transform: scale(0);
+    transition-duration: 50ms
+  }
+  .nav-icon-7.open span:nth-child(3){
+    top: 13PX;
+  }
+
+.nav__list {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    /* 이 부분 길게할지말지 길게하려면 100vh */
+    height: auto;
+    background: var(--primary-color);
+    padding-top: 5rem;
+    z-index: var(--zindex-gnb);
+    transform: translateX(100%);
+    transition: .3s;
 }
-.change-theme:hover {
-    color: var(--primary-color);
+.nav__list.visible {
+    transform: translateX(0);
 }
-#buttonLight {
-    display: none;
-}
-#buttonDark {
+.nav__link {
     display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: var(--font-semi-bold);
 }
-#navToggle {
-    display: none;
-}
-.nav__close {
+.nav__link:hover {
     color: var(--primary-color);
+    background: var(--white-color);
+}
+.nav__link i {
     display: none;
 }
+
+
 /* ========================= home page ========================= */
 .home {
-    padding-top: 7rem;
-    padding-bottom: 4rem;
+    padding: 4rem 0;
+    /* padding-bottom: 4rem; */
 }
 .home-pic img {
     width: 700px;
@@ -326,8 +333,8 @@ div {
     width: 100%;
     max-height: 100%;
     position: relative;
-  }
-  .home__about:before {
+}
+.home__about:before {
     content: "";
     width: 175px;
     height: 3px;
@@ -335,13 +342,14 @@ div {
     background: var(--primary-color);
     left: -100px;
     top: 100px;
-  }
-  .home__about-desc p {
+}
+.home__about-desc p {
+    width: 500px;
     line-height: 27px;
     font-size: var(--h3-font-size);
     font-weight: 300;
     margin: var(--mb-2) 0;
-  }
+}
 /* ========================= resume button ========================= */
 .resume-link {
     margin-top: 20px;
@@ -474,6 +482,16 @@ div {
     flex: 5;
 }
 
+/* ========================= qualification section ========================= */
+.qualification__info {
+    width: 300px;
+    margin: 1rem auto;
+}
+
+
+
+
+
 /* ========================= works section ========================= */
 .works {
     width: 80%;
@@ -481,21 +499,11 @@ div {
 }
 .slider-for img {
     padding: 1rem;
-    /* width: 100%; */
     width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 600px; */
 }
-.slick__slider_container {
-    height: 500px;
-}
-.slider-for {
-    width: 100%;
-    height: 500px;
-}
-
 .slick-dots {
     display: flex;
     justify-content: center;
@@ -503,7 +511,6 @@ div {
     margin-top: 1rem;
     cursor: pointer;
 }
-
 /* active된 dot */
 .slick-dots li.slick-active button {
     background: var(--primary-color);
@@ -533,8 +540,9 @@ div {
     width: 50px;
     height: 50px;
     font-size: 0;
+    border-radius: 50%;
     border: none;
-    background: rgba(123, 123, 123, 0.5);
+    background: rgba(255, 243, 80, 0.5);
     cursor: pointer;
 }
 .slick-prev {
