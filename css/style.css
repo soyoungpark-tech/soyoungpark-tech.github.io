@@ -616,7 +616,6 @@ div {
     z-index: 100;
 }
 .modal {
-    /* width: 400px; */
     width: 80%;
     height: 80%;
     background: #fff;
@@ -633,7 +632,6 @@ div {
     position: absolute;
     top: -.5rem;
     right: -.5rem;
-    /* font-size: 1.5rem; */
     background: #fff;
     width: 20px;
     height: 20px;
