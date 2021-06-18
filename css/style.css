@@ -24,7 +24,7 @@
 
     /* --main-bg-color: #242527; */
     --border-color: #8d98a133;
-    --hover-color: #007bff;
+    --hover-color: #e9bc0a;
     
     --primary-color: #fbd46d;
     --secondary-color: #FFCF09;
@@ -355,6 +355,7 @@ div {
 .resume-link {
     margin-top: 20px;
     margin-bottom: 40px;
+    transition: .3s;
   }
   .resume-link:hover {
     border: 1px solid var(--hover-color);
@@ -369,6 +370,12 @@ div {
 }
 .home-about-social i {
     font-size: 20px;
+}
+.github-link {
+    transition: .4s;
+}
+.blog-link {
+    transition: .4s;
 }
 .github-link:hover {
     color: var(--hover-color);
@@ -467,7 +474,7 @@ div {
 /* ========================= about section ========================= */
 .about {
     background: var(--primary-color);
-
+    
 }
 .about__desc {
     font-weight: var(--font-semi-bold);
@@ -478,4 +485,163 @@ div {
 .about__pic {
     margin: var(--mb-3);
     flex: 5;
+}
+
+/* ========================= works section ========================= */
+.works {
+    position: relative;
+}
+.slider-for img {
+    padding: 1rem;
+    width: 100%;
+    /* height: 600px; */
+}
+.slider-for {
+    /* border: 1px solid #000; */
+}
+.slider-nav {
+    /* border: 1px solid #000; */
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* active된 dot */
+.slick-dots li.slick-active button {
+    background: var(--primary-color);
+}
+/* 나머지 dot */
+.slick-dots li {
+    margin-right: .5rem;
+}
+.slick-dots li button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 0;
+    border: none;
+    background: var(--border-color);
+    cursor: pointer;
+}
+
+
+/* arrow */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    border: none;
+    background: rgba(123, 123, 123, 0.5);
+    cursor: pointer;
+}
+.slick-prev {
+    left: -10%;
+    top: -70%;
+}
+.slick-next {
+    right: -10%;
+    top: -70%;
+}
+
+.slick-prev:after,
+.slick-next:after{
+    font-size: 1.2rem;
+    color: var(--black-color);
+}
+.slick-prev:after,
+.slick-next:after{
+    font-family: unicons-line;
+}
+.slick-prev:after {
+    content: '\ec49';
+}
+.slick-next:after {
+    content: '\eb9f';
+}
+
+/* resusable css */
+.slider__button {
+    text-decoration: none;
+    color: inherit;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: var(--small-font-size);
+    background: var(--font-color);
+    color: var(--white-color);
+    width: 100px;
+    text-align: center;
+    transition: .4s;
+}
+.slider__button:hover {
+    background: var(--hover-color);
+}
+.slider__content {
+    display: flex;
+}
+/* .slider__img {
+    flex: 1;
+    overflow: hidden;
+} */
+/* .slider__img img {
+    border-radius: .5rem;
+} */
+.slider__desc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+.slider__desc p {
+    margin: 1rem 0;
+}
+/* works modal */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 100;
+}
+.modal {
+    /* width: 400px; */
+    width: 80%;
+    height: 80%;
+    background: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.close__modal {
+    position: absolute;
+    top: -.5rem;
+    right: -.5rem;
+    /* font-size: 1.5rem; */
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding-bottom: 4px;
+    border: 1px solid #eee;
+    cursor: pointer;
 }
