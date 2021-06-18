@@ -200,7 +200,7 @@ div {
     height: 100px;
   } */
   footer {
-    height: 100px;
+    height: 200px;
   }
 .flex {
     display: flex;
@@ -220,6 +220,9 @@ div {
     padding-bottom: 80px;
     margin: 0 auto;
 }
+.primary_color__bg {
+    background: var(--primary-color);
+}
 
 /* ========================= cut line ========================= */
 .division__line:before {
@@ -232,21 +235,8 @@ div {
 .division__line {
     position: relative;
     margin: 50px 0;
-}
-/* .division__line:after {
-    content: "";
-    font-family: Work Sans, sans-serif;
-    font-size: 14px;
-    color: var(--primary-color);
-    padding-left: 14px;
-    position: absolute;
-    right: 45%;
-    bottom: 50%;
-    transform: translate(-10%, 50%);
-  } */
-  .division__line {
     margin-bottom: 80px;
-  }
+}
   /* ========================= header ========================= */
 .header {
     position: fixed;
@@ -473,10 +463,6 @@ div {
     background: var(--primary-color);
 }
 /* ========================= about section ========================= */
-.about__bg {
-    background: var(--primary-color);
-    
-}
 .about__desc {
     font-weight: var(--font-semi-bold);
     flex: 5;
@@ -650,3 +636,18 @@ div {
     border: 1px solid #eee;
     cursor: pointer;
 } */
+
+/* ========================= footer ========================= */
+.footer__container {
+    line-height: 80px;
+}
+.footer__links {
+    width: 200px;
+    justify-content: space-around;
+}
+.footer__links a {
+    transition: .3s;
+}
+.footer__links a:hover {
+    color: var(--white-color);
+}
