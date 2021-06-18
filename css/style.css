@@ -293,6 +293,7 @@ header {
     width: 200px;
     /* 이 부분 길게할지말지 길게하려면 100vh */
     height: auto;
+    /* height: 100vh; */
     background: var(--primary-color);
     padding-top: 5rem;
     z-index: var(--zindex-gnb);
@@ -307,9 +308,10 @@ header {
     text-align: center;
     line-height: 50px;
     font-size: var(--font-semi-bold);
+    transition: .2s;
 }
 .nav__link:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     background: var(--white-color);
 }
 .nav__link i {
