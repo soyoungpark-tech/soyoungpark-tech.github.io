@@ -327,7 +327,7 @@ icons.forEach (icon => {
             
             var imgSrc = $(this).attr('data-link');
             // var imgSrc = "";
-            $().attr('src', imgSrc);
+            $('.slicer-nav').attr('src', imgSrc);
         })
         $btnClose.click(function(){
                 $overlay.fadeOut();
