@@ -464,13 +464,43 @@ header {
     height: 8px;
     border-radius: .5rem;
     overflow: hidden;
-    background: var(--primary-color-lighter);
+    background: var(--border-color);
 }
 .skill_percent {
     display: block;
-    width: 80%;
+    /* width: 50%; */
     height: 100%;
-    background: var(--primary-color);
+    background: var(--secondary-color);
+}
+/* skill tech */
+.skill__tech li:nth-child(1) .skill_percent{
+    width: 90%;
+}
+.skill__tech li:nth-child(2) .skill_percent{
+    width: 90%;
+}
+.skill__tech li:nth-child(3) .skill_percent{
+    width: 75%;
+}
+.skill__tech li:nth-child(4) .skill_percent{
+    width: 90%;
+}
+/* skill design */
+.skill__design li:nth-child(1) .skill_percent {
+    width: 80%;
+}
+.skill__design li:nth-child(2) .skill_percent {
+    width: 90%;
+}
+/* etc skill */
+.skill__etc li:nth-child(1) .skill_percent {
+    width: 75%;
+}
+.skill__etc li:nth-child(2) .skill_percent {
+    width: 90%;
+}
+.skill__etc li:nth-child(3) .skill_percent {
+    width: 85%;
 }
 /* ========================= about section ========================= */
 .about__desc {
@@ -489,19 +519,14 @@ header {
     width: 300px;
     margin: 1rem auto;
 }
-
-
-
-
-
 /* ========================= works section ========================= */
 .works {
-    width: 80%;
     position: relative;
 }
 .slider-for img {
     padding: 1rem;
-    width: 500px;
+    width: 600px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -537,6 +562,7 @@ header {
 .slick-next {
     position: absolute;
     top: 50%;
+    /* bottom: 0; */
     z-index: 100;
     transform: translateY(-50%);
     width: 50px;
@@ -548,12 +574,12 @@ header {
     cursor: pointer;
 }
 .slick-prev {
-    left: -10%;
-    top: -70%;
+    left: -30%;
+    top: -100%;
 }
 .slick-next {
-    right: -10%;
-    top: -70%;
+    right: -30%;
+    top: -100%;
 }
 
 .slick-prev:after,
@@ -571,81 +597,42 @@ header {
 .slick-next:after {
     content: '\eb9f';
 }
-
+.slider-nav {
+    width: 800px;
+    margin: 0 auto;
+}
 /* resusable css */
+.slider__link {
+    padding: 1rem;
+    text-align: center;
+    margin: 0 var(--mb-0-5);
+    border-radius: 1rem;
+    border: 1px solid var(--font-color);
+}
 .slider__button {
     text-decoration: none;
     color: inherit;
     border-radius: .5rem;
-    padding: 1rem;
     font-size: var(--small-font-size);
-    background: var(--font-color);
-    color: var(--white-color);
-    width: 100px;
+    line-height: 30px;
+    border: 1px solid var(--primary-dark-color);
+    color: var(--black-color);
+    width: 30%;
+    /* margin: 0 var(--mb-0-25); */
+    height: 30px;
+
     text-align: center;
-    transition: .4s;
+    transition: .5s;
 }
 .slider__button:hover {
     background: var(--hover-color);
+    border: none;
 }
-.slider__content {
-    display: flex;
+.slider__container {
+    /* border: 1px solid red; */
+    margin: var(--mb-2);
+    padding: var(--mb-2);
 }
-/* .slider__img {
-    flex: 1;
-    overflow: hidden;
-} */
-/* .slider__img img {
-    border-radius: .5rem;
-} */
-.slider__desc {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-}
-.slider__desc p {
-    margin: 1rem 0;
-}
-/* works modal */
-/* .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.5);
-    z-index: 100;
-}
-.modal {
-    width: 80%;
-    height: 80%;
-    background: #fff;
-    padding: 1rem;
-    border-radius: .5rem;
-    border: 1px solid #999;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.close__modal {
-    position: absolute;
-    top: -.5rem;
-    right: -.5rem;
-    background: #fff;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    padding-bottom: 4px;
-    border: 1px solid #eee;
-    cursor: pointer;
-} */
 
 /* ========================= footer ========================= */
 .footer__container {
