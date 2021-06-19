@@ -172,16 +172,16 @@ SupahScroll
 
 $(function(){
     /* ================= change theme ===================== */
-    $('#buttonDark').click(function(){
-        $(this).hide();
-        $('body').addClass('dark-theme');
-        $('#buttonLight').show();
-    })
-    $('#buttonLight').click(function(){
-        $('body').removeClass('dark-theme');
-        $('#buttonDark').show();
-        $(this).hide();
-    })
+    // $('#buttonDark').click(function(){
+    //     $(this).hide();
+    //     $('body').addClass('dark-theme');
+    //     $('#buttonLight').show();
+    // })
+    // $('#buttonLight').click(function(){
+    //     $('body').removeClass('dark-theme');
+    //     $('#buttonDark').show();
+    //     $(this).hide();
+    // })
 
     /* ================= navbar ===================== */
     const icons = document.querySelectorAll('.icon');
@@ -319,11 +319,15 @@ icons.forEach (icon => {
     // modal
     var $modal = $('.modal');
         var $overlay = $('.overlay');
-        var $btn = $('button');
+        var $btn = $('.detail_modal');
         var $btnClose = $('.close__modal');
         $overlay.hide();
         $btn.click(function(){
             $overlay.fadeIn();
+            
+            var imgSrc = $(this).attr('data-link');
+            // var imgSrc = "";
+            $().attr('src', imgSrc);
         })
         $btnClose.click(function(){
                 $overlay.fadeOut();
@@ -333,7 +337,7 @@ icons.forEach (icon => {
                 // currentTarget은 이벤트가 발생한 객체
                 if(e.target == e.currentTarget){
                     $(this).fadeOut();
-                }
+            }
         });
 });
 
