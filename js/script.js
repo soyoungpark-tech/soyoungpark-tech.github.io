@@ -17,8 +17,38 @@ $(function(){
         $(this).toggleClass('active');
         $navList.toggleClass('visible');
     })
+
+    // var $navItem = $('.nav__item');
+
+    // function open_chatroom(){
+    //     var windowWidth = $( window ).width();
+    //     if(windowWidth < 768) {
+    //         $($navItem).click(function(){
+    //             $($navList).toggleClass();
+    //         })
+    //     //창 가로 크기가 500 미만일 경우
+    //     } else {
+    //         $($navItem).click(function(){
+    //             $($navList).open();
+    //         })
+    //     //창 가로 크기가 500보다 클 경우
+    //     }
+    // }
+        
+
+
+
+
+    // $(window).resize(function(){
+    //     var width = $(window).width();
+    //     if(768>=width) {
+    //         $($navItem).click(function(){
+    //             $(this).removeClass($navList);
+    //         })
+    //     }
+    // })
 });
-    /* ================= navbar ===================== */
+    /* ================= navbar 이동 ===================== */
     var $navItem = $('.nav__item');
     $navItem.click(function(e){
         e.preventDefault();
@@ -30,6 +60,11 @@ $(function(){
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
     })
+
+    
+
+
+
 
     /* ================= About ================= */
     $('.stoudyCount, .pracCount, .projectCount').each(function () {
