@@ -911,6 +911,7 @@ header {
   border-radius: .5rem;
   z-index: var(--z-tooltip);
   transition: .4s;
+  background: var(--primary-dark-color);
 }
 .scrollup__icon {
   font-size: 1.5rem;
