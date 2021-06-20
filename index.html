@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- icons : unicons, xeicon -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -17,6 +18,7 @@
 <script src="./js/script.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <title>박소영 포트폴리오 사이트</title>
 </head>
 <body>
@@ -109,6 +111,7 @@
         <!-- </div> -->
     </section>
     <div class="division__line"></div>
+<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
     <section class="skills wrap" id="skills">
         <h1 class="section__title--wrap">Skills</h1>
         <h3 class="section__subtitle section__title--wrap">My Technical Level</h3>
@@ -268,36 +271,39 @@
                     </ul>
                 </li>
             </ul>
-
-        </div>
-    </section>
-    <div class="division__line"></div>
-    <div class="primary_color__bg">
-    <section class="about wrap" id="about">
-        <h1 class="section__title--wrap">About me</h1>
-        <h3 class="section__subtitle section__title--wrap">my introduction</h3>
-        <div class="about__container flex">
-            <div class="about__desc flex-center">
-                <p>
-                    다양한 환경에 반응하도록 디자인과 UX를 
-                    구현하고 사용자 모두가 접근 가능한 웹사이트를 만드는 데 
-                    열정을 쏟고 있습니다. 개방적이고 적극적으로 자세로 
-                    사용자의 피드백을 수용하며 끊임없이 새로운 기술을 
-                    습득하겠습니다. 
-                    <br>
-                    <br>
-                    시멘틱 마크업 원칙에 따라 웹 문서화 코딩작업을 하는 것을
-                    중요하게 생각합니다. 원만한 팀 협업을 위해 기술과 
-                    기능을 우선시 하고 있습니다. 
-                </p>
-            </div>
-            <div class="about__pic">
-                <img src="./images/about_img2.jpg" alt="aboutMeImg">
-            </div>
         </div>
     </section>
 </div>
     <div class="division__line"></div>
+<div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+    <div class="primary_color__bg">
+        <section class="about wrap" id="about">
+            <h1 class="section__title--wrap">About me</h1>
+            <h3 class="section__subtitle section__title--wrap">my introduction</h3>
+            <div class="about__container flex">
+                <div class="about__desc flex-center">
+                    <p>
+                        다양한 환경에 반응하도록 디자인과 UX를 
+                        구현하고 사용자 모두가 접근 가능한 웹사이트를 만드는 데 
+                        열정을 쏟고 있습니다. <span>개방적이고 적극적인</span> 자세로 
+                        사용자의 피드백을 수용하며 끊임없이 새로운 기술을 
+                        습득하겠습니다. 
+                        <br>
+                        <br>
+                        <span>시멘틱 마크업 원칙</span>에 따라 웹 문서화 코딩작업을 하는 것을
+                        중요하게 생각합니다. 원만한 팀 협업을 위해 기술과 
+                        기능을 우선시 하고 있습니다. 
+                    </p>
+                </div>
+                <div class="about__pic">
+                    <img src="./images/about_img2.jpg" alt="aboutMeImg">
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+    <div class="division__line"></div>
+<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
     <section class="qualification wrap" id="qualification">
         <h1 class="section__title--wrap">Qualification</h1>
         <div class="qualification__container">
@@ -376,7 +382,6 @@
                         <div class="qualification__puble--icon">
                             <img src="./images/icon-jQuery.png" alt="htmlIcon" class="qualification__tech jquery-icon">
                         </div>
-                       
                         <div class="qualification__divider flex">
                             <div class="qualification__line"></div>
                             <div class="qualification__month">6월</div>
@@ -391,319 +396,307 @@
             </div>
         </div>
     </section>
+</div>
     <div class="division__line"></div>
-<section class="works wrap" id="works">
-    <h1 class="section__title--wrap">Works</h1>
-        <h3 class="section__subtitle section__title--wrap">
-            Renewal, Responsive, Creation
-        </h3>
-        <div class="slider-for">
+    <section class="works wrap" id="works">
+        <h1 class="section__title--wrap">Works</h1>
+            <h3 class="section__subtitle section__title--wrap">
+                Renewal, Responsive, Creation
+            </h3>
+            <div class="slider-for">
+                <div>
+                    <div class="slider__container flex-center">
+                        <div class="slider__img">
+                            <img src="./images/balenciaga-mockup.png" alt="balenciaga-mockup" class="flex-center">
+                        </div>
+                        <div class="slider__desc">
+                            <h2>발렌시아가 리뉴얼 랜딩페이지
+                                <br>
+                                (참여도 100%)
+                            </h2>
+                            <br>
+                            <p>
+                                <h4>
+                                    사용툴:
+                                    <br>
+                                    Visual Studio Code
+                                    <br>
+                                    HTML, CSS, jQuery, javaScript
+                                </h4>
+                                <br>
+                                slider를 slick 라이브러리를 사용해
+                                코드 양을 줄이고 개발시간을 단축했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slider__container flex-center">
+                        <div class="slider__img">
+                            <img src="./images/balenciaga-mockup.png" alt="balenciaga-mockup" class="flex-center">
+                        </div>
+                        <div class="slider__desc">
+                            <h2>대구범물성당 랜딩페이지
+                                <br>
+                                (참여도 100%)
+                            </h2>
+                            <br>
+                            <p>
+                                <h4>
+                                    사용툴:
+                                    <br>
+                                    Visual Studio Code
+                                    <br>
+                                    HTML, CSS, jQuery, javaScript
+                                </h4>
+                                <br>
+                                jQuery를 이용해 풀다운 메뉴바를 제작하였습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slider__container flex-center">
+                        <div class="slider__img">
+                            <img src="./images/dgMarathon-mockup.png" alt="balenciaga-mockup" class="flex-center">
+                        </div>
+                        <div class="slider__desc">
+                            <h2>대구국제마라톤
+                                <br>
+                                (참여도 100%)
+                            </h2>
+                            <br>
+                            <p>
+                                <h4>
+                                    사용툴:
+                                    <br>
+                                    Visual Studio Code
+                                    <br>
+                                    HTML, CSS, jQuery, javaScript
+                                </h4>
+                                <br>
+                                랜딩페이지를 리뉴얼하고 서브 페이지를 추가하였습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slider__container flex-center">
+                        <div class="slider__img">
+                            <img src="./images/balenciaga-mockup.png" alt="balenciaga-mockup" class="flex-center">
+                        </div>
+                        <div class="slider__desc">
+                            <h2>서울대학교 암병동 홈페이지 클론코딩
+                                <br>
+                                (참여도 100%)
+                            </h2>
+                            <br>
+                            <p>
+                                <h4>
+                                    사용툴:
+                                    <br>
+                                    Visual Studio Code
+                                    <br>
+                                    HTML, CSS, jQuery, javaScript
+                                </h4>
+                                <br>
+                                jQuery를 이용해 메뉴바를 제작하였습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slider__container flex-center">
+                        <div class="slider__img">
+                            <img src="./images/dgMarathon-mockup.png" alt="balenciaga-mockup" class="flex-center">
+                        </div>
+                        <div class="slider__desc">
+                            <h2>삼성전자서비스 홈페이지 클론코딩
+                                <br>
+                                (참여도 100%)
+                            </h2>
+                            <br>
+                            <p>
+                                <h4>
+                                    사용툴:
+                                    <br>
+                                    Visual Studio Code
+                                    <br>
+                                    HTML, CSS
+                                </h4>
+                                <br>
+                                slider를 slick 라이브러리를 사용해
+                                코드 양을 줄이고 개발시간을 단축했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
             <div>
                 <div class="slider__container flex-center">
-                    <div class="slider__img">
-                        <img src="./images/balenciaga-mockup.png" alt="balenciaga-mockup" class="flex-center">
-                    </div>
-                    <div class="slider__desc">
-                        <h2>발렌시아가 리뉴얼 랜딩페이지
-                            <br>
-                            (참여도 100%)
-                        </h2>
-                        <br>
-                        <p>
-                            <h4>
-                                사용툴:
+                        <div class="slider__img">
+                            <img src="./images/comu-mockup.png" alt="balenciaga-mockup" class="flex-center">
+                        </div>
+                        <div class="slider__desc">
+                            <h2>코뮤
                                 <br>
-                                Visual Studio Code
-                                <br>
-                                HTML, CSS, jQuery, javaScript
-                            </h4>
+                                (참여도 100%)
+                            </h2>
                             <br>
-                            slider를 slick 라이브러리를 사용해
-                            코드 양을 줄이고 개발시간을 단축했습니다.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="slider__container flex-center">
-                    <div class="slider__img">
-                        <img src="./images/balenciaga-mockup.png" alt="balenciaga-mockup" class="flex-center">
-                    </div>
-                    <div class="slider__desc">
-                        <h2>대구범물성당 랜딩페이지
-                            <br>
-                            (참여도 100%)
-                        </h2>
-                        <br>
-                        <p>
-                            <h4>
-                                사용툴:
+                            <p>
+                                <h4>
+                                    사용툴:
+                                    <br>
+                                    Visual Studio Code
+                                    <br>
+                                    HTML, CSS, jQuery, javaScript
+                                </h4>
                                 <br>
-                                Visual Studio Code
-                                <br>
-                                HTML, CSS, jQuery, javaScript
-                            </h4>
-                            <br>
-                            jQuery를 이용해 풀다운 메뉴바를 제작하였습니다.
-                        </p>
+                                slider를 slick 라이브러리를 사용해
+                                코드 양을 줄이고 개발시간을 단축했습니다.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="slider__container flex-center">
-                    <div class="slider__img">
-                        <img src="./images/dgMarathon-mockup.png" alt="balenciaga-mockup" class="flex-center">
-                    </div>
-                    <div class="slider__desc">
-                        <h2>대구국제마라톤
-                            <br>
-                            (참여도 100%)
-                        </h2>
+            </div>
+            <div class="slider-nav">
+                <div>
+                    <div class="slider__link flex">
+                        <div>
+                            <h3>발렌시아가<br>랜딩페이지</h3>
+                        </div>
                         <br>
-                        <p>
-                            <h4>
-                                사용툴:
-                                <br>
-                                Visual Studio Code
-                                <br>
-                                HTML, CSS, jQuery, javaScript
-                            </h4>
-                            <br>
-                            랜딩페이지를 리뉴얼하고 서브 페이지를 추가하였습니다.
-                        </p>
+                        <div>
+                            <a href="https://www.github.com" target="_blank" class="slider__button site_link">GoTo</a>
+                            <button  class="slider__button detail_modal" data-img="./images/detail-balenciaga.jpg" id="detail__img">Detail</button>
+                            <a href="https://www.github.com" target="_blank" class="slider__button code_view">GitHub</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="slider__container flex-center">
-                    <div class="slider__img">
-                        <img src="./images/balenciaga-mockup.png" alt="balenciaga-mockup" class="flex-center">
-                    </div>
-                    <div class="slider__desc">
-                        <h2>서울대학교 암병동 홈페이지 클론코딩
-                            <br>
-                            (참여도 100%)
-                        </h2>
+                <div>
+                    <div class="slider__link">
+                        <div>
+                            <h3>대구범물성당<br>홈페이지</h3>
+                        </div>
                         <br>
-                        <p>
-                            <h4>
-                                사용툴:
-                                <br>
-                                Visual Studio Code
-                                <br>
-                                HTML, CSS, jQuery, javaScript
-                            </h4>
-                            <br>
-                            jQuery를 이용해 메뉴바를 제작하였습니다.
-                        </p>
+                        <div>
+                            <a href="https://www.github.com" target="_blank" class="slider__button site_link">GoTo</a>
+                            <button  class="slider__button detail_modal" data-img="./images/detail-dgmarathon.png" id="detail__img">Detail</button>
+                            <a href="https://www.github.com" target="_blank" class="slider__button code_view">GitHub</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="slider__container flex-center">
-                    <div class="slider__img">
-                        <img src="./images/dgMarathon-mockup.png" alt="balenciaga-mockup" class="flex-center">
-                    </div>
-                    <div class="slider__desc">
-                        <h2>삼성전자서비스 홈페이지 클론코딩
-                            <br>
-                            (참여도 100%)
-                        </h2>
+                <div>
+                    <div class="slider__link">
+                        <div>
+                            <h3>대구국제마라톤<br>홈페이지</h3>
+                        </div>
                         <br>
-                        <p>
-                            <h4>
-                                사용툴:
-                                <br>
-                                Visual Studio Code
-                                <br>
-                                HTML, CSS
-                            </h4>
-                            <br>
-                            slider를 slick 라이브러리를 사용해
-                            코드 양을 줄이고 개발시간을 단축했습니다.
-                        </p>
+                        <div>
+                            <a href="https://www.github.com" target="_blank" class="slider__button site_link">GoTo</a>
+                            <button  class="slider__button detail_modal" data-img="./images/detail-dgmarathon.png">Detail</button>
+                            <a href="https://www.github.com" target="_blank" class="slider__button code_view">GitHub</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-       
-        <div>
-             <div class="slider__container flex-center">
-                    <div class="slider__img">
-                        <img src="./images/comu-mockup.png" alt="balenciaga-mockup" class="flex-center">
-                    </div>
-                    <div class="slider__desc">
-                        <h2>코뮤
-                            <br>
-                            (참여도 100%)
-                        </h2>
+                <div>
+                    <div class="slider__link">
+                        <div>
+                            <h3>서울대암병동<br>홈페이지</h3>
+                        </div>
                         <br>
-                        <p>
-                            <h4>
-                                사용툴:
-                                <br>
-                                Visual Studio Code
-                                <br>
-                                HTML, CSS, jQuery, javaScript
-                            </h4>
-                            <br>
-                            slider를 slick 라이브러리를 사용해
-                            코드 양을 줄이고 개발시간을 단축했습니다.
-                        </p>
+                        <div>
+                            <a href="https://www.github.com" target="_blank" class="slider__button site_link">GoTo</a>
+                            <button  class="slider__button detail_modal" data-img="./images/detail-dgmarathon.png">Detail</button>
+                            <a href="https://www.github.com" target="_blank" class="slider__button code_view">GitHub</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div>
+                    <div class="slider__link">
+                        <div>
+                            <h3>삼성전자서비스<br>랜딩페이지</h3>
+                        </div>
+                        <br>
+                        <div>
+                            <a href="https://www.github.com" target="_blank" class="slider__button site_link">GoTo</a>
+                            <button  class="slider__button detail_modal" data-img="./images/detail-dgmarathon.png">Detail</button>
+                            <a href="https://www.github.com" target="_blank" class="slider__button code_view">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            
         </div>
-        </div>
-        <div class="slider-nav">
-            <div>
-                <div class="slider__link flex">
-                    <div>
-                        <h3>발렌시아가<br>랜딩페이지</h3>
-                    </div>
-                    <br>
-                    <div>
-                        <a href="https://www.github.com" target="_blank" class="slider__button site_link">GoTo</a>
-                        <button  class="slider__button detail_modal" data-img="./images/detail-balenciaga.jpg" id="detail__img">Detail</button>
-                        <a href="https://www.github.com" target="_blank" class="slider__button code_view">GitHub</a>
+        <!-- modal -->
+            <div class="overlay">
+                <div class="modal">
+                    <span class="close__modal">x</span>
+                    <i class="uil uil-times-circle close__modal"></i>
+                    <div class="modal__content">
+                        <img src="" alt="발렌시아가디테일" id="modalImg">
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="slider__link">
-                    <div>
-                        <h3>대구범물성당<br>홈페이지</h3>
-                    </div>
-                    <br>
-                    <div>
-                        <a href="https://www.github.com" target="_blank" class="slider__button site_link">GoTo</a>
-                        <button  class="slider__button detail_modal" data-img="./images/detail-dgmarathon.png" id="detail__img">Detail</button>
-                        <a href="https://www.github.com" target="_blank" class="slider__button code_view">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="slider__link">
-                    <div>
-                        <h3>대구국제마라톤<br>홈페이지</h3>
-                    </div>
-                    <br>
-                    <div>
-                        <a href="https://www.github.com" target="_blank" class="slider__button site_link">GoTo</a>
-                        <button  class="slider__button detail_modal" data-img="./images/detail-dgmarathon.png">Detail</button>
-                        <a href="https://www.github.com" target="_blank" class="slider__button code_view">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="slider__link">
-                    <div>
-                        <h3>서울대암병동<br>홈페이지</h3>
-                    </div>
-                    <br>
-                    <div>
-                        <a href="https://www.github.com" target="_blank" class="slider__button site_link">GoTo</a>
-                        <button  class="slider__button detail_modal" data-img="./images/detail-dgmarathon.png">Detail</button>
-                        <a href="https://www.github.com" target="_blank" class="slider__button code_view">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="slider__link">
-                    <div>
-                        <h3>삼성전자서비스<br>랜딩페이지</h3>
-                    </div>
-                    <br>
-                    <div>
-                        <a href="https://www.github.com" target="_blank" class="slider__button site_link">GoTo</a>
-                        <button  class="slider__button detail_modal" data-img="./images/detail-dgmarathon.png">Detail</button>
-                        <a href="https://www.github.com" target="_blank" class="slider__button code_view">GitHub</a>
-                    </div>
-                </div>
-            </div>
-          
-    </div>
-    <!-- modal -->
-        <div class="overlay">
-            <div class="modal">
-                <span class="close__modal">x</span>
-                <i class="uil uil-times-circle close__modal"></i>
-                <div class="modal__content">
-                    <img src="" alt="발렌시아가디테일" id="modalImg">
-                </div>
-            </div>
-        </div>
-        <!-- <div class="overlay">
-            <div class="modal">
-                <span class="close__modal">x</span>
-                <i class="uil uil-times-circle close__modal"></i>
-                <div class="modal__content">
-                    <img src="./images/detail-dgmarathon.png" alt="대구마라톤디테일">
-                </div>
-            </div>
-        </div> -->
-</section>
+    </section>
     <div class="division__line"></div>
-<section class="design__works wrap" id="design__works">
-    <h1 class="section__title--wrap">Design Works</h1>
-        <h3 class="section__subtitle section__title--wrap">
-            Let's Creative!
-        </h3>
-        <div class="design__works_container">
-            <div class="l_wrapper">
-                <ul class="l_row">
-                    
-                    <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_6_12">
-                        <div class="img__wrapper">
-                            <img src="./images/balenciaga-mockup.png" alt="">
-                        </div>
-                    </li>
-                    <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_6_12">
-                        <div class="img__wrapper">
-                            <img src="./images/hamlit-mockup.jpg" alt="">
-                        </div>
-                    </li>
-            
-                    
-                    <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_3_12">
-                        <div class="img__wrapper">
-                            <img src="./images/logo-mockup.jpg" alt="">
-                        </div>
-                    </li>
-                    <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_3_12">
-                        <div class="img__wrapper">
-                            <img src="./images/comu-mockup.png" alt="">
-                        </div>
-                    </li>
-                    <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_3_12">
-                        <div class="img__wrapper">
-                            <img src="./images/magazine-mockup.jpg" alt="">
-                        </div>
-                    </li>
-                    <li class="l_col l_col_4_12 l_col_tablet_6_12 l_col_mobile_3_12">
-                        <div class="img__wrapper">
-                            <img src="./images/dgMarathon-mockup.png" alt="">
-                        </div>
-                    </li>
-                    
-                    <li class="l_col l_col_5_12 l_col_tablet_6_12 l_col_mobile_3_12">
-                        <div class="img__wrapper">
-                            <img src="./images/pattern-banner.jpg" alt="">
-                        </div>
-                    </li>
-            
-                    
-                    <!-- <li class="l_col l_col_12_12 l_col_tablet_6_12 l_col_mobile_3_12">
-                        <div class="img__wrapper">
-                            <img src="images/animal09.png" alt="">
-                        </div>
-                    </li> -->
-                    
-                </ul>
+    <section class="design__works wrap" id="design__works">
+        <h1 class="section__title--wrap">Design Works</h1>
+            <h3 class="section__subtitle section__title--wrap">
+                Let's Creative!
+            </h3>
+            <div class="design__works_container">
+                <div class="l_wrapper">
+                    <ul class="l_row">
+                        
+                        <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_6_12">
+                            <div class="img__wrapper">
+                                <img src="./images/balenciaga-mockup.png" alt="">
+                            </div>
+                        </li>
+                        <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_6_12">
+                            <div class="img__wrapper">
+                                <img src="./images/hamlit-mockup.jpg" alt="">
+                            </div>
+                        </li>
+                
+                        
+                        <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_3_12">
+                            <div class="img__wrapper">
+                                <img src="./images/logo-mockup.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_3_12">
+                            <div class="img__wrapper">
+                                <img src="./images/comu-mockup.png" alt="">
+                            </div>
+                        </li>
+                        <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_3_12">
+                            <div class="img__wrapper">
+                                <img src="./images/magazine-mockup.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="l_col l_col_4_12 l_col_tablet_6_12 l_col_mobile_3_12">
+                            <div class="img__wrapper">
+                                <img src="./images/dgMarathon-mockup.png" alt="">
+                            </div>
+                        </li>
+                        
+                        <li class="l_col l_col_5_12 l_col_tablet_6_12 l_col_mobile_3_12">
+                            <div class="img__wrapper">
+                                <img src="./images/pattern-banner.jpg" alt="">
+                            </div>
+                        </li>
+                        <!-- <li class="l_col l_col_12_12 l_col_tablet_6_12 l_col_mobile_3_12">
+                            <div class="img__wrapper">
+                                <img src="images/animal09.png" alt="">
+                            </div>
+                        </li> -->
+                        
+                    </ul>
+                </div>
             </div>
-        </div>
-</section>
-<section>
-</section>
+    </section>
 </main>
 <!-- ====================================== Scroll top ====================================== -->
 <a href="#" class="scrollup" id="scroll-up">
@@ -728,5 +721,9 @@
         <p class="footer__copy">&copy; 2021. Park So Young. All right reserved</p>
     </div>
 </footer>
+
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

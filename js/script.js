@@ -17,13 +17,6 @@ $(function(){
         $(this).toggleClass('active');
         $navList.toggleClass('visible');
     })
-
-     // dimmed effect
-     $dimmed.click(function(){
-        $(this).removeClass('visible');
-        $($gnb).removeClass('visible');
-        $toggle.removeClass('active');
-    })
 });
     /* ================= navbar ===================== */
     var $navItem = $('.nav__item');

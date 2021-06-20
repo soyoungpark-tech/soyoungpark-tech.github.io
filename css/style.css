@@ -652,6 +652,11 @@ header {
   line-height: 30px;
   margin: var(--mb-3);
 }
+.about__desc span {
+  color: brown;
+  font-weight: var(--font-semi-bold);
+  /* text-decoration: underline; */
+}
 .about__pic {
   margin: var(--mb-3);
   flex: 5;
