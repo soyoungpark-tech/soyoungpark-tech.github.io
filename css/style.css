@@ -376,6 +376,7 @@ header {
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 999;
 }
 .nav-icon-7 {
   width: 35px;
@@ -1022,25 +1023,6 @@ header {
     width: 110px;
     flex: 1;
   }
-    /* ========== works ========== */
-    .works {
-      position: initial;
-    }
-    .slider-nav {
-      position: initial;
-    }
-    .slider-for{
-      z-index: -1;
-      position: initial;
-    }
-    .slick-slider {
-      position: initial;
-    }
-    .slider__link {
-      display: flex;
-      height: 200px;
-      justify-content: space-evenly;
-    }
 }
 
 /* ========================= Mobile ========================= */
