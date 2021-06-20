@@ -366,6 +366,7 @@ footer {
 }
 .division__line {
   position: relative;
+  z-index: -1;
   margin: 50px 0;
   margin-bottom: 80px;
 }
@@ -437,6 +438,7 @@ header {
   padding-top: 5rem;
   transform: translateX(100%);
   transition: 0.3s;
+  z-index: 99;
 }
 .nav__list.visible {
   transform: translateX(0);
@@ -494,8 +496,8 @@ header {
   transition: 0.3s;
 }
 .resume-link:hover {
-  border: none;
-  color: var(--hover-color);
+  border-color: var(--primary-dark-color);
+  color: var(--secondary-color);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /* ========================= home about social ========================= */
@@ -817,8 +819,10 @@ header {
 /* .slider-nav .slider__link:nth-child(2){
   background: #fbd56d80;
   color: red;
-
 } */
+.slider__link {
+  flex-direction: column;
+}
 .slider__button {
   text-decoration: none;
   color: inherit;
@@ -851,7 +855,7 @@ header {
   z-index: 100;
 }
 .modal {
-  width: 800px;
+  width: 50%;
   background: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -945,11 +949,15 @@ header {
     --normal-font-size: 0.938rem;
     --small-font-size: 0.75rem;
   }
-  /* .inner {
-    padding: 2rem 2rem;
-  } */
   header {
     width: 100%;
+  }
+  .nav-icon-7 {
+    z-index: 9999;
+  }
+  .nav__list {
+    width: 100%;
+    z-index: 999;
   }
 
   .home {
@@ -968,12 +976,16 @@ header {
     padding: 0;
     margin-top: var(--mb-2);
     text-align: center;
+    position: static;
   }
   .home__about-desc {
     text-align: center;    
   }
   .home-about-social {
     display: none;
+  }
+  .home-aobut-resume {
+    justify-content: center;
   }
   /* ========== skills ========== */
   .skills__container {
@@ -1010,10 +1022,32 @@ header {
     width: 110px;
     flex: 1;
   }
+    /* ========== works ========== */
+    .works {
+      position: initial;
+    }
+    .slider-nav {
+      position: initial;
+    }
+    .slider-for{
+      z-index: -1;
+      position: initial;
+    }
+    .slick-slider {
+      position: initial;
+    }
+    .slider__link {
+      display: flex;
+      height: 200px;
+      justify-content: space-evenly;
+    }
 }
 
 /* ========================= Mobile ========================= */
 @media (max-width: 568px) {
+  .nav__list {
+    width: 100%;
+  }
   .slider__container {
     flex-direction: column;
   }

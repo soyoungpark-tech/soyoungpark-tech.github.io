@@ -62,7 +62,7 @@ $(function(){
     var $qualificationContent = $('.qualification__content');
     $qualificationContent.eq(1).hide();
     $qualificationTab.click(function(e){
-        e.preventDefault();
+        // e.preventDefault();
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
         var idx = $(this).index();
@@ -128,6 +128,8 @@ $(function(){
                     $(this).fadeOut();
             }
         });
+
+        // responsive
 });
 
 
