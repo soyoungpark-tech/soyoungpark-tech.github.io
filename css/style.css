@@ -22,7 +22,7 @@
     --body-color: hsl(var(--hue-color), 60%, 99%); */
 
   /* --main-bg-color: #242527; */
-  --border-color: #8d98a133;
+  --border-color: #999999;
   --hover-color: #e9bc0a;
 
   --primary-color: #fbd46d;
@@ -61,10 +61,15 @@
 }
 
 /* ----------------------- dark-theme ----------------------- */
-body.dark-theme {
-  --black-color: hsl(var(--hue-color), 8%, 95%); /* 흰색으로 바뀝니다 */
-  --body-color: hsl(var(--hue-color), 28%, 12%); /* 어두운 색으로 바뀝니다 */
-}
+/* body.dark-theme {
+  --black-color: var(--primary-dark-color);
+  --body-color:  var(--white-color); 
+} */
+/* 흰색으로 바뀝니다 */
+  /* 어두운 색으로 바뀝니다 */
+/* .change-theme:hover {
+  color: var(--primary-color);
+} */
 
 /* ----------------------- reset ----------------------- */
 * {
@@ -83,7 +88,6 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  /* z-index: ; */
 }
 .clearfix:after {
   content: "";
@@ -214,6 +218,155 @@ footer {
 .primary_color__bg {
   background: var(--primary-color);
 }
+/* layouts (공공재) */
+.l_wrapper {
+  background: beige;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+.l_wrapper:after {
+  content: '';
+  display: table;
+}
+.l_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px -20px -10px;
+}
+
+.l_col {
+  box-sizing: border-box;
+  width: 33.3333%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+/* float 버전 */
+/* .l_row {
+overflow: hidden;
+margin: 0 -20px;
+}
+.l_col {
+  float: left;
+  box_sizing: border_box;
+  padding: 0 20px;
+} */
+
+.l_col_12_12 {
+  width: 100%;
+}
+.l_col_11_12 {
+  width: 91.66666667%;
+}
+.l_col_10_12 {
+  width: 83.33333333%;
+}
+.l_col_9_12 {
+  width: 75%;
+}
+.l_col_8_12 {
+  width: 66.66666667%;
+}
+.l_col_7_12 {
+  width: 58.33333333%;
+}
+.l_col_6_12 {
+  width: 50%;
+}
+.l_col_5_12 {
+  width: 41.66666667%;
+}
+.l_col_4_12 {
+  width: 33.33333333%;
+}
+.l_col_3_12 {
+  width: 25%;
+}
+.l_col_2_12 {
+  width: 16.66666667%;
+}
+.l_col_1_12 {
+  width: 8.33333333%;
+}
+
+@media (max-width: 768px) {
+  .l_col_tablet_12_12 {
+      width: 100%;
+  }
+  .l_col_tablet_11_12 {
+      width: 91.66666667%;
+  }
+  .l_col_tablet_10_12 {
+      width: 83.33333333%;
+  }
+  .l_col_tablet_9_12 {
+      width: 75%;
+  }
+  .l_col_tablet_8_12 {
+      width: 66.66666667%;
+  }
+  .l_col_tablet_7_12 {
+      width: 58.33333333%;
+  }
+  .l_col_tablet_6_12 {
+      width: 50%;
+  }
+  .l_col_tablet_5_12 {
+      width: 41.66666667%;
+  }
+  .l_col_tablet_4_12 {
+      width: 33.33333333%;
+  }
+  .l_col_tablet_3_12 {
+      width: 25%;
+  }
+  .l_col_tablet_2_12 {
+      width: 16.66666667%;
+  }
+  .l_col_tablet_1_12 {
+      width: 8.33333333%;
+  }
+}
+
+@media (max-width: 568px) {
+  .l_col_mobile_12_12 {
+      width: 100%;
+  }
+  .l_col_mobile_11_12 {
+      width: 91.66666667%;
+  }
+  .l_col_mobile_10_12 {
+      width: 83.33333333%;
+  }
+  .l_col_mobile_9_12 {
+      width: 75%;
+  }
+  .l_col_mobile_8_12 {
+      width: 66.66666667%;
+  }
+  .l_col_mobile_7_12 {
+      width: 58.33333333%;
+  }
+  .l_col_mobile_6_12 {
+      width: 50%;
+  }
+  .l_col_mobile_5_12 {
+      width: 41.66666667%;
+  }
+  .l_col_mobile_4_12 {
+      width: 33.33333333%;
+  }
+  .l_col_mobile_3_12 {
+      width: 25%;
+  }
+  .l_col_mobile_2_12 {
+      width: 16.66666667%;
+  }
+  .l_col_mobile_1_12 {
+      width: 8.33333333%;
+  }
+}
 
 /* ========================= cut line ========================= */
 .division__line:before {
@@ -319,10 +472,9 @@ header {
 /* ========================= home page ========================= */
 .home {
   padding: 4rem 0;
-  /* padding-bottom: 4rem; */
 }
-.home-pic img {
-  width: 700px;
+.home-pic {
+  width: 70%;
 }
 
 .home__about {
@@ -343,7 +495,6 @@ header {
   top: 100px;
 }
 .home__about-desc p {
-  width: 500px;
   line-height: 27px;
   font-size: var(--h3-font-size);
   font-weight: 300;
@@ -356,8 +507,9 @@ header {
   transition: 0.3s;
 }
 .resume-link:hover {
-  border: 1px solid var(--hover-color);
+  /* border: 1px solid var(--hover-color); */
   color: var(--hover-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /* ========================= home about social ========================= */
 .home-about-social {
@@ -377,11 +529,11 @@ header {
 }
 .github-link:hover {
   color: var(--hover-color);
-  border: 1px solid var(--hover-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .blog-link:hover {
   color: var(--hover-color);
-  border: 1px solid var(--hover-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /* ========================= skills desc section ========================= */
 .skills {
@@ -393,12 +545,14 @@ header {
   flex: 1;
 }
 .skills__desc_container i {
-  flex: 1;
+  flex: .5;
+}
+.uil-book-open {
+  padding-bottom: 50px;
 }
 .skills__desc_container p {
-  flex: 8;
+  flex: 7;
   line-height: 2rem;
-  padding-bottom: var(--mb-1);
   margin: 0 var(--mb-1);
 }
 .skills__list {
@@ -510,13 +664,15 @@ header {
   margin: var(--mb-3);
   flex: 5;
 }
+.about__pic img {
+  border-radius: 10px;
+  
+}
 
 /* ========================= qualification section ========================= */
-.qualification {
-}
 .qualification__info {
-  width: 300px;
   margin: 1rem auto;
+  width: 20%;
   text-align: center;
 }
 .qualification__history {
@@ -529,14 +685,20 @@ header {
 .qualification__item {
   flex: 1;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .qualification__puble--icon {
   text-align: center;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
 }
 .qualification__design--icon {
   text-align: center;
   margin-top: 1rem;
+    display: flex;
+    align-items: center;
 }
 .qualification__design--icon h2 {
   margin-top: 5px;
@@ -549,11 +711,12 @@ header {
   flex: 1;
   flex-direction: row-reverse;
   align-items: center;
+  width: 100%;
 }
 .qualification__line {
   width: 100%;
   height: 5px;
-  background: #ffce098e;
+  background: #dee2e6;
 }
 .qualification__month {
   width: 150px;
@@ -562,20 +725,21 @@ header {
   text-align: center;
   line-height: 50px;
   margin: 2rem 0;
-  background: var(--secondary-color);
+  background: #adb5bd;
 }
 
 /* ========================= works section ========================= */
 .works {
   position: relative;
 }
-.slider-for img {
-  padding: 1rem;
-  width: 600px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.slider__img {
+  flex: 6;
+  margin: var(--mb-1-5);
+}
+.slider__desc {
+  flex: 5;
+  margin: var(--mb-1);
+  
 }
 .slick-dots {
   display: flex;
@@ -607,7 +771,6 @@ header {
 .slick-next {
   position: absolute;
   top: 50%;
-  /* bottom: 0; */
   z-index: 100;
   transform: translateY(-50%);
   width: 50px;
@@ -615,15 +778,15 @@ header {
   font-size: 0;
   border-radius: 50%;
   border: none;
-  background: rgba(255, 243, 80, 0.5);
+  background: rgba(102, 100, 74, 0.295);
   cursor: pointer;
 }
 .slick-prev {
-  left: -30%;
+  left: 0;
   top: -100%;
 }
 .slick-next {
-  right: -30%;
+  right: 0;
   top: -100%;
 }
 
@@ -643,28 +806,32 @@ header {
   content: "\eb9f";
 }
 .slider-nav {
-  width: 800px;
   margin: 0 auto;
 }
 /* resusable css */
 .slider__link {
+  cursor: pointer;
   padding: 1rem;
   text-align: center;
   margin: 0 var(--mb-0-5);
   border-radius: 1rem;
-  background: rgba(255, 243, 80, 0.445);
+  background: rgba(102, 100, 74, 0.295);
 }
+/* .slider-nav .slider__link:nth-child(2){
+  background: #fbd56d80;
+  color: red;
+
+} */
 .slider__button {
   text-decoration: none;
   color: inherit;
   border-radius: 0.5rem;
   font-size: var(--small-font-size);
   line-height: 30px;
-  border: 1px solid var(--primary-dark-color);
+  border: 1px solid var(--border-color);
   color: var(--black-color);
   width: 30%;
   height: 30px;
-
   text-align: center;
   transition: 0.5s;
 }
@@ -673,7 +840,6 @@ header {
   border: none;
 }
 .slider__container {
-  /* border: 1px solid red; */
   margin: var(--mb-2);
   padding: var(--mb-2);
 }
@@ -721,6 +887,44 @@ header {
   overflow-y: auto;
 }
 
+/* ========================= design works ========================= */
+.design__works {
+  margin-bottom: 80px;
+}
+/* - dash는 하위 개념을 나타낸다 */
+/* _(underbar)는 연관된 하나의 개념이다 */
+.l_col_half {
+  width: 50%;
+}
+/* component */
+.img__wrapper {
+  background: dodgerblue;
+  height: 100%;
+}
+.img__wrapper img {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+/* ========================= scroll up ========================= */
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  opacity: .8;
+  padding: .4rem .6rem 0 .6rem;
+  border-radius: .5rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+}
+.scrollup__icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.scrollup.visible {
+  bottom: 5rem;
+}
 /* ========================= footer ========================= */
 .footer__container {
   line-height: 80px;
@@ -746,23 +950,20 @@ header {
     --normal-font-size: 0.938rem;
     --small-font-size: 0.75rem;
   }
-  .inner {
+  /* .inner {
     padding: 2rem 2rem;
-  }
-
+  } */
   header {
-    right: 68%;
+    width: 100%;
   }
 
   .home {
-    width: 80%;
+    width: 100%;
     margin-left: 0;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
   }
   .home-pic {
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
   }
   .home__about:before {
@@ -770,13 +971,50 @@ header {
   }
   .home__about {
     padding: 0;
+    margin-top: var(--mb-2);
+    text-align: center;
+    /* border-radius: 10px; */
   }
   .home__about-desc {
-    display: inline-block;
-    border: 1px solid #000;
+    text-align: center;    
+  }
+  .home-about-social {
+    display: none;
+  }
+  /* ========== skills ========== */
+  .skills__container {
+    flex-direction: column;
+  }
+  /* ========== about me ========== */
+  .about__container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .about__pic {
+    flex: 2;
+    width:60%;
+  }
+  .about__desc {
+    flex: 8;
+  }
+  /* ========== qualification ========== */
+  .qualification__container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .qualification__design--icon {
     text-align: center;
-    width: 300px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .qualification__item {
+    flex-direction: row;
+  }
+  .jquery-icon {
+    width: 110px;
+    flex: 1;
   }
 }
 

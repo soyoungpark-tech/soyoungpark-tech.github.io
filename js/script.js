@@ -185,8 +185,8 @@ $(function(){
 
     /* ================= navbar ===================== */
     const icons = document.querySelectorAll('.icon');
-icons.forEach (icon => {  
-  icon.addEventListener('click', (event) => {
+    icons.forEach (icon => {  
+    icon.addEventListener('click', (event) => {
     icon.classList.toggle("open");
   });
     var $navToggle = $('.nav-icon-7'),
@@ -226,6 +226,7 @@ icons.forEach (icon => {
     //     $('.nav__container').toggleClass('visible');
     // })
 
+
       /* ================= About ================= */
       // 1. 카운트할 셀렉터만 기입하면 자동으로 됩나다
       // 2. duration은 시간입니다. 수정가능합니다
@@ -263,25 +264,18 @@ icons.forEach (icon => {
     })
 
       /* ================= service ================= */
-    $('.service__item-button').click(function(e){
-            e.preventDefault();
-            $(this).siblings('.service__modal').show();
-    })
-    $('.modal__close').click(function(){
-        $('.service__modal').hide();
-    })
-    $('.service__modal').click(function(e){
-        if(e.target === e.currentTarget){
-            $(this).hide();
-        }
-    })
-
-    /* ================= portfolio ================= */
-    $('.custom__slider').slick({
-        dots:true,
-        /* autoplay: true,
-        autoplaySpeed: 2000, */
-    });
+    // $('.service__item-button').click(function(e){
+    //         e.preventDefault();
+    //         $(this).siblings('.service__modal').show();
+    // })
+    // $('.modal__close').click(function(){
+    //     $('.service__modal').hide();
+    // })
+    // $('.service__modal').click(function(e){
+    //     if(e.target === e.currentTarget){
+    //         $(this).hide();
+    //     }
+    // })
 
     /* ================= scroll up ================= */
     var skillsDistance = $('#skills').offset().top;
@@ -305,6 +299,8 @@ icons.forEach (icon => {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
@@ -321,13 +317,15 @@ icons.forEach (icon => {
         var $overlay = $('.overlay');
         var $btn = $('.detail_modal');
         var $btnClose = $('.close__modal');
+        var $modalImg = $('#modalImg');
         $overlay.hide();
         $btn.click(function(){
-            $overlay.fadeIn();
             
-            var imgSrc = $(this).attr('data-link');
+            var imgSrc = $(this).attr('data-img');
+            console.log(imgSrc)
             // var imgSrc = "";
-            $('.slicer-nav').attr('src', imgSrc);
+            $modalImg.attr('src', imgSrc);
+            $overlay.fadeIn();
         })
         $btnClose.click(function(){
                 $overlay.fadeOut();
