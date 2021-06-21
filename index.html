@@ -7,8 +7,6 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- icons : unicons, xeicon -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
@@ -16,7 +14,6 @@
 <!-- js -->
 <!-- jQuery CDN -->
 <script src="./js/script.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <title>박소영 포트폴리오 사이트</title>
@@ -79,7 +76,7 @@
     </header>
     <main>
         <section class="home flex wrap" id="home">
-            <div class="home-pic">
+            <div class="home__pic">
                 <img src="./images/my-img.JPG" alt="my-img">
             </div>
             <div class="home__about">
@@ -411,7 +408,7 @@
                             <img src="./images/balenciaga-mockup.png" alt="balenciaga-mockup" class="flex-center">
                         </div>
                         <div class="slider__desc">
-                            <h2>발렌시아가 리뉴얼 랜딩페이지
+                            <h2><span>1</span> 발렌시아가 리뉴얼 랜딩페이지
                                 <br>
                                 (참여도 100%)
                             </h2>
@@ -437,7 +434,7 @@
                             <img src="./images/balenciaga-mockup.png" alt="balenciaga-mockup" class="flex-center">
                         </div>
                         <div class="slider__desc">
-                            <h2>대구범물성당 랜딩페이지
+                            <h2><span>2</span> 대구범물성당 랜딩페이지
                                 <br>
                                 (참여도 100%)
                             </h2>
@@ -462,7 +459,7 @@
                             <img src="./images/dgMarathon-mockup.png" alt="balenciaga-mockup" class="flex-center">
                         </div>
                         <div class="slider__desc">
-                            <h2>대구국제마라톤
+                            <h2><span>3</span> 대구국제마라톤
                                 <br>
                                 (참여도 100%)
                             </h2>
@@ -487,7 +484,7 @@
                             <img src="./images/balenciaga-mockup.png" alt="balenciaga-mockup" class="flex-center">
                         </div>
                         <div class="slider__desc">
-                            <h2>서울대학교 암병동 홈페이지 클론코딩
+                            <h2><span>4</span> 서울대학교 암병동 홈페이지 클론코딩
                                 <br>
                                 (참여도 100%)
                             </h2>
@@ -512,7 +509,7 @@
                             <img src="./images/dgMarathon-mockup.png" alt="balenciaga-mockup" class="flex-center">
                         </div>
                         <div class="slider__desc">
-                            <h2>삼성전자서비스 홈페이지 클론코딩
+                            <h2><span>5</span> 삼성전자서비스 홈페이지 클론코딩
                                 <br>
                                 (참여도 100%)
                             </h2>
@@ -532,40 +529,15 @@
                         </div>
                     </div>
                 </div>
-        
-            <div>
-                <div class="slider__container flex-center">
-                        <div class="slider__img">
-                            <img src="./images/comu-mockup.png" alt="balenciaga-mockup" class="flex-center">
-                        </div>
-                        <div class="slider__desc">
-                            <h2>코뮤
-                                <br>
-                                (참여도 100%)
-                            </h2>
-                            <br>
-                            <p>
-                                <h4>
-                                    사용툴:
-                                    <br>
-                                    Visual Studio Code
-                                    <br>
-                                    HTML, CSS, jQuery, javaScript
-                                </h4>
-                                <br>
-                                slider를 slick 라이브러리를 사용해
-                                코드 양을 줄이고 개발시간을 단축했습니다.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
             <div class="slider-nav">
                 <div>
                     <div class="slider__link flex">
                         <div>
-                            <h3>발렌시아가<br>랜딩페이지</h3>
+                            <h3>발렌시아가</h3>
+                            <span class="mobile__title">
+                                1
+                            </span>
                         </div>
                         <br>
                         <div>
@@ -578,7 +550,10 @@
                 <div>
                     <div class="slider__link">
                         <div>
-                            <h3>대구범물성당<br>홈페이지</h3>
+                            <h3>대구범물성당</h3>
+                            <span class="mobile__title">
+                                2
+                            </span>
                         </div>
                         <br>
                         <div>
@@ -591,7 +566,10 @@
                 <div>
                     <div class="slider__link">
                         <div>
-                            <h3>대구국제마라톤<br>홈페이지</h3>
+                            <h3>대구국제마라톤</h3>
+                            <span class="mobile__title">
+                                3
+                            </span>
                         </div>
                         <br>
                         <div>
@@ -604,7 +582,10 @@
                 <div>
                     <div class="slider__link">
                         <div>
-                            <h3>서울대암병동<br>홈페이지</h3>
+                            <h3>서울대암병동</h3>
+                            <span class="mobile__title">
+                                4
+                            </span>
                         </div>
                         <br>
                         <div>
@@ -617,7 +598,10 @@
                 <div>
                     <div class="slider__link">
                         <div>
-                            <h3>삼성전자서비스<br>랜딩페이지</h3>
+                            <h3>삼성전자서비스</h3>
+                            <span class="mobile__title">
+                                5
+                            </span>
                         </div>
                         <br>
                         <div>
@@ -627,7 +611,6 @@
                         </div>
                     </div>
                 </div>
-            
         </div>
         <!-- modal -->
             <div class="overlay">
