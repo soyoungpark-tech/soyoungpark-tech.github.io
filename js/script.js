@@ -2,12 +2,19 @@
 
 $(function(){
 
-    /* ================= navbar ===================== */
+/* ===================== slider effect ===================== */
+    AOS.init({
+        once: true,
+        duration: 500,
+        debounceDelay: 50
+    });
+
+/* ================= navbar ===================== */
     const icons = document.querySelectorAll('.icon');
     icons.forEach (icon => {  
     icon.addEventListener('click', (event) => {
     icon.classList.toggle("open");
-  });
+});
     var $navToggle = $('.nav-icon-7'),
         $navList = $('.nav__list'),
         $dimmed = $('#dimmed');

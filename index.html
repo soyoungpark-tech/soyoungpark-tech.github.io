@@ -77,9 +77,12 @@
     <main>
         <section class="home flex wrap" id="home">
             <div class="home__pic">
-                <img src="./images/my-img.JPG" alt="my-img">
+                <div data-aos="fade-right">
+                    <img src="./images/my-img.JPG" alt="my-img">
+                </div>
             </div>
             <div class="home__about">
+                <div data-aos="fade-left">
                 <div class="home__about-desc">
                     <h1>
                         1일 1페이지 구현하는
@@ -95,6 +98,7 @@
                         습득하겠습니다. 
                     </p>
                 </div>
+            </div>
                 <div class="home-aobut-resume">
                     <a href="./박소영_이력서.pdf" class="resume-link home__about_button" download="resume">
                         resumé
@@ -714,8 +718,5 @@
     </div>
 </footer>
 
-<script>
-    AOS.init();
-</script>
 </body>
 </html>
