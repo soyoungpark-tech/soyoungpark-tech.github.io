@@ -707,6 +707,7 @@ header {
   flex: 5;
   line-height: 30px;
   margin: var(--mb-3);
+  align-items: center;
 }
 
 .about__desc span {
