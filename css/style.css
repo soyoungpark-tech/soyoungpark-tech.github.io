@@ -1077,9 +1077,17 @@ header {
     display: none;
   }
   .resume-link {
-    margin-left: 6.5em;
+    width: 100%;
+    text-align: center;
+    /* margin-left: 6.5em; */
+  }
+  .home-line {
+    display: none;
   }
   /* ========== skills ========== */
+  .skills {
+    margin-top: 80px;
+  }
   .skills__container {
     flex-direction: column;
   }
