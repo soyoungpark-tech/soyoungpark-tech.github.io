@@ -458,17 +458,7 @@ header {
   flex-direction: column;
   width: 100%;
   max-height: 100%;
-  /* position: relative; */
 }
-/* .home__about:before {
-  content: "";
-  width: 175px;
-  height: 3px;
-  position: absolute;
-  background: var(--primary-color);
-  left: -100px;
-  top: 100px;
-} */
 .home__about-desc p {
   line-height: 27px;
   font-size: var(--h3-font-size);
@@ -529,57 +519,6 @@ header {
   transform:scaleX(1);
   transition-delay:.6s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ========================= resume button ========================= */
-/* .resume-link {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  transition: 0.3s;
-}
-.resume-link:hover {
-  color: var(--secondary-color);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-} */
-/* ========================= home about social ========================= */
-/* .home-about-social {
-  display: flex;
-}
-.home-about-social a {
-  margin-right: 30px;
-}
-.home-about-social i {
-  font-size: 25px;
-}
-.github-link {
-  transition: 0.4s;
-}
-.blog-link {
-  transition: 0.4s;
-}
-.github-link:hover {
-  color: var(--hover-color);
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.blog-link:hover {
-  color: var(--hover-color);
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-} */
 /* ========================= skills desc section ========================= */
 .skills {
   margin-bottom: var(--mb-3);
