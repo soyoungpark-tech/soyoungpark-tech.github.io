@@ -155,26 +155,6 @@ strong {
   color: var(--gray-color);
   margin-bottom: var(--mb-3);
 }
-.link-button {
-  border: thin solid var(--border-color);
-  font-weight: bold;
-  padding: 8px 15px;
-  border-radius: 50px;
-  font-size: 15px;
-  line-height: 15px;
-  text-transform: uppercase;
-}
-.link-button-circle {
-  width: 40px;
-  height: 40px;
-  font-size: 14px;
-  border-radius: 50%;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border: thin solid var(--border-color);
-}
 
 /* ========================= layout ========================= */
 .wrap {
@@ -194,14 +174,11 @@ footer {
 }
 .flex-center {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
 }
 .flex-center-space-between {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .skill-box-style {
   padding-bottom: 80px;
@@ -454,10 +431,10 @@ header {
 }
 .nav__link {
   display: block;
-  text-align: center;
   line-height: 50px;
   font-size: var(--font-semi-bold);
   transition: 0.2s;
+  text-align: center;
 }
 .nav__link:hover {
   color: var(--secondary-color);
@@ -477,12 +454,13 @@ header {
 .home__about {
   padding: 72px 0px 72px 100px;
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
   width: 100%;
   max-height: 100%;
-  position: relative;
+  /* position: relative; */
 }
-.home__about:before {
+/* .home__about:before {
   content: "";
   width: 175px;
   height: 3px;
@@ -490,15 +468,84 @@ header {
   background: var(--primary-color);
   left: -100px;
   top: 100px;
-}
+} */
 .home__about-desc p {
   line-height: 27px;
   font-size: var(--h3-font-size);
   font-weight: 300;
   margin: var(--mb-2) 0;
+  line-height: 2.5rem;
 }
+/* button--------------------------------- */
+.home__about_button {
+  position:relative;
+  padding:10px 10px 10px 30px;
+  color:var(--font-color);
+  text-decoration:none;
+  font-size:var(--h3-font-size);
+  /* font-family: sans-serif; */
+  font-weight: lighter;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: var(--mb-0-5);
+}
+.home__about_button:before
+{
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:2px;
+  background:var(--secondary-color);
+  transform-style:linear;
+  transition-property:height,width;
+  transition-delay:0.3s,.4s;
+  transition-duration:.3s;
+}
+.home__about_button:hover:before
+{
+  transition-property:width,height;
+  width:10px;
+  height:100%;
+}
+.home__about_button:after
+{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  width:100%;
+  height:100%;
+  background:var(--grey-color-lighter);
+  transform:scaleX(0);
+  transition:0.4s;
+  transition-delay:0s;
+  transform-origin:left;
+  z-index:-1;
+}
+.home__about_button:hover:after
+{
+  transform:scaleX(1);
+  transition-delay:.6s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========================= resume button ========================= */
-.resume-link {
+/* .resume-link {
   margin-top: 20px;
   margin-bottom: 40px;
   transition: 0.3s;
@@ -506,9 +553,9 @@ header {
 .resume-link:hover {
   color: var(--secondary-color);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+} */
 /* ========================= home about social ========================= */
-.home-about-social {
+/* .home-about-social {
   display: flex;
 }
 .home-about-social a {
@@ -532,7 +579,7 @@ header {
   color: var(--hover-color);
   border: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+} */
 /* ========================= skills desc section ========================= */
 .skills {
   margin-bottom: var(--mb-3);
@@ -571,14 +618,14 @@ header {
   flex-shrink: 0;
   flex-direction: column;
   margin-bottom: var(--mb-1-5);
-  padding-right: var(--mb-1-5);
+  padding: 0 var(--mb-1-5);
 }
 .skills__header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: var(--mb-1);
   cursor: pointer;
+  align-items: center;
 }
 .skills__title {
   display: flex;
@@ -696,15 +743,15 @@ header {
   align-items: center;
 }
 .qualification__puble--icon {
-  text-align: center;
   margin-bottom: 1rem;
   display: flex;
+  text-align: center;
   align-items: center;
 }
 .qualification__design--icon {
-  text-align: center;
   margin-top: 1rem;
   display: flex;
+  text-align: center;
   align-items: center;
 }
 .qualification__tech {
@@ -723,8 +770,8 @@ header {
 .qualification__divider {
   flex: 1;
   flex-direction: row-reverse;
-  align-items: center;
   width: 100%;
+  align-items: center;
 }
 .qualification__line {
   width: 100%;
@@ -735,9 +782,9 @@ header {
   width: 150px;
   height: 50px;
   border-radius: 10px;
-  text-align: center;
   line-height: 50px;
   margin: 2rem 0;
+  text-align: center;
   background: var(--grey-color-lighter);
 }
 .qualification__item-bg {
@@ -764,10 +811,10 @@ header {
 }
 .slick-dots {
   display: flex;
-  justify-content: center;
   position: relative;
   margin-top: 1rem;
   cursor: pointer;
+  justify-content: center;
 }
 /* active된 dot */
 .slick-dots li.slick-active button {
@@ -845,8 +892,6 @@ header {
   margin: 0 var(--mb-1);
   border-radius: 1rem;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-.slider__link {
   flex-direction: column;
 }
 .slider__button {
@@ -859,8 +904,8 @@ header {
   color: var(--black-color);
   width: 30%;
   height: 30px;
-  text-align: center;
   transition: .3s;
+  text-align: center;
 }
 .slider__container {
   margin: var(--mb-2);
@@ -892,8 +937,8 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   overflow-y: initial;
+  text-align: center;
 }
 .close__modal {
   position: absolute;
@@ -904,12 +949,12 @@ header {
   width: 20px;
   height: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   border: 1px solid #eee;
   color: var(--grey-color-dark);
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 .modal__content {
   height: 80vh;
@@ -999,13 +1044,6 @@ header {
     width: 100%;
     z-index: 999;
   }
-  .resume-link {
-    line-height: 30px;
-    width: 200px;
-    height: 50px;
-    border: 1px solid var(--grey-color-lighter);
-  }
-
   .home {
     width: 100%;
     margin-left: 0;
@@ -1022,17 +1060,24 @@ header {
   .home__about {
     padding: 0;
     margin-top: var(--mb-2);
-    text-align: center;
     position: static;
   }
   .home__about-desc {
-    text-align: center;    
+    text-align: center;
   }
   .home-about-social {
     display: none;
   }
   .home-aobut-resume {
     justify-content: center;
+    display: inline-block;
+  }
+  .github-link,
+  .blog-link {
+    display: none;
+  }
+  .resume-link {
+    margin-left: 6.5em;
   }
   /* ========== skills ========== */
   .skills__container {
@@ -1050,8 +1095,8 @@ header {
   /* ========== about me ========== */
   .about__container {
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
   .about__pic {
     flex: 2;
@@ -1062,20 +1107,18 @@ header {
   }
   /* ========== qualification ========== */
   .qualification__container {
-    align-items: center;
     flex-direction: column;
+    align-items: center;
   }
   .qualification__design--icon {
-    text-align: center;
     display: flex;
-    align-items: center;
     margin: 0;
   }
   .qualification__item {
     flex-direction: row;
   }
   .jquery-icon {
-    width: 110px;
+    width: 65px;
     flex: 1;
   }
   .gtq-icon {
