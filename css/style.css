@@ -1120,6 +1120,9 @@ header {
   .skills__item {
     padding-left: var(--mb-1-5);
   }
+  .jquery-icon {
+    width: 60px;
+  }
   .qualification__info {
     display: none;
   }
