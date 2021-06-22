@@ -1,8 +1,7 @@
 @charset "utf-8";
 
 /* google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
 
 /* ----------------------- main color ----------------------- */
@@ -23,10 +22,11 @@
     --hover-color: #1d7edf;
     --border-color: #1862ac;
     --light-background: #00000099;
+    --grey-light: #E2E2E2;
 
 /* ----------------------- typography ----------------------- */
 /* font-family: ; */
-    --body-font: 'Do Hyeon', sans-serif;
+    --body-font: 'Roboto', sans-serif;
     --big-font-size: 3rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
@@ -95,6 +95,10 @@ img {
 button {
     cursor: pointer;
 }
+address {
+    font-family: inherit;
+    font-style: inherit;
+}
 
 /* ========================= reusable, common css ========================= */
 .section__title--wrap {
@@ -116,11 +120,11 @@ button {
     padding: 0 12px;
     max-width: 1140px;
     margin: 0 auto;
-  }
-  .inner {
+}
+.inner {
     max-width: 1440px;
     margin: 0 auto;
-  }
+}
 .flex {
     display: flex;
 }
@@ -159,6 +163,9 @@ button {
     background: var(--white-color);
 }
 /* ========================= nav bar ========================= */
+.logo {
+text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
 .nav__item > a.fixed {
     color: var(--white-color);
 }
@@ -306,9 +313,6 @@ header {
     justify-content: space-evenly;
     background: var(--white-color);
 }
-.tab__item {
-    /* padding: var(--mb-2); */
-}
 .tab__desc {
     line-height: 30px;
     margin: 0 1rem;
@@ -331,11 +335,9 @@ header {
 }
 .missa__weekend {
     flex: 3;
-    /* margin-right: var(--mb-1); */
 }
 .missa__schadule {
     flex: 4;
-    /* margin-right: var(--mb-1); */
 }
 .missa__img {
     flex: 6;
@@ -366,23 +368,17 @@ header {
     height: 115.19px;
 }
 /* ========================= video section ========================= */
-/* .cathedral__video video {
-    width: 100%;
-    flex: 5;
-} */
-
-.cathedral__video {
-}
 .cathedral__video video {
     width: 600px;
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
 }
 /* ========================= video section ========================= */
 .news {
     flex: 5;
     text-align: center;
-    /* margin: 2rem 0; */
 }
 .news h2 {
     padding-bottom: 3rem;
@@ -398,4 +394,17 @@ header {
 }
 .news img:hover {
     transform: scale(1.1);
+}
+
+/* ========================= footer ========================= */
+footer {
+    padding: 4rem 0;
+    font-weight: var(--font-semi-bold);
+    background: var(--grey-light);
+}
+.footer__desc {
+    line-height: 2rem;
+}
+.footer__item_menu li {
+    margin-right: var(--mb-2);
 }
