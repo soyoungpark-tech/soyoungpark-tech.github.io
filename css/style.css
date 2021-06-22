@@ -190,9 +190,8 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 10px;
   max-width: 1140px;
-  /* height: 600px; *K; */
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 .l_wrapper::-webkit-scrollbar {
   width: 10px;
@@ -737,6 +736,9 @@ header {
   flex: 5;
   margin: var(--mb-1);
 }
+.slider__desc h4 {
+  line-height: 2rem;
+}
 .slider__desc span {
   font-size: var(--big-font-size);
 }
@@ -824,7 +826,7 @@ header {
   padding: 1rem;
   text-align: center;
   /* margin: 0 var(--mb-1); */
-  margin: 1.5rem;
+  margin: var(--mb-1) var(--mb-0-5);
   border-radius: 1rem;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
