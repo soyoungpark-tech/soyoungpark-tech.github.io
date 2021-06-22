@@ -5,8 +5,8 @@ $(function(){
 /* ===================== slider effect ===================== */
     AOS.init({
         once: true,
-        duration: 500,
-        debounceDelay: 50
+        duration: 900,
+        debounceDelay: 200
     });
 
 /* ================= navbar ===================== */
