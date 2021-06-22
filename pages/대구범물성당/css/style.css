@@ -97,7 +97,7 @@ button {
 }
 
 /* ========================= reusable, common css ========================= */
-/* .section__title--wrap {
+.section__title--wrap {
     text-align: center;
 }
 .section__title {
@@ -110,7 +110,7 @@ button {
 }
 .header__bg_color {
     background: var(--primary-color);
-} */
+}
 /* ========================= layout ========================= */
 .wrap {
     padding: 0 12px;
@@ -135,7 +135,7 @@ button {
     margin: 0 auto;
 }
 .section__margin {
-    margin: var(--mb-3) 0;
+    margin: 4rem 0;
 }
 /* ========================= header ========================= */
 #header {
@@ -281,15 +281,9 @@ header {
 }
 /* ========================= tab menu ========================= */
 .information__tab {
-    height: 300px;
+    height: auto;
     border: 1px solid #000;
     overflow: hidden;
-}
-.tab__item {
-    height: 100%;
-
-    background: var(--white-color);
-    padding: var(--mb-2);
 }
 .tab__menu {
     display: flex;
@@ -308,29 +302,45 @@ header {
 /* ========================= tab item ========================= */
 .tab__item {
     height: 100%;
-    padding-top: var(--mb-2-5);
+    padding: var(--mb-1);
     justify-content: space-evenly;
+    background: var(--white-color);
+}
+.tab__item {
+    /* padding: var(--mb-2); */
 }
 .tab__desc {
-
     line-height: 30px;
+    margin: 0 1rem;
     flex: 5;
 }
-.tab__desc ul {
-    list-style: circle;
-}
 .tab__desc ul li {
+    list-style: circle;
     transition: .2s;
 }
 .tab__desc ul li:hover {
     color: var(--hover-color);
-    border-bottom: 1px solid var(--hover-color);
 }
 .tab__img {
     flex: 5;
 }
-
-
+.missa__item {
+    margin: var(--mb-1);
+    line-height: 2.5rem;
+    align-items: center;
+}
+.missa__weekend {
+    flex: 3;
+    /* margin-right: var(--mb-1); */
+}
+.missa__schadule {
+    flex: 4;
+    /* margin-right: var(--mb-1); */
+}
+.missa__img {
+    flex: 6;
+    width: 400px;
+}
 
 /* ========================= information icon ========================= */
 .information__icon {
@@ -355,5 +365,37 @@ header {
     width: 115.19px;
     height: 115.19px;
 }
+/* ========================= video section ========================= */
+/* .cathedral__video video {
+    width: 100%;
+    flex: 5;
+} */
 
+.cathedral__video {
+}
+.cathedral__video video {
+    width: 600px;
+    overflow: hidden;
 
+}
+/* ========================= video section ========================= */
+.news {
+    flex: 5;
+    text-align: center;
+    /* margin: 2rem 0; */
+}
+.news h2 {
+    padding-bottom: 3rem;
+}
+.news img {
+    width: 35%;
+    margin: 0 var(--mb-2);
+    transition: .5s;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.news img:hover {
+    transform: scale(1.1);
+}
