@@ -106,7 +106,7 @@ $(function(){
         focusOnSelect: true
     });
 
-    // modal
+/* ================= work modal ================= */
     var $modal = $('.modal');
         var $overlay = $('.overlay');
         var $btn = $('.detail_modal');
@@ -129,6 +129,28 @@ $(function(){
                     $(this).fadeOut();
             }
         });
+
+    /* ================= design work modal ================= */
+    var $designWorkImg = $('.design_img');
+    var $designOverlay = $('.design__overlay');
+
+    $designWorkImg.click(function(){    
+        var designSrc = $(this).children('img').attr('src');
+        var $designModalImg = $('.design__modal img');
+        // console.log(src);
+        // modal에 있는 img 엘리먼트 src에 이미지 주소를 세팅
+        $designModalImg.attr('src', designSrc);
+        $designOverlay.show();
+    })
+    
+    $designOverlay.click(function(e){
+        // target은 내가 클릭한 객체
+        // currentTarget은 이벤트가 발생한 객체
+        if(e.target == e.currentTarget){
+            $(this).fadeOut();
+        }
+    })
+    
 
 });
 
