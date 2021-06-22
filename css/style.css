@@ -510,6 +510,9 @@ header {
   transform: scaleX(1);
   transition-delay: .6s;
 }
+.home__about_button i {
+  vertical-align: bottom;
+}
 /* ========================= skills desc section ========================= */
 .skills {
   margin-bottom: var(--mb-3);
