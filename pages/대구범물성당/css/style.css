@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+
+/* ----------------------- main color ----------------------- */
+/* 
+    hsl(hue, saturation, lightness) 
+    hue(색조) : 0 ~ 360 ( 0: 빨간색, 120: 녹색, 240: 파란색 )
+    saturation(채도) : 0 ~ 100 (0: 회색, 100: 원색)
+    lightness(명도) : 0 ~ 100 (0: 검정색, 50: 중간, 100: 흰색)
+*/
+    /* --hue-color: 205; */
+
+/* ----------------------- colors ----------------------- */
+    --primary-color:#1d7edf;
+    --primary-color-lighter: #3f97f0;
+    --body-color: #F1F1F1;
+    --black-color: #101010;
+    --white-color: #FFF;
+    --hover-color: #1d7edf;
+    --border-color: #1862ac;
+    --light-background: #00000099;
+
+/* ----------------------- typography ----------------------- */
+/* font-family: ; */
+    --body-font: 'Do Hyeon', sans-serif;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+
+/* ----------------------- font-weight ----------------------- */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+/* ----------------------- margin bottom ----------------------- */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+/* ----------------------- z index ----------------------- */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/* ----------------------- reset ----------------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--gray-color);
+    height: 100vh;
+
+}
+h1,h2,h3,h4 {
+    color: var(--black-color);
+    font-weight: var(--font-semi-bold);
+}
+h1 {
+    font-size: var(--h1-font-size);
+}
+h2 {
+    font-size: var(--h2-font-size);
+}
+h3 {
+    font-size: var(--h3-font-size);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+button {
+    cursor: pointer;
+}
+
+/* ========================= reusable, common css ========================= */
+/* .section__title--wrap {
+    text-align: center;
+}
+.section__title {
+    font-size: var(--h1-font-size);
+}
+.section__subtitle {
+    font-size: var(--normal-font-size);
+    color: var(--gray-color);
+    margin-bottom: var(--mb-3);
+}
+.header__bg_color {
+    background: var(--primary-color);
+} */
+/* ========================= layout ========================= */
+.wrap {
+    padding: 0 12px;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .inner {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+.flex {
+    display: flex;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-inner {
+    width: 100%;
+    padding: 3rem 0 5rem;
+    margin: 0 auto;
+}
+.section__margin {
+    margin: var(--mb-3) 0;
+}
+/* ========================= header ========================= */
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-fixed);
+    border-bottom: 1px solid var(--white-color);
+    font-size: var(--h3-font-size);
+    transition: .4s;
+}
+#header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #000;
+    background: var(--primary-color);
+    border: none;
+    background: var(--white-color);
+}
+/* ========================= nav bar ========================= */
+.nav__item > a.fixed {
+    color: var(--white-color);
+}
+.header-inner {
+    background: var(--white-color);
+    max-width: 100%;
+    height: 4rem;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: var(--light-background); 
+}
+
+/* nav full dropdown menu */
+header {
+    width: 100%;
+}
+.nav__container {
+    height: 60px;
+    line-height: 60px;
+}
+.nav__container ul {
+    overflow: hidden;
+    width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: left;
+}
+.nav__container ul li a {
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav__submenu_container {
+    overflow: hidden;
+    width: 965px;
+    height: Z;
+    margin: 0 auto;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.nav__subitem li {
+    padding-bottom: 10px;
+}
+.nav__subitem li a {
+    color: var(--white-color);
+    font-size: 15px;
+}
+.nav__subitem li a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+/* ========================= main banner ========================= */
+.banner__main {
+    margin-top: 45px;
+}
+/* arrow */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    border: none;
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+    z-index:K 100;
+}
+
+.slick-prev:after,
+.slick-next:after{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.slick-prev:after,
+.slick-next:after{
+    font-family: unicons-line;
+}
+.slick-prev:after {
+    content: '\ec49';
+}
+.slick-next:after {
+    content: '\eb9f';
+}
+
+/* progress */
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -2rem;
+}
+/* active된 dot */
+.slick-dots li.slick-active button {
+    background: #fff;
+}
+/* 나머지 dot */
+.slick-dots li button {
+    width: 100px;
+    height: 5px;
+    font-size: 0;
+    border: none;
+    background: #666;
+}
+/* ========================= tab menu ========================= */
+.information__tab {
+    height: 300px;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+.tab__item {
+    height: 100%;
+
+    background: var(--white-color);
+    padding: var(--mb-2);
+}
+.tab__menu {
+    display: flex;
+    background: var(--light-background);
+}
+.tab__menu a {
+    color: var(--white-color);
+    width: 180px;
+    height: 50px;
+}
+.tab__menu a.selected {
+    background: var(--white-color);
+    color: var(--black-color);
+    border-top: 3px solid var(--border-color);
+}
+/* ========================= tab item ========================= */
+.tab__item {
+    height: 100%;
+    padding-top: var(--mb-2-5);
+    justify-content: space-evenly;
+}
+.tab__desc {
+
+    line-height: 30px;
+    flex: 5;
+}
+.tab__desc ul {
+    list-style: circle;
+}
+.tab__desc ul li {
+    transition: .2s;
+}
+.tab__desc ul li:hover {
+    color: var(--hover-color);
+    border-bottom: 1px solid var(--hover-color);
+}
+.tab__img {
+    flex: 5;
+}
+
+
+
+/* ========================= information icon ========================= */
+.information__icon {
+    justify-content: space-around;
+    text-align: center;
+}
+.icon__item img {
+    width: 90%;
+    transition: .3s;
+}
+.icon__item h3 {
+    transition: .3s;
+    margin-top: var(--mb-1-5);
+}
+.icon__item:hover img {
+    transform: scale(1.1);
+}
+.icon__item:hover h3 {
+    color: var(--primary-color);
+}
+.cross-icon {
+    width: 115.19px;
+    height: 115.19px;
+}
+
+
