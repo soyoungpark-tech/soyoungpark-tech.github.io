@@ -205,6 +205,11 @@ header {
 .nav__container ul li a {
     font-size: 20px;
     font-weight: bold;
+    transition: .2s;
+}
+.nav__container ul li a:hover {
+    color: var(--hover-color);
+    transform: scale(1.1);
 }
 .nav__submenu_container {
     overflow: hidden;
@@ -350,7 +355,7 @@ header {
     text-align: center;
 }
 .icon__item img {
-    width: 90%;
+    width: 70%;
     transition: .3s;
 }
 .icon__item h3 {
@@ -364,8 +369,8 @@ header {
     color: var(--primary-color);
 }
 .cross-icon {
-    width: 115.19px;
-    height: 115.19px;
+    width: 85.95px;
+    height: 85.95px;
 }
 /* ========================= video section ========================= */
 .cathedral__video video {
