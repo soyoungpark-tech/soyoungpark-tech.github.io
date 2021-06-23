@@ -3,15 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-  /* ----------------------- main color ----------------------- */
-  /* 
-    hsl(hue, saturation, lightness) 
-    hue(색조) : 0 ~ 360 ( 0: 빨간색, 120: 녹색, 240: 파란색 )
-    saturation(채도) : 0 ~ 100 (0: 회색, 100: 원색)
-    lightness(명도) : 0 ~ 100 (0: 검정색, 50: 중간, 100: 흰색)
-*/
-  --hue-color: 201;
-
   /* ----------------------- colors ----------------------- */
   --hover-color: #e9bc0a;
 
@@ -53,17 +44,6 @@
   --z-modal: 1000;
 }
 
-/* ----------------------- dark-theme ----------------------- */
-/* body.dark-theme {
-  --black-color: var(--primary-dark-color);
-  --body-color:  var(--white-color); 
-} */
-/* 흰색으로 바뀝니다 */
-  /* 어두운 색으로 바뀝니다 */
-/* .change-theme:hover {
-  color: var(--primary-color);
-} */
-
 /* ----------------------- reset ----------------------- */
 * {
   box-sizing: border-box;
@@ -72,10 +52,8 @@
 }
 body {
   font-family: var(--body-font);
-  /* background: var(--primary-color); */
   color: var(--font-color);
   min-height: 100vh;
-  /* font-size: 16px; */
 }
 #particles-js {
   position: absolute;
@@ -214,7 +192,6 @@ footer {
   flex-wrap: wrap;
   margin: 0 -10px -20px -10px;
 }
-
 .l_col {
   box-sizing: border-box;
   width: 33.3333%;
@@ -222,7 +199,6 @@ footer {
   margin-bottom: 20px;
   cursor: pointer;
 }
-
 .l_col_12_12 {
   width: 100%;
 }
@@ -463,7 +439,7 @@ header {
   margin: var(--mb-2) 0;
   line-height: 2.5rem;
 }
-/* button--------------------------------- */
+/* --------------- button ---------------- */
 .home__about_item {
   position: relative;
   padding: 10px 10px 10px 30px;
@@ -472,7 +448,6 @@ header {
   font-weight: lighter;
   letter-spacing: 4px;
   text-transform: uppercase;
-  /* margin: var(--mb-0-25); */
 }
 .home__about_item:before{
   content: '';
@@ -600,11 +575,10 @@ header {
 }
 .skill_percent {
   display: block;
-  /* width: 50%; */
   height: 100%;
   background: var(--secondary-color);
 }
-/* skill tech */
+/* ================ skill tech ================ */
 .skill__tech li:nth-child(1) .skill_percent {
   width: 90%;
 }
@@ -617,14 +591,14 @@ header {
 .skill__tech li:nth-child(4) .skill_percent {
   width: 80%;
 }
-/* skill design */
+/* ================ skill design ================ */
 .skill__design li:nth-child(1) .skill_percent {
   width: 85%;
 }
 .skill__design li:nth-child(2) .skill_percent {
   width: 90%;
 }
-/* etc skill */
+/* ================ etc skill ================ */
 .skill__etc li:nth-child(1) .skill_percent {
   width: 75%;
 }
@@ -642,7 +616,6 @@ header {
   margin: var(--mb-3);
   align-items: center;
 }
-
 .about__desc span {
   background: var(--secondary-color);
   font-weight: var(--font-semi-bold);
@@ -740,6 +713,7 @@ header {
 .slider__desc {
   flex: 5;
   margin: var(--mb-1);
+  margin-top: var(--mb-3);
 }
 .slider__desc h4 {
   line-height: 2rem;
@@ -778,7 +752,6 @@ header {
   background: var(--grey-color-lighter);
   cursor: pointer;
 }
-
 /* arrow */
 .slick-prev,
 .slick-next {
@@ -834,11 +807,9 @@ header {
   cursor: pointer;
   padding: 1rem;
   text-align: center;
-  /* margin: 0 var(--mb-1); */
   margin: var(--mb-1) var(--mb-0-5);
   border-radius: 1rem;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
   flex-direction: column;
 }
 .slider__link i {
@@ -926,12 +897,6 @@ header {
   height: 100%;
   border-radius: 10px;
 }
-/* .tumfy_img {
-  width: 500px;
-}
-.comu_img {
-  width: 70%;
-} */
 /* ========================= design works modal ========================= */
 .design__overlay {
   position: fixed;
