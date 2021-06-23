@@ -701,6 +701,10 @@ header {
 .jquery-icon {
   margin-bottom: -.6rem;
 }
+.gtq-icon {
+  margin-top: 1rem;
+  width: 180px;
+}
 .qualification__divider {
   flex: 1;
   flex-direction: row-reverse;
@@ -940,7 +944,7 @@ header {
   display: none;
 }
 .design__modal {
-  width: 30%;
+  width: 50%;
   background: #fff;
   padding: 1rem;
   border-radius: .5rem;
@@ -955,7 +959,6 @@ header {
   position: absolute;
   top: -.5rem;
   right: -.5rem;
-  /* font-size: 1.5rem; */
   background: #fff;
   width: 20px;
   height: 20px;
