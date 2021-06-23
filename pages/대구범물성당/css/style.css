@@ -294,7 +294,8 @@ header {
 /* ========================= tab menu ========================= */
 .information__tab {
     height: auto;
-    border: 1px solid #000;
+    border-radius: 5px;
+    border: 1px solid var(--grey-light);
     overflow: hidden;
 }
 .tab__menu {
@@ -320,7 +321,7 @@ header {
 }
 .tab__desc {
     line-height: 30px;
-    margin: 0 1rem;
+    margin: var(--mb-0-5);
     flex: 5;
 }
 .tab__desc ul li {
