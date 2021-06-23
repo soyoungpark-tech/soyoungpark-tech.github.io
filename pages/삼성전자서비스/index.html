@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/responsive.css">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>samsung service clone coding</title>
+</head>
+<body>
+
+    <header class="app-header">
+        <div class="inner clearfix">
+            <div class="icon logo"></div>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#">스스로해결</a></li>
+                    <li><a href="#">전문상담</a></li>
+                    <li><a href="#">서비스 안내</a></li>
+                    <li><a href="#">서비스 예약</a></li>
+                    <li><a href="#">소모품샵</a></li>
+                    <li><a href="#">고객의 소리</a></li>
+                </ul>
+            </nav>
+            <div class="util">
+                <button><i class="icon icon-user">로그아웃상태</i></button>
+                <button><i class="icon icon-cart">장바구니</i></button>
+                <button><i class="icon icon-glass">검색</i></button>
+                <button><span class="xi-bars xi-2x btn__side-menu"></span></button>
+            </div>
+        </div>
+    </header>
+    <div class="app-container">
+    <section class="main-visual">
+        <!-- <div class="img-m">
+            <img src="./img/main-visual-small.jpg" alt="main-visual">
+        </div> -->
+        <div class="main-visual-img">
+            <img src="./img/main-visual.jpg" alt="main-visual">
+        </div>
+        <img src="./img/main-visual-small.jpg" alt="main-visual-small">
+        <div class="main-visual-txt">
+            <strong class="main-visual-title">
+                서비스 그 이상의 가치,
+                <br>
+                삼성전자서비스입니다.
+            </strong>
+            <p>고객의 마음까지 케어하는 삼성전자서비스가 되겠습니다.</p>
+        </div>
+    </section>
+    <section class="main-search inner sec_box">
+            <h1 class="tit__02">제품정보, 증상을 찾아보세요</h1>
+            <div class="main-search-form">
+                <input type="search" placeholder="예) 동파, 참수, 비밀번호 해제, SL-C46xFW"><i class="icon icon-glass ">검색</i>
+            </div>
+            <div class="main-search-tag">
+                <span><a href="#">#액정파손</a></span>
+                <span><a href="#">#sl-j1660</a></span>
+                <span><a href="#">#이전설치</a></span>
+                <span><a href="#">#에어컨 청소</a></span>
+                <span><a href="#">#에어컨 사전점검</a></span>
+                <span><a href="#">#무선충전</a></span>
+            </div>
+    </section>
+    <section class="main-search-product inner">
+        <h1 class="tit__02">궁금하신 제품을 선택하세요</h1>
+        <div class="main-search-product-list">
+            <ul>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-mobile-phone.png" alt="mobile-phone" class="main-search-product-img">
+                        <span>모바일</span>
+                    </a>
+                </li>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-pc.png" alt="pc" class="main-search-product-img">
+                        <span>PC</span>
+                    </a>
+                </li>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-monitor.png" alt="monitor" class="main-search-product-img">
+                        <span>모니터</span>
+                    </a>
+                </li>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-printer.png" alt="printer" class="main-search-product-img">
+                        <span>프린터/복합기</span>
+                    </a>
+                </li>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-tv.png" alt="tv" class="main-search-product-img">
+                        <span>TV</span>
+                    </a>
+                </li>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-aircon.png" alt="aircon" class="main-search-product-img">
+                        <span>에어컨</span>
+                    </a>
+                </li>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-refrigerator.png" alt="refrigerator" class="main-search-product-img">
+                        <span>냉장고/김치냉장고</span>
+                    </a>
+                </li>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-washer.png" alt="wacher" class="main-search-product-img">
+                        <span>세탁기/건조기</span>
+                    </a>
+                </li>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-robot-cleaner.png" alt="cleaner" class="main-search-product-img">
+                        <span>청소기</span>
+                    </a>
+                </li>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-air-purifier.png" alt="purifier" class="main-search-product-img">
+                        <span>건강가전</span>
+                    </a>
+                </li>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-kitchen.png" alt="kitchen" class="main-search-product-img">
+                        <span>주방가전</span>
+                    </a>
+                </li>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-home-theaters.png" alt="" class="main-search-product-img">
+                        <span>오디오</span>
+                    </a>
+                </li>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-iot.png" alt="iot" class="main-search-product-img">
+                        <span>스마트싱스</span>
+                    </a>
+                </li>
+                <li class="l-col-7-14">
+                    <a href="#">
+                        <img src="./img/main-search-product-icon/icon-main-etc.png" alt="etc" class="main-search-product-img">
+                        <span>기타제품</span>
+                    </a>
+                </li>
+            </ul>
+            <button>
+                <i class="icon icon-main-more">
+                    <span>더보기</span>
+                </i>
+            </button>
+        </div>
+        <div class=" main-banner sec-box">
+            <ul class="main-banner">
+                <li class="l-col-4-12">
+                    <a href="#">
+                        <div class="main-banner-img">
+                            <img src="./img/main-banner/main-banner-1.png" alt="main-banner-1" class="main-banner-img">
+                        </div>
+                        <strong class="tit">제품자가진단</strong>
+                        <p>등록된 생활가전 제품의 진단 결과를 간편하게 확인해 보세요.</p>
+                    </a>
+                </li>
+                <li class="l-col-4-12">
+                    <a href="#">
+                        <div class="main-banner-img">
+                            <img src="./img/main-banner/main-banner-2.png" alt="main-banner-1" class="main-banner-img">
+                        </div>
+                        <strong class="tit">동영상</strong>
+                        <p>동영상 가이드를 활용하여 제품에 대한 궁금증을 해결할 수 있습니다.</p>
+                    </a>
+                </li>
+                <li class="l-col-4-12">
+                    <a href="#">
+                        <div class="main-banner-img">
+                            <img src="./img/main-banner/main-banner-3.png" alt="main-banner-1" class="main-banner-img">
+                        </div>
+                        <strong class="tit">다운로드 자료실</strong>
+                        <p>제품 관련 유용한 자료를 다운로드할 수 있습니다.</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="main-service-info inner">
+        <h2 class="tit__02">주요 서비스 안내</h2>
+        <ul>
+            <li class="l-col-4-12">
+                <a href="#">
+                    <strong class="tit">챗봇 상담</strong>
+                    <p>
+                        <span>
+                            챗봇 써비에게 궁금한 점을
+                            <br>
+                            물어보시면 이메일로 답변해 드립니다.
+                        </span>
+                    </p>
+                    <i class="icon icon-main-chatbot"></i>
+                </a>
+            </li>
+            <li class="l-col-4-12">
+                <a href="#">
+                    <strong class="tit">이메일 상담</strong>
+                    <p>
+                        <span>
+                            제품에 대한 궁금한 내용을
+                            <br>
+                            이메일로 답변해 드립니다.
+                        </span>
+                    </p>
+                    <i class="icon icon-main-envelop"></i>
+                </a>
+            </li>
+            <li class="l-col-4-12">
+                <a href="#">
+                    <strong class="tit">원격 상담</strong>
+                    <p>
+                        <span>
+                            고객님의 문의사항을 원격으로
+                            <br>
+                            상담 받으실 수 있습니다.
+                        </span>
+                    </p>
+                    <i class="icon icon-main-remote"></i>
+                </a>
+            </li>
+            <li class="l-col-4-12">
+                <a href="#">
+                    <strong class="tit">출장서비스 예약</strong>
+                    <p>
+                        <span>
+                            원하시는 곳으로 엔지니어가
+                            <br>
+                            방문하여 제품을 점검해 드립니다.
+                        </span>
+                    </p>
+                    <i class="icon icon-main-doortodoor"></i>
+                </a>
+            </li>
+            <li class="l-col-4-12">
+                <a href="#">
+                    <strong class="tit">영수증/명세서</strong>
+                    <p>
+                        <span>
+                            서비스센터에서 접수한 서비스 정보를
+                            <br>
+                            조회하실 수 있습니다.
+                        </span>
+                    </p>
+                    <i class="icon icon-main-reciept"></i>
+                </a>
+            </li>
+            <li class="l-col-4-12">
+                <a href="#">
+                    <strong class="tit">소모품샵</strong>
+                    <p>
+                        <span>
+                            삼성전자 정품 소모품 및 부품을
+                            <br>
+                            편리하게 구매하실 수 있습니다.
+                        </span>
+                    </p>
+                    <i class="icon icon-main-shop"></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="main-service-tip">
+        <div class="sec-box">
+            <h2 class="tit__02">서비스 Tip</h2>
+            <p>간단한 팁과 해결 방법을 찾아보세요!</p>
+            <div class="main-service-tip-swiper">
+                <ul>
+                    <li>
+                        <img src="./img/main-service-tip/main-service-tip-bg-color.jpg" alt="main-service-tip-bg-color" class="main-service-tip-bg-color">
+                        <div class="main-service-desc">
+                            <strong class="tit">S21/S21+/S21 Ultra 5G</strong>
+                            <p>
+                                갤럭시 S21/S21+/S21 Ultra 5G의
+                                <br>
+                                사양 및 기능, 특징을 소개합니다.
+                            </p>
+                        </div>
+                        <img src="./img/main-service-tip/main-service-tip-bg-photo.png" alt="main-service-tip-bg-photo" class="main-service-tip-photo-1">
+                    </li>
+                    <li>
+                        <img src="./img/main-service-tip/main-service-tip-bg-color-blue.jpg" alt="main-service-tip-bg-color2">
+                        <div class="main-service-desc">
+                            <strong class="tit">휴대폰 액정 화면 단품 수리 안내</strong>
+                            <p>
+                                액정 파손 시 수리 비용 할인 Tip을
+                                <br>
+                                알려드려요!
+                            </p>
+                        </div>
+                        <img src="./img/main-service-tip/main-service-tip-bg-photo-2.png" alt="main-service-tip-bg-photo2" class="main-service-tip-photo-2">
+                    </li>
+                    <div class="btn-mst-next">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="sec-box main-blog inner">
+        <ul class="main-blog-list">
+            <li class="l-col-3-12">
+                <a href="#">
+                    <div class="img">
+                        <img src="./img/main-blog/main-blog-list.jpg" alt="main-blog-list-photo">
+                    </div>
+                    <strong class="tit">갤럭시라 참 다행입니다.</strong>
+                    <p>당신과 함께하는 갤럭시 서비스 스토리</p>
+                </a>
+            </li>
+            <li class="l-col-3-12">
+                <a href="#">
+                    <div class="img">
+                        <img src="./img/main-blog/main-blog-list-2.png" alt="main-blog-list-photo">
+                    </div>
+                    <strong class="tit">휴대폰을 분실했다면?!</strong>
+                    <p>'내 디바이스 찾기'로 내 휴대폰 찾는 방법</p>
+                </a>
+            </li>
+            <li class="l-col-3-12">
+                <a href="#">
+                    <div class="img">
+                        <img src="./img/main-blog/main-blog-list-3.png" alt="main-blog-list-photo">
+                    </div>
+                    <strong class="tit">공기청정기 필터 수명 늘리기</strong>
+                    <p>공기청정기 필터 청소 및 관리 방법</p>
+                </a>
+            </li>
+            <li class="l-col-3-12">
+                <a href="#">
+                    <div class="img">
+                        <img src="./img/main-blog/main-blog-list-4.png" alt="main-blog-list-photo">
+                    </div>
+                    <strong class="tit">삼성 모바일 앱 고객지원</strong>
+                    <p>모바일 앱 관련 1:1 문의 사이트</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+        <section class="main-notice sec-box">
+            <h2 class="tit__02">공지사항</h2>
+            <ul>
+                <li class="l-col-4-12">
+                    <a href="#">
+                        <p>2021년 5월 10일 홍대휴대폰센터 이전 및 휴점 안내</p>
+                    </a>
+                    <span class="date">2021-05-03</span>
+                </li>
+                <li class="l-col-4-12">
+                    <a href="#">
+                        <p>논현휴대폰센터 영업 종료(5월 29일 13시까지 업무)에 따른 인근 센터 이용 안내</p>
+                    </a>
+                    <span class="date">2021-05-03</span>
+                </li>
+                <li class="l-col-4-12">
+                    <a href="#">
+                        <p>휴대폰 액정 화면 단품 수리 안내('21년 4월 1일 적용 비용)</p>
+                    </a>
+                    <span class="date">2021-02-08</span>
+                </li>
+            </ul>
+        </section>   
+    </div>
+<footer class="app-footer">
+        <hr>
+        <div class="footer-pages inner">
+            <div>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">영상정보처리기기운영관리방침</a>
+                <a href="#">홈페이지의견</a>
+                <a href="#">아이디어정책</a>
+                <a href="#">사이트맵</a>
+                <a href="#">공지사항</a>
+                <a href="#">이벤트</a>
+                <a href="#">이용가이드</a>
+                <a href="#">회사소개</a>
+            </div>
+        </div>
+        <hr>
+    <div class="footer-company-info">
+        <div class="inner">
+            <p>
+                <span>주소 : 경기도 수원시 영통구 삼성로 290 삼성전자서비스주식회사</span>
+                <span>대표이사 : 심원환</span>
+                <span>사업자등록번호 : 124-81-58485</span>
+                <span>통신판매업신고번호 : 제2005-406호 </span>
+                <span>사업자번호확인</span>
+                <span>호스팅서비스제공자 : 삼성에스디에스㈜</span>
+                <span>대표전화 : 1588-3366</span>
+                <span>회원문의 : 080-719-4031</span>
+            </p>
+            <div class="copyright">
+                <p>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사, 배포 등을 금합니다.</p>
+                <p>Copyright ©SAMSUNG ELECTRONICS SERVICE CO., Ltd. All rights reserved.</p>
+            </div>
+        <!-- </div> -->
+        <div class="footer-sub-site sec-box">
+            <div class="footer-link">
+                <p>
+                    <a href="#"><i class="icon icon-sns-youtube-30"></i></a>
+                    <a href="#"><i class="icon icon-sns-blog-30"></i></a>
+                </p>
+                <!-- <div class="form__select line-style related-site">
+                    <button class="btn__toggle-select">
+                        <span>삼성제품 관련 사이트</span>
+                    </button>
+                </div> -->
+            </div>
+            <div class="store-app">
+                <ul>
+                    <li>
+                        <div>
+                            <i class="icon icon-store-galaxy"></i>
+                            <span>
+                                갤럭시 스토어 
+                                <br>
+                                앱 다운로드
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="icon icon-store-google"></i>
+                            <span>
+                                구글 플레이
+                                <br>
+                                앱 다운로드
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-etc">
+                <div class="footer-certifications">
+                    <a href="#">
+                        <i class="icon icon-ks-sqi"></i>
+                        <span>
+                            한국서비스 품질지수
+                            <br>
+                            전자제품 A/S 전부문 1위
+                        </span>
+                    </a>
+                    <a href="#">
+                        <i class="icon icon-ksqi"></i>
+                        <span>
+                            한국산업의 서비스 품질지수
+                            <br>
+                            전자제품 A/S 전부문 1위
+                        </span>
+                    </a>
+                    <a href="#">
+                        <i class="icon icon-kicc-easyescrow"></i>
+                        <span>
+                            한국정보통신(주) 매매안심거래 
+                            <br>
+                            서비스가맹점 
+                        </span>
+                    </a>
+                    <a href="#">
+                        <i class="icon icon-emblem"></i>
+                        <span>
+                            한국에서 가장 존경받는 기업 
+                            <br>
+                            서비스센터 부문 10년 연속 1위
+                        </span>
+                    </a>
+                    <a href="#">
+                        <i class="icon icon-wa"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

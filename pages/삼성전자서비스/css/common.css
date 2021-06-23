@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+body {
+  font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;
+}
+:root {
+  font-size: 62.5%;
+  --font-large: 3.4rem;
+  --font-medium: 2.4rem;
+  --font-small: 1.6rem;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.margingix:after,
+.margingix:before {
+  content: "";
+  display: table;
+}
+.icon {
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+}
+i {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+}
+.sec-box {
+  margin-top: 55px;
+  margin-bottom: 20px;
+}
+.tit__02 {
+  margin-top: 73px;
+  margin-bottom: 21px;
+  font-size: var(--font-large);
+}
+.sec-box {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+/* header */
+.logo {
+  background-position: 0px -834px;
+  width: 223px;
+  height: 20px;
+}
+.icon-user {
+  background-position: -1090px -930px;
+  width: 24px;
+  height: 24px;
+}
+.icon-cart {
+  background-position: -1090px -556px;
+  width: 24px;
+  height: 24px;
+}
+.icon-glass {
+  background-position: -1090px -862px;
+  width: 24px;
+  height: 24px;
+}
+
+/* main service icon */
+.icon-main-chatbot {
+  background-position: -400px -568px;
+  width: 92px;
+  height: 80px;
+}
+.icon-main-envelop {
+  background-position: -612px -568px;
+  width: 90px;
+  height: 60px;
+}
+.icon-main-remote {
+  background-position: -916px 0px;
+  width: 94px;
+  height: 74px;
+}
+.icon-main-doortodoor {
+  background-position: -226px -340px;
+  width: 92px;
+  height: 88px;
+}
+.icon-main-reciept {
+  background-position: -328px -340px;
+  width: 90px;
+  height: 88px;
+}
+.icon-main-shop {
+  background-position: -300px -568px;
+  width: 90px;
+  height: 84px;
+}
+.icon-main-more {
+  background-position: -1198px -610px;
+  width: 40px;
+  height: 40px;
+}
+
+/* footer icon */
+.icon-sns-youtube-30 {
+  background-position: -1090px -334px;
+  width: 30px;
+  height: 30px;
+}
+.icon-sns-blog-30 {
+  background-position: -1090px -214px;
+  width: 30px;
+  height: 30px;
+}
+.icon-store-galaxy {
+  background-position: -1090px -374px;
+  width: 30px;
+  height: 30px;
+}
+.icon-store-google {
+  background-position: -1090px -414px;
+  width: 29px;
+  height: 30px;
+}
+.icon-ks-sqi {
+  background-position: -958px -1088px;
+  width: 56px;
+  height: 40px;
+}
+.icon-ksqi {
+  background-position: -210px -160px;
+  width: 88px;
+  height: 40px;
+}
+.icon-kicc-easyescrow {
+  background-position: -1138px -420px;
+  width: 50px;
+  height: 50px;
+}
+.icon-emblem {
+  background-position: -1138px -180px;
+  width: 50px;
+  height: 50px;
+}
+.icon-wa {
+  background-position: -840px -1018px;
+  width: 71px;
+  height: 50px;
+}
