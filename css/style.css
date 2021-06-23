@@ -743,6 +743,10 @@ header {
 .slider__desc span {
   font-size: var(--big-font-size);
 }
+.slider__desc div {
+  display: initial;
+  background: var(--primary-color);
+}
 .mobile__title {
   display: none;
 }
@@ -918,6 +922,12 @@ header {
   height: 100%;
   border-radius: 10px;
 }
+/* .tumfy_img {
+  width: 500px;
+}
+.comu_img {
+  width: 70%;
+} */
 /* ========================= design works modal ========================= */
 .design__overlay {
   position: fixed;
