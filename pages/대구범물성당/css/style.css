@@ -314,7 +314,7 @@ header {
 /* ========================= tab item ========================= */
 .tab__item {
     height: 100%;
-    padding: var(--mb-1);
+    padding: 2rem;
     justify-content: space-evenly;
     background: var(--white-color);
 }
@@ -331,7 +331,7 @@ header {
     color: var(--hover-color);
 }
 .tab__img {
-    flex: 5;
+    flex: 3;
 }
 .missa__item {
     margin: var(--mb-1);
