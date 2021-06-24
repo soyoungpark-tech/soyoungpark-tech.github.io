@@ -9,6 +9,7 @@
   --primary-color: #fbd46d;
   --secondary-color: #ffcf09;
   --primary-dark-color: #2b2301;
+  --green-color: #6fa766;
   --white-color: #fff;
   --font-color: #2b2b28;
   --grey-color: #a2a2a2;
@@ -125,7 +126,7 @@ strong {
 .section__title--wrap {
   text-align: center;
   padding-top: var(--mb-1);
-  color: #6fa766;
+  color: var(--green-color);
 }
 .section__subtitle {
   font-size: var(--normal-font-size);
@@ -475,12 +476,18 @@ header {
   right: 0;
   width: 100%;
   height: 100%;
-  background: var(--grey-color-lighter);
+  background: var(--green-color);
   transform: scaleX(0);
   transition: 0.4s;
   transition-delay: 0s;
   transform-origin: left;
   z-index: -1;
+}
+.home__about_button a {
+  transition: 1.2s;
+}
+.home__about_button a:hover {
+  color: var(--white-color);
 }
 .home__about_item:hover:after {
   transform: scaleX(1);
