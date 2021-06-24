@@ -710,6 +710,9 @@ header {
   flex: 6;
   margin: var(--mb-1-5);
 }
+.balenciaga-mockup {
+  margin-top: var(--mb-3);
+}
 .slider__desc {
   flex: 5;
   margin: var(--mb-1);
