@@ -125,6 +125,7 @@ strong {
 .section__title--wrap {
   text-align: center;
   padding-top: var(--mb-1);
+  color: #6fa766;
 }
 .section__subtitle {
   font-size: var(--normal-font-size);
