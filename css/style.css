@@ -625,7 +625,8 @@ header {
   align-items: center;
 }
 .about__desc span {
-  background: var(--secondary-color);
+  background: var(--green-color);
+  color: var(--white-color);
   font-weight: var(--font-semi-bold);
   font-size: var(--h3-font-size);
 }
@@ -966,8 +967,12 @@ header {
   bottom: 5rem;
 }
 /* ========================= footer ========================= */
+.footer .wrap {
+  text-align: center;
+}
 .footer__container {
-  line-height: 80px;
+  padding-top: var(--mb-1);
+  line-height: 70px;
 }
 .footer__links {
   width: 200px;
