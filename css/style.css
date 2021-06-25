@@ -859,7 +859,8 @@ header {
 }
 .modal {
   width: 50%;
-  height: 80vh;
+  height: 85vh;
+  padding: 1rem;
   background: #fff;
   border-radius: 0.5rem;
   border: 1px solid var(--grey-color);
