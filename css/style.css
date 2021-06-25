@@ -461,7 +461,6 @@ header {
   width: 100%;
   height: 2px;
   background: var(--secondary-color);
-  transform-style: linear;
   transition-property: height,width;
   transition-delay: 0.3s,.4s;
   transition-duration: .3s;
@@ -735,7 +734,7 @@ header {
 .slider__desc span {
   font-size: var(--big-font-size);
 }
-.slider__desc div {
+.slider__desc p {
   display: initial;
   background: var(--primary-color);
 }

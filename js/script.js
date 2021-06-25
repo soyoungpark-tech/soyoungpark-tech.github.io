@@ -41,7 +41,7 @@ $(function(){
 
     /* ================= About ================= */
     $('.stoudyCount, .pracCount, .projectCount').each(function () {
-        $(this).prop('Counter',0).animate({
+        $(this).prop('Counter',1).animate({
                 Counter: $(this).text()
         }, {
                 duration: 3000,
