@@ -763,7 +763,6 @@ header {
   font-size: 0;
   border: none;
   background: var(--grey-color-lighter);
-  cursor: pointer;
 }
 /* arrow */
 .slick-prev,
@@ -778,7 +777,6 @@ header {
   border-radius: 50%;
   border: none;
   background: var(--grey-color-lighter);
-  cursor: pointer;
 }
 .slick-prev {
   left: 0;
