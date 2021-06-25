@@ -84,7 +84,7 @@ $(function(){
     })
     $scrollUp.click(function(e){
         e.preventDefault();
-        $('html, body').animate({scrollTop: 0});
+        $('html, body').animate({scrollTop: 1});
     })
 
     /* ================= slick banner works ================= */
