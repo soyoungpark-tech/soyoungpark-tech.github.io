@@ -26,5 +26,12 @@ $(function(){
         $(this).children('.navbar__submenu').stop().slideUp();
     });
 
+// modal
+        var $modal = $('.notice');
+        var $btnClose = $('.notice-modal__close');
 
-})
+        $btnClose.click(function(){
+            $modal.hide();
+        })
+
+    })

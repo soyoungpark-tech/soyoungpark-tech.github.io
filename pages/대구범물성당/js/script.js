@@ -2,6 +2,14 @@
 
 $(function(){
     
+/* ================= modal ===================== */
+var $modal = $('.notice');
+var $btnClose = $('.notice-modal__close');
+
+$btnClose.click(function(){
+    $modal.hide();
+})
+
 /* ================= navbar ===================== */
         var $navItem = $('.nav__container ul li a'),
         $subMenu = $('.nav__submenu');

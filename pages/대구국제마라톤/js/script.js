@@ -1,36 +1,34 @@
 'use strict';
 
 $(function(){
-    
-        /* ================= navbar ===================== */
-        var $header = $('#header');
-        var $navItem = $('.nav__item');
+    /* ================= modal ===================== */
+        var $modal = $('.notice');
+        var $btnClose = $('.notice-modal__close');
 
-        $(window).scroll(function(){
-            var scrollTop = $(window).scrollTop();
-            var headerHeight = $('#header').outerHeight();
-            var homeHeight = $('#home').outerHeight();
-    
-            if( scrollTop > headerHeight ){
-                $header.addClass('fixed');
-                $navItem.children().addClass('fixed');
-                $navItem.children().addClass('active');
-            }else{
-                $header.removeClass('fixed');
-                $navItem.children().removeClass('fixed');
-            }
-    
-            // aboutSection을 지나치면 보여라
-            // scrollTop 값이 about section 높이보다 커지면
-            // if( scrollTop > aboutHeight ){
-            //     $arrowUp.addClass('visible');
-            // }else{
-            //     $arrowUp.removeClass('visible');
-            // }        
-    
+        $btnClose.click(function(){
+            $modal.hide();
         })
+    /* ================= navbar ===================== */
+    var $header = $('#header');
+    var $navItem = $('.nav__item');
 
-        /* nav submenu */
+    $(window).scroll(function(){
+        var scrollTop = $(window).scrollTop();
+        var headerHeight = $('#header').outerHeight();
+        var homeHeight = $('#home').outerHeight();
+
+        if( scrollTop > headerHeight ){
+            $header.addClass('fixed');
+            $navItem.children().addClass('fixed');
+            $navItem.children().addClass('active');
+        }else{
+            $header.removeClass('fixed');
+            $navItem.children().removeClass('fixed');
+        }
+
+    })
+
+  /* ================= nav submenu ===================== */
         var $navItem = $('.nav__item'),
             $navMenu = $('.nav__link'),
             $subMenu = $('.nav__submenu');
