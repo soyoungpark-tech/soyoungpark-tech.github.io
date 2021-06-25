@@ -426,6 +426,9 @@ header {
 .home__pic {
   width: 70%;
 }
+.home__pic img {
+  border-radius: 15px;
+}
 .home__about {
   padding: 72px 0px 72px 100px;
   display: flex;
@@ -594,27 +597,27 @@ header {
   width: 90%;
 }
 .skill__tech li:nth-child(3) .skill_percent {
-  width: 80%;
+  width: 70%;
 }
 .skill__tech li:nth-child(4) .skill_percent {
-  width: 80%;
+  width: 75%;
 }
 /* ================ skill design ================ */
 .skill__design li:nth-child(1) .skill_percent {
-  width: 85%;
+  width: 80%;
 }
 .skill__design li:nth-child(2) .skill_percent {
   width: 90%;
 }
 /* ================ etc skill ================ */
 .skill__etc li:nth-child(1) .skill_percent {
-  width: 75%;
+  width: 55%;
 }
 .skill__etc li:nth-child(2) .skill_percent {
-  width: 90%;
+  width: 85%;
 }
 .skill__etc li:nth-child(3) .skill_percent {
-  width: 85%;
+  width: 80%;
 }
 /* ========================= about section ========================= */
 .about__desc {
@@ -684,7 +687,7 @@ header {
   margin-bottom: -.6rem;
 }
 .gtq-icon {
-  margin-top: 1rem;
+  margin-top: 1.1rem;
   width: 180px;
 }
 .qualification__divider {
