@@ -630,14 +630,14 @@ header {
   align-items: flex-start;
 }
 .about__desc h2 {
-  margin-bottom: var(--mb-1);
-  /* background: var(--green-color); */
-  color: var(--green-color);
-  /* padding: 0.5rem 0.25rem; */
-}
-.about__desc span {
+  margin-bottom: var(--mb-1-5);
   background: var(--green-color);
   color: var(--white-color);
+  padding: var(--mb-0-5) var(--mb-0-25);
+}
+.about__desc span {
+  /* background: var(--green-color); */
+  color: var(--green-color);
   font-weight: var(--font-semi-bold);
 }
 .about__pic {
