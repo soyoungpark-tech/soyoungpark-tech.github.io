@@ -626,6 +626,9 @@ header {
   margin: var(--mb-3);
   align-items: center;
 }
+.about__desc h2 {
+  margin-bottom: var(--mb-1);
+}
 .about__desc span {
   background: var(--green-color);
   color: var(--white-color);
@@ -860,7 +863,7 @@ header {
   z-index: 100;
 }
 .modal {
-  width: 50%;
+  width: 65%;
   height: 85vh;
   padding: 1rem;
   background: #fff;
