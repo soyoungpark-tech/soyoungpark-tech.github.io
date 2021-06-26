@@ -625,15 +625,19 @@ header {
   line-height: 30px;
   margin: var(--mb-3);
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 .about__desc h2 {
   margin-bottom: var(--mb-1);
+  background: var(--green-color);
+  padding: 0.5rem 0.25rem;
 }
 .about__desc span {
   background: var(--green-color);
   color: var(--white-color);
   font-weight: var(--font-semi-bold);
-  font-size: var(--h3-font-size);
 }
 .about__pic {
   margin: var(--mb-3);

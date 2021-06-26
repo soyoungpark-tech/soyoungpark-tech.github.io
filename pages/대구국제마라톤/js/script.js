@@ -1,13 +1,6 @@
 'use strict';
 
 $(function(){
-    /* ================= modal ===================== */
-        var $modal = $('.notice');
-        var $btnClose = $('.notice-modal__close');
-
-        $btnClose.click(function(){
-            $modal.hide();
-        })
     /* ================= navbar ===================== */
     var $header = $('#header');
     var $navItem = $('.nav__item');
