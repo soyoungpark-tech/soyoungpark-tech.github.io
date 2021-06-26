@@ -705,7 +705,7 @@ header {
 .qualification__line {
   width: 100%;
   height: 5px;
-  background: var(--green-color);
+  background: var(--grey-color-lighter);
 }
 .qualification__month {
   width: 150px;
