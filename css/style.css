@@ -631,9 +631,9 @@ header {
 }
 .about__desc h2 {
   margin-bottom: var(--mb-1);
-  background: var(--green-color);
-  color: var(--white-color);
-  padding: 0.5rem 0.25rem;
+  /* background: var(--green-color); */
+  color: var(--green-color);
+  /* padding: 0.5rem 0.25rem; */
 }
 .about__desc span {
   background: var(--green-color);
