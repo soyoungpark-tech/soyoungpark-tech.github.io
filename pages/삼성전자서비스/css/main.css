@@ -490,7 +490,7 @@ button span:only-child {
 /* footer etc */
 .footer-etc {
   margin-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
   padding-left: 0;
 }
 .app-footer .footer-certifications > a {
