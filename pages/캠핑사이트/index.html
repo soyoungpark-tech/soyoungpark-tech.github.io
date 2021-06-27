@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Zoom image on scroll</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'><link rel="stylesheet" href="./css/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+<header>
+  <div class="inner">
+    <img src="./img/daytrip-logo-grunge.png" class="logo" alt="daytrip-logo-grunge">
+  </div>
+</header>
+<section>
+    <img id="header-stones" src="https://4.bp.blogspot.com/-KXFN5VqNsaA/W87Dl_Yp7YI/AAAAAAAAPYI/1Z7qSrHg6Hks6agjqTW1fls0aUinJXXzACLcBGAs/s1600/stones.png" alt="Stones in the background">
+    <img id="header-front" src="https://3.bp.blogspot.com/--DQy6E0J_Q8/W87Dy-VOMvI/AAAAAAAAPYM/9aj6WEfjHRMLV8J_L_bysCur6bA0CoL0gCLcBGAs/s1600/fireplace.png">
+</section>
+<div class="boardname">
+  <div class="col-md-12">
+    <div class="main_inner">
+      <section class="intro" id="intro">
+        <h1>Go Play Outside</h1>
+        <p>
+          DayTrip makes it easy to find something great to do within driving distance of your town. It’s okay to wait ’til the last minute to plan. Turn off the TV, round up your friends and family, and head out on an adventure.
+        </p>
+      </section>
+      <section class="spots" id="spots">
+        <div class="spots__desc">
+          <h1>Only The Besst Spots</h1>
+          <p>
+            Spots have all been hand-selected, so you can’t go wrong. You can browse by category or town. Whether you’ve got a hankering for BBQ or want to explore New Braunfels, DayTrip has you covered.
+          </p>
+        </div>
+        <div class="spots__img">
+          <a href="#">
+            <img src="./img/luckenbach.jpg" alt="luchkenbach home image">
+          </a>
+          <a href="#">
+            <img src="./img/blanco.jpg" alt="blanco water fall image">
+          </a>
+          <a href="#">
+            <img src="./img/kreuz.jpg" alt="kreuz barbecue house image">
+          </a>
+          <a href="#">
+            <img src="./img/marburgerorchard.jpg" alt="marburgerorchard farm image">
+          </a>
+        </div>
+      </section>
+      <section class="map" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207854.6617182883!2d-97.6360191537751!3d35.51097646568194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b2241dfc0ea693%3A0x5fe0613c4b9edd2f!2z7Jik7YG065287Zi466eIIOugiOydtO2BrA!5e0!3m2!1sko!2skr!4v1624763605267!5m2!1sko!2skr" width="1020" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+      <section class="submit">
+        <h1>Let Your Mind Travel</h1>
+        
+      <form action="./index.html">
+        <fieldset>
+          <legend>Resrvation</legend>
+          <div class="add_info flex-center">
+            <div class="email">
+                <label for="member-id">Email</label>
+                <input type="email" name="email-id" id="email-id" placeholder="enter your email" required>
+            </div>
+            <div class="date">
+                <label for="">Dates</label>
+                <input type="month" name="Dates" id="Dates" required>
+            </div>
+            <div class="submit_button">
+              <input type="submit" value="Reserve Now">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      </section>
+    </div>
+  </div>
+  <footer>
+    <div class="footer__desc">
+      <div class="sign_up">
+        <a href="#">sign up</a>
+      </div>
+      <div class="sign_in">
+        <p>
+        Already have an account? 
+        <a href="#">
+          Sign in.
+        </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.1.0/jquery.lazyloadxt.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script><script  src="./js/script.js"></script>
+
+</body>
+</html>
