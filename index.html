@@ -1,34 +1,407 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- meta 정보들 : SEO (검색 엔진 최적화) -->
-<meta name="build" content="2020.06.15"><!-- 제작 년월일 -->
-<meta name="description" content="웹퍼블리셔 박소영의 웹사이트입니다"><!-- 설명 -->
-<meta name="author" content="박소영"><!-- 제작자 -->
-<meta name="keywords" content="웹퍼블리셔, 포트폴리오, 박소영, 대구, 반응형, 웹표준, 웹호환성, 웹접근성, javascript, github"><!-- 검색 키워드 -->
-<meta name="robotos" content="index"><!-- 웹페이지 검색 기본 설정 -->
 
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!-- icons : unicons, xeicon -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-<!-- js -->
-<!-- jQuery CDN -->
-<script src="./js/script.js"></script>
-<script src="./js/plugin/slick.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<title>박소영 포트폴리오 사이트</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta 정보들 : SEO (검색 엔진 최적화) -->
+    <meta name="build" content="2020.06.15"><!-- 제작 년월일 -->
+    <meta name="description" content="웹퍼블리셔 박소영의 웹사이트입니다"><!-- 설명 -->
+    <meta name="author" content="박소영"><!-- 제작자 -->
+    <meta name="keywords" content="웹퍼블리셔, 포트폴리오, 박소영, 서울, 반응형, 웹표준, 웹호환성, 웹접근성, javascript, github"><!-- 검색 키워드 -->
+    <meta name="robotos" content="index"><!-- 웹페이지 검색 기본 설정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <!-- icons : unicons, xeicon -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- js -->
+    <script src="./js/plugin/jquery-3.6.0.min.js"></script>
+    <script src="./js/plugin/fullpage.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/plugin/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <title>박소영 포트폴리오 사이트</title>
 </head>
+
 <body>
-<!-- <a id="skip" href="#about" tabindex="1">본문 바로가기</a> -->
-<header class="header" id="header">
+    <!-- <a id="skip" href="#about" tabindex="1">본문 바로가기</a> -->
+
+    <div id="fullpage">
+        <!-- section 01 about me-->
+        <div class="section">
+            <section class="home flex wrap" id="home">
+                <div class="home__pic">
+                    <div data-aos="fade-right">
+                        <img src="./images/my-profile.jpg" alt="자기소개 이미지 첫 번째">
+                    </div>
+                </div>
+                <div class="home__about">
+                    <div data-aos="fade-left">
+                        <div class="home__about-desc">
+                            <h1>
+                                하드 코딩하는
+                                <br>
+                                웹 퍼블리셔 박소영입니다.
+                            </h1>
+                            <br>
+                            <p>
+                                사람은 누구나 성장할 수 있다는 말을 좋아합니다.
+                                <br>
+                                개방적이고 적극적으로 자세로 사용자의 피드백을 수용하며
+                                <br>
+                                끊임없이 새로운 기술을 습득하겠습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="home__about_button">
+                        <a href="./resume-1.pdf" class="resume-link home__about_item" download="resume" target="_blank">
+                            <i class="xi-file-text-o"></i>
+                            이력서
+                        </a>
+                        <a href="https://github.com/soyoungpark-tech" class="github-link home__about_item"
+                            target="_blank">
+                            <i class="xi-github"></i>
+                            깃허브
+                        </a>
+                        <a href="https://blog.naver.com/thdud4961" class="blog-link home__about_item" target="_blank">
+                            <i class="xi-naver-square"></i>
+                            블로그
+                        </a>
+                    </div>
+                    <!-- <div class="home-about-social"> -->
+                </div>
+        </div>
+        <!-- section 2 skills -->
+        <div class="section">
+            <div class="primary_color__bg">
+                <div class="about wrap" id="about">
+                    <h1 class="section__title--wrap">이런 스킬을 사용할 수 있어요!</h1>
+                    <h3 class="section__subtitle section__title--wrap">
+                        #세심함 #창의성 #진솔함
+                    </h3>
+                    <div class="about__container flex">
+                        <div class="about__desc flex">
+                            <h2>서두르지 말고, 그러나 쉬지는 말고</h2>
+                            <p>
+                                시멘틱 마크업 원칙에 따라 웹 문서화 코딩하는 것을 중요하게 생각합니다.
+                                이를 기반으로 <span>원만한 팀 협업을 위해 기술과 소통을 중요시 하겠습니다.</span>
+                                함께 하는 회사 속에서 적극적인 자세로 피드백을 수용하며 저의 개발을 멈추지 않고
+                                끊임없이 새로운 기술을 습득하여 더 성장하는 모습을 보여드리겠습니다.
+                                <br>
+                                <br>
+                                <span>계단을 오르듯 6개월간 쉬지 않고 꾸준히 하드 코딩 및 디자인 작업을 이어왔습니다.</span>
+                                다양한 환경에 반응하도록 UX를 고려하여 구현 하였으며 사용자 모두가 접근 가능한
+                                웹사이트를 만드는 데 열정을 쏟고 있습니다.
+
+                            </p>
+                        </div>
+                        <div class="about__pic">
+                            <!-- <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                <img src="./images/my-profile.jpg" alt="자기소개 이미지 두번째">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 03 my projects -->
+        <div class="section">
+            <h1>진행 프로젝트</h1>
+            <div id="test-slide" class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">슬라이드1</li>
+                    <li class="swiper-slide">슬라이드2</li>
+                </ul>
+            </div>
+            <div class="pagination"></div>
+            <script>
+                // 스크립트
+                const slide = new Swiper('#test-slide', {
+                    slidesPerView: 'auto', // 한 슬라이드에 보여줄 갯수
+                    spaceBetween: 6, // 슬라이드 사이 여백
+                    loop: false, // 슬라이드 반복 여부
+                    loopAdditionalSlides: 1, // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
+                    pagination: false, // pager 여부
+                    autoplay: {  // 자동 슬라이드 설정 , 비 활성화 시 false
+                        delay: 3000,   // 시간 설정
+                        disableOnInteraction: false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+                    },
+                    navigation: {   // 버튼 사용자 지정
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    }
+                });
+            </script>
+        </div>
+        <!-- section 4 my projects 2-->
+        <div class="section">
+            <div class="works wrap" id="works">
+                <h1 class="section__title--wrap">Works</h1>
+                <h3 class="section__subtitle section__title--wrap">
+                    내용 가득한 4가지의 작업물
+                </h3>
+                <div class="slider-for">
+                    <div>
+                        <div class="slider__container flex-center">
+                            <div class="slider__img">
+                                <img src="./images/mockup-balenciaga.png" alt="발렌시아가 리뉴얼 홈페이지 목업"
+                                    class="balenciaga-mockup flex-center">
+                            </div>
+                            <div class="slider__desc">
+                                <h2><span>1</span> 발렌시아가 반응형페이지 리뉴얼
+                                    <br>
+                                    (참여도 100%, 데스크탑/반응형)
+                                </h2>
+                                <br>
+                                <div>
+                                    <h4>
+                                        Visual Studio Code
+                                        <br>
+                                        HTML, CSS, jQuery, javaScript
+                                    </h4>
+                                    <br>
+                                    기존 홈페이지에서 부족했던 <p>사용자 진입을 향상시키기 위해 컨텐츠를 추가</p>하였습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider__container flex-center">
+                            <div class="slider__img">
+                                <img src="./images/mockup-beommul.png" alt="대구범물성당 홈페이지 목업 사진" class="flex-center">
+                            </div>
+                            <div class="slider__desc">
+                                <h2><span>2</span> 대구범물성당 랜딩페이지
+                                    <br>
+                                    (참여도 100%)
+                                </h2>
+                                <br>
+                                <div>
+                                    <h4>
+                                        Visual Studio Code
+                                        <br>
+                                        HTML, CSS, jQuery, javaScript
+                                    </h4>
+                                    <br>
+                                    <p>웹 접근성을 위해</p> 많은 정보를 한눈에 보여줄 수 있는 풀다운 메뉴, 탭 기능을 추가하였습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider__container flex-center">
+                            <div class="slider__img">
+                                <img src="./images/mockup-marathon.png" alt="대구국제마라톤 홈페이지 목업 사진" class="flex-center">
+                            </div>
+                            <div class="slider__desc">
+                                <h2><span>3</span> 대구국제마라톤 홈페이지 리뉴얼
+                                    <br>
+                                    (참여도 100%)
+                                </h2>
+                                <br>
+                                <div>
+                                    <h4>
+                                        Visual Studio Code
+                                        <br>
+                                        HTML, CSS, jQuery, javaScript
+                                    </h4>
+                                    <br>
+                                    <p>생동감있는 이미지, 동영상 추가</p>와 중요한 컨텐츠만을 랜딩페이지에 보여주었습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider__container flex-center">
+                            <div class="slider__img">
+                                <img src="./images/mockup-camping.png" alt="DayTravel 목업 사진" class="flex-center">
+                            </div>
+                            <div class="slider__desc">
+                                <h2><span>4</span> Day Trip 랜딩페이지</h2>
+                                <br>
+                                <div>
+                                    <h4>
+                                        Visual Studio Code
+                                        <br>
+                                        HTML, CSS, javaScript, jQuery
+                                    </h4>
+                                    <br>
+                                    적절한 애니메이션과 <p>지도, 예약란을 추가</p>하였습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider__container flex-center">
+                            <div class="slider__img">
+                                <img src="./images/mockup-samsung.png" alt="삼성전자홈페이지 목업 사진" class="flex-center">
+                            </div>
+                            <div class="slider__desc">
+                                <h2><span>5</span> 삼성전자서비스 홈페이지 클론코딩</h2>
+                                <br>
+                                데스크탑, 반응형
+                                <div>
+                                    <h4>
+                                        Visual Studio Code
+                                        <br>
+                                        HTML, CSS
+                                    </h4>
+                                    <br>
+                                    <p>css float속성</p>을 이용해 코딩하였습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <div>
+                        <div class="slider__link flex">
+                            <div>
+                                <h3>
+                                    <i class="uil uil-shopping-cart"></i>
+                                    발렌시아가
+                                </h3>
+                                <span class="mobile__title">
+                                    1
+                                </span>
+                            </div>
+                            <br>
+                            <div>
+                                <a href="./pages/발렌시아가/" target="_blank" class="slider__button site_link">사이트</a>
+                                <button class="slider__button detail_modal mobile-none"
+                                    data-img="./images/detail-balenciaga.jpg" id="balenciaga_detail__img">기획서</button>
+                                <a href="https://github.com/soyoungpark-tech/soyoungpark-tech.github.io/tree/main/pages/%EB%B0%9C%EB%A0%8C%EC%8B%9C%EC%95%84%EA%B0%80"
+                                    target="_blank" class="slider__button code_view mobile-none">깃헙확인</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider__link">
+                            <div>
+                                <h3>
+                                    <i class="uil uil-users-alt"></i>
+                                    대구범물성당
+                                </h3>
+                                <span class="mobile__title">
+                                    2
+                                </span>
+                            </div>
+                            <br>
+                            <div>
+                                <a href="./pages/대구범물성당/" target="_blank" class="slider__button site_link">사이트</a>
+                                <button class="slider__button detail_modal mobile-none"
+                                    data-img="./images/detail-beommul.jpg" id="bemmul_detail__img">기획서</button>
+                                <a href="https://github.com/soyoungpark-tech/soyoungpark-tech.github.io/tree/main/pages/%EB%8C%80%EA%B5%AC%EB%B2%94%EB%AC%BC%EC%84%B1%EB%8B%B9"
+                                    target="_blank" class="slider__button code_view mobile-none">깃헙확인</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider__link">
+                            <div>
+                                <h3>
+                                    <i class="uil uil-sign-alt"></i>
+                                    대구국제마라톤
+                                </h3>
+                                <span class="mobile__title">
+                                    3
+                                </span>
+                            </div>
+                            <br>
+                            <div>
+                                <a href="./pages/대구국제마라톤/" target="_blank" class="slider__button site_link">사이트</a>
+                                <button class="slider__button detail_modal mobile-none"
+                                    data-img="./images/detail-marathon.jpg" id="marathon_detail__img">기획서</button>
+                                <a href="https://github.com/soyoungpark-tech/soyoungpark-tech.github.io/tree/main/pages/%EB%8C%80%EA%B5%AC%EA%B5%AD%EC%A0%9C%EB%A7%88%EB%9D%BC%ED%86%A4"
+                                    target="_blank" class="slider__button code_view mobile-none">깃헙확인</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider__link">
+                            <div>
+                                <h3>
+                                    <i class="uil uil-mountains-sun"></i>
+                                    DayTrip
+                                </h3>
+                                <span class="mobile__title">
+                                    4
+                                </span>
+                            </div>
+                            <br>
+                            <div>
+                                <a href="./pages/캠핑사이트/" target="_blank" class="slider__button site_link">사이트</a>
+                                <a href="https://github.com/soyoungpark-tech/soyoungpark-tech.github.io/tree/main/pages/%EC%BA%A0%ED%95%91%EC%82%AC%EC%9D%B4%ED%8A%B8"
+                                    target="_blank" class="slider__button code_view mobile-none">깃헙확인</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider__link">
+                            <div>
+                                <h3>
+                                    <i class="uil uil-heart-medical"></i>
+                                    삼성전자서비스
+                                </h3>
+                                <span class="mobile__title">
+                                    5
+                                </span>
+                            </div>
+                            <br>
+                            <div>
+                                <a href="./pages/삼성전자서비스/" target="_blank" class="slider__button site_link">사이트</a>
+                                <a href="https://github.com/soyoungpark-tech/samsungsvc-clone" target="_blank"
+                                    class="slider__button code_view mobile-none">깃헙확인</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal -->
+                <div class="overlay">
+                    <div class="modal">
+                        <span class="close__modal">x</span>
+                        <i class="uil uil-times close__modal"></i>
+                        <div class="modal__content">
+                            <img src="./images/" alt="기획안 자세히 보기" id="modalImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 5 contact -->
+        <div class="section">
+            <footer class="footer primary_color__bg" id="footer">
+                <div class="wrap">
+                    <div class="footer__container">
+                        <h2>편하게 연락주세요!</h2>
+                        <div class="footer__links flex-center">
+                            <a href="https://open.kakao.com/o/sl3pECjd">
+                                <i class="xi-kakaotalk xi-3x"></i>
+                            </a>
+                            <a href="https://github.com/soyoungpark-tech">
+                                <i class="xi-github xi-3x"></i>
+                            </a>
+                            <a href="https://blog.naver.com/thdud4961">
+                                <i class="xi-naver-square xi-3x"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="footer__copy">&copy; 2021. Park So Young All right reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <header class="header" id="header">
         <div class="flex">
             <div class="icon nav-icon-7">
                 <span></span>
@@ -81,50 +454,10 @@
                 </li>
             </ul>
         </div>
-</header>
+    </header>
     <main>
-        <section class="home flex wrap" id="home">
-            <div class="home__pic">
-                <div data-aos="fade-right">
-                    <img src="./images/my-profile.jpg" alt="자기소개 이미지 첫 번째">
-                </div>
-            </div>
-            <div class="home__about">
-                <div data-aos="fade-left">
-                    <div class="home__about-desc">
-                        <h1>
-                            1일 1커밋하는
-                            <br>
-                            웹 퍼블리셔 박소영입니다.
-                        </h1>
-                        <br>
-                        <p>
-                            사람은 누구나 성장할 수 있다는 말을 좋아합니다.
-                            <br>
-                            개방적이고 적극적으로 자세로 사용자의 피드백을 수용하며
-                            <br>
-                            끊임없이 새로운 기술을 습득하겠습니다. 
-                        </p>
-                    </div>
-                </div>
-                <div class="home__about_button">
-                    <a href="./resume-1.pdf" class="resume-link home__about_item" download="resume" target="_blank">
-                        <i class="xi-file-text-o"></i>
-                        이력서
-                    </a>
-                    <a href="https://github.com/soyoungpark-tech" class="github-link home__about_item" target="_blank">
-                        <i class="xi-github"></i>
-                        깃허브
-                    </a>
-                    <a href="https://blog.naver.com/thdud4961" class="blog-link home__about_item" target="_blank">
-                        <i class="xi-naver-square"></i>
-                        블로그
-                    </a>
-                </div>
-                <!-- <div class="home-about-social"> -->
-            </div>
-        </section>
-    <div class="division__line home-line"></div>
+
+        <div class="division__line home-line"></div>
         <section class="skills wrap" id="skills">
             <h1 class="section__title--wrap">Skills</h1>
             <h3 class="section__subtitle section__title--wrap">
@@ -133,27 +466,27 @@
             <div class="skills__container flex">
                 <div class="skills__desc_container">
                     <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <div class="skills__desc_code flex-center-space-between">
-                        <i class="uil uil-brackets-curly skill__icon"></i>
-                        <p>
-                            <span>웹 표준을 준수</span>하고 유지보수를 고려한 코드를 작성하기 위해 노력하며, 레거시한 코드는 지양합니다.
-                        </p>
-                    </div>
-                    <div class="skills__desc_study flex-center-space-between">
-                        <i class="uil uil-book-open skill__icon"></i>
-                        <p>
-                            <span>jQuery를 작성하여 기능을 구현</span>할 수 있습니다.
-                            javascript에 대한 공부를 게을리하지 않으며 ES6문법을 이해하고 활용할 수 있습니다.
-                        </p>
-                    </div>
-                    <div class="skills__desc_share flex-center-space-between">
-                        <i class="uil uil-share-alt skill__icon"></i>
-                        <p>
-                            기획자, 디자이너, 개발자와 <span>원활하게 협업하려고 노력하고</span> 다른 분야를 이해하고 도와가며 더 좋은 결과물을 만들어냅니다.
-                        </p>
+                        <div class="skills__desc_code flex-center-space-between">
+                            <i class="uil uil-brackets-curly skill__icon"></i>
+                            <p>
+                                <span>웹 표준을 준수</span>하고 유지보수를 고려한 코드를 작성하기 위해 노력하며, 레거시한 코드는 지양합니다.
+                            </p>
+                        </div>
+                        <div class="skills__desc_study flex-center-space-between">
+                            <i class="uil uil-book-open skill__icon"></i>
+                            <p>
+                                <span>jQuery를 작성하여 기능을 구현</span>할 수 있습니다.
+                                javascript에 대한 공부를 게을리하지 않으며 ES6문법을 이해하고 활용할 수 있습니다.
+                            </p>
+                        </div>
+                        <div class="skills__desc_share flex-center-space-between">
+                            <i class="uil uil-share-alt skill__icon"></i>
+                            <p>
+                                기획자, 디자이너, 개발자와 <span>원활하게 협업하려고 노력하고</span> 다른 분야를 이해하고 도와가며 더 좋은 결과물을 만들어냅니다.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
                 <ul class="skills__list">
                     <li class="skills__item">
                         <div class="skills__header">
@@ -290,356 +623,137 @@
                 </ul>
             </div>
         </section>
-    <div class="division__line"></div>
-    <div class="primary_color__bg">
-        <section class="about wrap" id="about">
-            <h1 class="section__title--wrap">About me</h1>
-            <h3 class="section__subtitle section__title--wrap">
-                #세심함 #창의성 #진솔함
-            </h3>
-            <div class="about__container flex">
-                <div class="about__desc flex">
-                    <h2>서두르지 말고, 그러나 쉬지는 말고</h2>
-                    <p>
-                        시멘틱 마크업 원칙에 따라 웹 문서화 코딩하는 것을 중요하게 생각합니다. 
-                        이를 기반으로 <span>원만한 팀 협업을 위해 기술과 소통을 중요시 하겠습니다.</span>
-                         함께 하는 회사 속에서 적극적인 자세로 피드백을 수용하며 저의 개발을 멈추지 않고 
-                        끊임없이 새로운 기술을 습득하여 더 성장하는 모습을 보여드리겠습니다.
-                        <br>
-                        <br>
-                        <span>계단을 오르듯 6개월간 쉬지 않고 꾸준히 하드 코딩 및 디자인 작업을 이어왔습니다.</span>
-                         다양한 환경에 반응하도록 UX를 고려하여 구현 하였으며 사용자 모두가 접근 가능한 
-                        웹사이트를 만드는 데 열정을 쏟고 있습니다.
-                        
-                    </p>
-                </div>
-                <div class="about__pic">
-                    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <img src="./images/about_img2.jpg" alt="자기소개 이미지 두번째">
+        <div class="division__line"></div>
+        <div class="primary_color__bg">
+            <section class="about wrap" id="about">
+                <h1 class="section__title--wrap">About me</h1>
+                <h3 class="section__subtitle section__title--wrap">
+                    #세심함 #창의성 #진솔함
+                </h3>
+                <div class="about__container flex">
+                    <div class="about__desc flex">
+                        <h2>서두르지 말고, 그러나 쉬지는 말고</h2>
+                        <p>
+                            시멘틱 마크업 원칙에 따라 웹 문서화 코딩하는 것을 중요하게 생각합니다.
+                            이를 기반으로 <span>원만한 팀 협업을 위해 기술과 소통을 중요시 하겠습니다.</span>
+                            함께 하는 회사 속에서 적극적인 자세로 피드백을 수용하며 저의 개발을 멈추지 않고
+                            끊임없이 새로운 기술을 습득하여 더 성장하는 모습을 보여드리겠습니다.
+                            <br>
+                            <br>
+                            <span>계단을 오르듯 6개월간 쉬지 않고 꾸준히 하드 코딩 및 디자인 작업을 이어왔습니다.</span>
+                            다양한 환경에 반응하도록 UX를 고려하여 구현 하였으며 사용자 모두가 접근 가능한
+                            웹사이트를 만드는 데 열정을 쏟고 있습니다.
+
+                        </p>
                     </div>
-                </div>
-            </div>
-        </section>
-    </div>
-<!-- </div> -->
-    <div class="division__line"></div>
-<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-    <section class="qualification wrap" id="qualification">
-        <h1 class="section__title--wrap">Qualification</h1>
-        <div class="qualification__container">
-            <div class="qualification__info flex-center-space-between">
-                <div>
-                    <h2 class="qualification__info--title stoudyCount">720</h2>
-                    <span class="qualification__info--name">학습 시간</span>
-                </div>
-                <div>
-                    <h2 class="qualification__info--title pracCount">100</h2>
-                    <span class="qualification__info--name">실습 시간</span>
-                </div>
-                <div>
-                    <h2 class="qualification__info--title projectCount">08</h2>
-                    <span class="qualification__info--name">사용 툴</span>
-                </div>
-            </div>
-            <div class="qualification__history">
-                <div class="qualification__container flex">
-                    <div class="qualification__item flex">
-                        <div class="qualification__puble--icon">
-                            <img src="./images/icon-html.png" alt="html 아이콘" class="qualification__tech">
-                        </div>
-                        <div class="qualification__divider flex">
-                            <div class="qualification__line"></div>
-                            <div class="qualification__month">2월</div>
-                            <div class="qualification__line qualification__item-bg"></div>
-                        </div>
-                        <div class="qualification__design--icon">
-                            <img src="./images/icon-photoshop.png" alt="포토샵 아이콘" class="qualification__design">
-                        </div>
-                    </div>
-                    <div class="qualification__item flex">
-                        <div class="qualification__puble--icon">
-                            <img src="./images/icon-css.png" alt="css 아이콘" class="qualification__tech">
-                        </div>
-                        <div class="qualification__divider flex">
-                            <div class="qualification__line"></div>
-                            <div class="qualification__month">3월</div>
-                            <div class="qualification__line"></div>
-                        </div>
-                        <div class="qualification__design--icon">
-                            <img src="./images/icon-illustrator.png" alt="일러스트 아이콘" class="qualification__design">
-                        </div>
-                    </div>
-                    <div class="qualification__item flex">
-                        <div class="qualification__puble--icon">
-                            <img src="./images/icon-github.png" alt="깃헙 아이콘" class="qualification__tech github-icon">
-                        </div>
-                        <div class="qualification__divider flex">
-                            <div class="qualification__line"></div>
-                            <div class="qualification__month">4월</div>
-                            <div class="qualification__line"></div>
-                        </div>
-                        <div class="qualification__design--icon">
-                            <img src="./images/icon-gtq.png" alt="그래픽기술자격 아이콘" class="gtq-icon">
-                        </div>
-                    </div>
-                    <div class="qualification__item flex">
-                        <div class="qualification__puble--icon">
-                            <img src="./images/icon-javaScript.png" alt="자바스크립트 아이콘" class="qualification__tech">
-                        </div>
-                        <div class="qualification__divider flex">
-                            <div class="qualification__line"></div>
-                            <div class="qualification__month">5월</div>
-                            <div class="qualification__line"></div>
-                        </div>
-                        <div class="qualification__design--icon">
-                            <img src="./images/icon-indesign.png" alt="인디자인 아이콘" class="qualification__design">
-                        </div>
-                    </div>
-                    <div class="qualification__item flex">
-                        <div class="qualification__puble--icon">
-                            <img src="./images/icon-jQuery.png" alt="제이쿼리 아이콘" class="jquery-icon">
-                        </div>
-                        <div class="qualification__divider flex">
-                            <div class="qualification__line qualification__item-bg"></div>
-                            <div class="qualification__month">6월</div>
-                            <div class="qualification__line"></div>
-                        </div>
-                        <div class="qualification__design--icon">
-                            <img src="./images/icon-developer.png" alt="개발자 아이콘" class="qualification__design">
+                    <div class="about__pic">
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <img src="./images/about_img2.jpg" alt="자기소개 이미지 두번째">
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </section>
-</div>
-    <div class="division__line"></div>
-    <section class="works wrap" id="works">
-        <h1 class="section__title--wrap">Works</h1>
-            <h3 class="section__subtitle section__title--wrap">
-                내용 가득한 4가지의 작업물
-            </h3>
-            <div class="slider-for">
-                <div>
-                    <div class="slider__container flex-center">
-                        <div class="slider__img">
-                            <img src="./images/mockup-balenciaga.png" alt="발렌시아가 리뉴얼 홈페이지 목업" class="balenciaga-mockup flex-center">
+        <!-- </div> -->
+        <div class="division__line"></div>
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <section class="qualification wrap" id="qualification">
+                <h1 class="section__title--wrap">Qualification</h1>
+                <div class="qualification__container">
+                    <div class="qualification__info flex-center-space-between">
+                        <div>
+                            <h2 class="qualification__info--title stoudyCount">720</h2>
+                            <span class="qualification__info--name">학습 시간</span>
                         </div>
-                        <div class="slider__desc">
-                            <h2><span>1</span> 발렌시아가 반응형페이지 리뉴얼
-                                <br>
-                                (참여도 100%, 데스크탑/반응형)
-                            </h2>
-                            <br>
-                            <div>
-                                <h4>
-                                    Visual Studio Code
-                                    <br>
-                                    HTML, CSS, jQuery, javaScript
-                                </h4>
-                                <br>
-                                기존 홈페이지에서 부족했던 <p>사용자 진입을 향상시키기 위해 컨텐츠를 추가</p>하였습니다.
+                        <div>
+                            <h2 class="qualification__info--title pracCount">100</h2>
+                            <span class="qualification__info--name">실습 시간</span>
+                        </div>
+                        <div>
+                            <h2 class="qualification__info--title projectCount">08</h2>
+                            <span class="qualification__info--name">사용 툴</span>
+                        </div>
+                    </div>
+                    <div class="qualification__history">
+                        <div class="qualification__container flex">
+                            <div class="qualification__item flex">
+                                <div class="qualification__puble--icon">
+                                    <img src="./images/icon-html.png" alt="html 아이콘" class="qualification__tech">
+                                </div>
+                                <div class="qualification__divider flex">
+                                    <div class="qualification__line"></div>
+                                    <div class="qualification__month">2월</div>
+                                    <div class="qualification__line qualification__item-bg"></div>
+                                </div>
+                                <div class="qualification__design--icon">
+                                    <img src="./images/icon-photoshop.png" alt="포토샵 아이콘" class="qualification__design">
+                                </div>
+                            </div>
+                            <div class="qualification__item flex">
+                                <div class="qualification__puble--icon">
+                                    <img src="./images/icon-css.png" alt="css 아이콘" class="qualification__tech">
+                                </div>
+                                <div class="qualification__divider flex">
+                                    <div class="qualification__line"></div>
+                                    <div class="qualification__month">3월</div>
+                                    <div class="qualification__line"></div>
+                                </div>
+                                <div class="qualification__design--icon">
+                                    <img src="./images/icon-illustrator.png" alt="일러스트 아이콘"
+                                        class="qualification__design">
+                                </div>
+                            </div>
+                            <div class="qualification__item flex">
+                                <div class="qualification__puble--icon">
+                                    <img src="./images/icon-github.png" alt="깃헙 아이콘"
+                                        class="qualification__tech github-icon">
+                                </div>
+                                <div class="qualification__divider flex">
+                                    <div class="qualification__line"></div>
+                                    <div class="qualification__month">4월</div>
+                                    <div class="qualification__line"></div>
+                                </div>
+                                <div class="qualification__design--icon">
+                                    <img src="./images/icon-gtq.png" alt="그래픽기술자격 아이콘" class="gtq-icon">
+                                </div>
+                            </div>
+                            <div class="qualification__item flex">
+                                <div class="qualification__puble--icon">
+                                    <img src="./images/icon-javaScript.png" alt="자바스크립트 아이콘"
+                                        class="qualification__tech">
+                                </div>
+                                <div class="qualification__divider flex">
+                                    <div class="qualification__line"></div>
+                                    <div class="qualification__month">5월</div>
+                                    <div class="qualification__line"></div>
+                                </div>
+                                <div class="qualification__design--icon">
+                                    <img src="./images/icon-indesign.png" alt="인디자인 아이콘" class="qualification__design">
+                                </div>
+                            </div>
+                            <div class="qualification__item flex">
+                                <div class="qualification__puble--icon">
+                                    <img src="./images/icon-jQuery.png" alt="제이쿼리 아이콘" class="jquery-icon">
+                                </div>
+                                <div class="qualification__divider flex">
+                                    <div class="qualification__line qualification__item-bg"></div>
+                                    <div class="qualification__month">6월</div>
+                                    <div class="qualification__line"></div>
+                                </div>
+                                <div class="qualification__design--icon">
+                                    <img src="./images/icon-developer.png" alt="개발자 아이콘" class="qualification__design">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="slider__container flex-center">
-                        <div class="slider__img">
-                            <img src="./images/mockup-beommul.png" alt="대구범물성당 홈페이지 목업 사진" class="flex-center">
-                        </div>
-                        <div class="slider__desc">
-                            <h2><span>2</span> 대구범물성당 랜딩페이지
-                                <br>
-                                (참여도 100%)
-                            </h2>
-                            <br>
-                            <div>
-                                <h4>
-                                    Visual Studio Code
-                                    <br>
-                                    HTML, CSS, jQuery, javaScript
-                                </h4>
-                                <br>
-                                <p>웹 접근성을 위해</p> 많은 정보를 한눈에 보여줄 수 있는 풀다운 메뉴, 탭 기능을 추가하였습니다.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="slider__container flex-center">
-                        <div class="slider__img">
-                            <img src="./images/mockup-marathon.png" alt="대구국제마라톤 홈페이지 목업 사진" class="flex-center">
-                        </div>
-                        <div class="slider__desc">
-                            <h2><span>3</span> 대구국제마라톤 홈페이지 리뉴얼
-                                <br>
-                                (참여도 100%)
-                            </h2>
-                            <br>
-                            <div>
-                                <h4>
-                                    Visual Studio Code
-                                    <br>
-                                    HTML, CSS, jQuery, javaScript
-                                </h4>
-                                <br>
-                                <p>생동감있는 이미지, 동영상 추가</p>와 중요한 컨텐츠만을 랜딩페이지에 보여주었습니다.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="slider__container flex-center">
-                        <div class="slider__img">
-                            <img src="./images/mockup-camping.png" alt="DayTravel 목업 사진" class="flex-center">
-                        </div>
-                        <div class="slider__desc">
-                            <h2><span>4</span> Day Trip 랜딩페이지</h2>
-                            <br>
-                            <div>
-                                <h4>
-                                    Visual Studio Code
-                                    <br>
-                                    HTML, CSS, javaScript, jQuery
-                                </h4>
-                                <br>
-                                적절한 애니메이션과 <p>지도, 예약란을 추가</p>하였습니다.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="slider__container flex-center">
-                        <div class="slider__img">
-                            <img src="./images/mockup-samsung.png" alt="삼성전자홈페이지 목업 사진" class="flex-center">
-                        </div>
-                        <div class="slider__desc">
-                            <h2><span>5</span> 삼성전자서비스 홈페이지 클론코딩</h2>
-                            <br>
-                            데스크탑, 반응형
-                            <div>
-                                <h4>
-                                    Visual Studio Code
-                                    <br>
-                                    HTML, CSS
-                                </h4>
-                                <br>
-                                <p>css float속성</p>을 이용해 코딩하였습니다.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-nav">
-                <div>
-                    <div class="slider__link flex">
-                        <div>
-                            <h3>
-                                <i class="uil uil-shopping-cart"></i>
-                                발렌시아가
-                            </h3>
-                            <span class="mobile__title">
-                                1
-                            </span>
-                        </div>
-                        <br>
-                        <div>
-                            <a href="./pages/발렌시아가/" target="_blank" class="slider__button site_link">사이트</a>
-                            <button  class="slider__button detail_modal mobile-none" data-img="./images/detail-balenciaga.jpg" id="balenciaga_detail__img">기획서</button>
-                            <a href="https://github.com/soyoungpark-tech/soyoungpark-tech.github.io/tree/main/pages/%EB%B0%9C%EB%A0%8C%EC%8B%9C%EC%95%84%EA%B0%80" target="_blank" class="slider__button code_view mobile-none">깃헙확인</a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="slider__link">
-                        <div>
-                            <h3>
-                                <i class="uil uil-users-alt"></i>
-                                대구범물성당
-                            </h3>
-                            <span class="mobile__title">
-                                2
-                            </span>
-                        </div>
-                        <br>
-                        <div>
-                            <a href="./pages/대구범물성당/" target="_blank" class="slider__button site_link">사이트</a>
-                            <button  class="slider__button detail_modal mobile-none" data-img="./images/detail-beommul.jpg" id="bemmul_detail__img">기획서</button>
-                            <a href="https://github.com/soyoungpark-tech/soyoungpark-tech.github.io/tree/main/pages/%EB%8C%80%EA%B5%AC%EB%B2%94%EB%AC%BC%EC%84%B1%EB%8B%B9" target="_blank" class="slider__button code_view mobile-none">깃헙확인</a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="slider__link">
-                        <div>
-                            <h3>
-                                <i class="uil uil-sign-alt"></i>
-                                대구국제마라톤
-                            </h3>
-                            <span class="mobile__title">
-                                3
-                            </span>
-                        </div>
-                        <br>
-                        <div>
-                            <a href="./pages/대구국제마라톤/" target="_blank" class="slider__button site_link">사이트</a>
-                            <button  class="slider__button detail_modal mobile-none" data-img="./images/detail-marathon.jpg" id="marathon_detail__img">기획서</button>
-                            <a href="https://github.com/soyoungpark-tech/soyoungpark-tech.github.io/tree/main/pages/%EB%8C%80%EA%B5%AC%EA%B5%AD%EC%A0%9C%EB%A7%88%EB%9D%BC%ED%86%A4" target="_blank" class="slider__button code_view mobile-none">깃헙확인</a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="slider__link">
-                        <div>
-                            <h3>
-                                <i class="uil uil-mountains-sun"></i>
-                                DayTrip
-                            </h3>
-                            <span class="mobile__title">
-                                4
-                            </span>
-                        </div>
-                        <br>
-                        <div>
-                            <a href="./pages/캠핑사이트/" target="_blank" class="slider__button site_link">사이트</a>
-                            <a href="https://github.com/soyoungpark-tech/soyoungpark-tech.github.io/tree/main/pages/%EC%BA%A0%ED%95%91%EC%82%AC%EC%9D%B4%ED%8A%B8" target="_blank" class="slider__button code_view mobile-none">깃헙확인</a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="slider__link">
-                        <div>
-                            <h3>
-                                <i class="uil uil-heart-medical"></i>
-                                삼성전자서비스
-                            </h3>
-                            <span class="mobile__title">
-                                5
-                            </span>
-                        </div>
-                        <br>
-                        <div>
-                            <a href="./pages/삼성전자서비스/" target="_blank" class="slider__button site_link">사이트</a>
-                            <a href="https://github.com/soyoungpark-tech/samsungsvc-clone" target="_blank" class="slider__button code_view mobile-none">깃헙확인</a>
-                        </div>
-                    </div>
-                </div>
+            </section>
         </div>
-        <!-- modal -->
-            <div class="overlay">
-                <div class="modal">
-                    <span class="close__modal">x</span>
-                    <i class="uil uil-times close__modal"></i>
-                    <div class="modal__content">
-                        <img src="./images/" alt="기획안 자세히 보기" id="modalImg">
-                    </div>
-                </div>
-            </div>
-    </section>
-    <div class="division__line"></div>
-    <section class="design__works wrap" id="design__works">
-        <h1 class="section__title--wrap">Design Works</h1>
+        <div class="division__line"></div>
+
+        <div class="division__line"></div>
+        <section class="design__works wrap" id="design__works">
+            <h1 class="section__title--wrap">Design Works</h1>
             <h3 class="section__subtitle section__title--wrap">
                 꼼꼼히 작업한 디자인
             </h3>
@@ -678,37 +792,38 @@
                         </li>
                     </ul>
                     <!-- modal -->
-                        <div class="design__overlay">
-                            <div class="design__modal">
-                                <img src="./images/" alt="디자인 작업물 자세히보기">
-                            </div>
+                    <div class="design__overlay">
+                        <div class="design__modal">
+                            <img src="./images/" alt="디자인 작업물 자세히보기">
                         </div>
+                    </div>
                 </div>
             </div>
-    </section>
-</main>
-<!-- ====================================== Scroll top ====================================== -->
-<a href="#" class="scrollup" id="scroll-up">
-    <i class="uil uil-arrow-up scrollup__icon"></i>
-</a>
-<footer class="footer primary_color__bg" id="footer">
-    <div class="wrap">
-        <div class="footer__container">
-            <h2>언제든 편하게 연락주세요</h2>
-            <div class="footer__links flex-center">
-                <a href="https://open.kakao.com/o/sl3pECjd">
-                    <i class="xi-kakaotalk xi-3x"></i>
-                </a>
-                <a href="https://github.com/soyoungpark-tech">
-                    <i class="xi-github xi-3x"></i>
-                </a>
-                <a href="https://blog.naver.com/thdud4961">
-                    <i class="xi-naver-square xi-3x"></i>
-                </a>
+        </section>
+    </main>
+    <!-- ====================================== Scroll top ====================================== -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <footer class="footer primary_color__bg" id="footer">
+        <div class="wrap">
+            <div class="footer__container">
+                <h2>언제든 편하게 연락주세요</h2>
+                <div class="footer__links flex-center">
+                    <a href="https://open.kakao.com/o/sl3pECjd">
+                        <i class="xi-kakaotalk xi-3x"></i>
+                    </a>
+                    <a href="https://github.com/soyoungpark-tech">
+                        <i class="xi-github xi-3x"></i>
+                    </a>
+                    <a href="https://blog.naver.com/thdud4961">
+                        <i class="xi-naver-square xi-3x"></i>
+                    </a>
+                </div>
             </div>
+            <p class="footer__copy">&copy; 2021. Park So Young All right reserved.</p>
         </div>
-        <p class="footer__copy">&copy; 2021. Park So Young All right reserved.</p>
-    </div>
-</footer>
+    </footer>
 </body>
+
 </html>
