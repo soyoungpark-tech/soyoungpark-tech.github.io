@@ -190,3 +190,28 @@
   .wbr {display: none;}
   .mbr {display: block;}
 }
+@media (max-width: 414px) {
+  .home__about-desc p {
+    font-size: var(--small-font-size);
+    line-height: 25px;
+  }
+  .skills__desc_container p {
+    font-size: var(--small-font-size);
+    line-height: 25px;
+    margin: 0;
+  }
+  .section__subtitle {
+    font-size: var(--normal-font-size);
+    padding: 20px;
+  }
+  .prj_cards_item .prj_info .prj_txt .txtbox {
+    font-size: var(--small-font-size);
+    line-height: 15px;
+  }
+  .prj_cards_item .prj_info .prj_txt .txtbox h2 {
+    font-size: var(--normal-font-size);
+  }
+  .swiper-cards {
+    margin: var(--mb-1-5) !important;
+  }
+}
