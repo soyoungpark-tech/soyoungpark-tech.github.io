@@ -13,19 +13,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- icons : unicons, xeicon -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <!-- js -->
     <!-- jQuery CDN -->
     <script src="./js/script.js"></script>
     <script src="./js/plugin/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
-    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+    <!-- swiper CSS -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- swiper jQuery -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>박소영 포트폴리오 사이트</title>
     </head>
@@ -294,21 +300,145 @@
             </div>
         </section>
     <div class="division__line"></div>
-    <div class="primary_color__bg">
+    <div class="primary_color__bg prj_sec">
         <section class="about wrap" id="about">
-            <h1 class="section__title--wrap">About me</h1>
+            <h1 class="section__title--wrap">My Projects</h1>
             <h3 class="section__subtitle section__title--wrap">
                 #세심함 #창의성 #진솔함
             </h3>
 
             <div class="prj_cards_cnt">
-                <div class="swiper mySwiperprj_cards_box">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
+                <div class="swiper mySwiper prj_cards_box">
+                    <div class="swiper-wrapper prj_cards_list">
+                        <div class="swiper-slide prj_cards_item">
+                            <div class="prj_info">
+                                <a href="http://ecomonster.co.kr/" target="_blank">
+                                    <div class="prj_txt">
+                                        <div class="txtbox">
+                                            <h2>
+                                                에코몬스터 (반응형)
+                                                <br>
+                                                www.ecomonster.com
+                                            </h2>
+                                            <br>
+                                            <p>
+                                                사용기술 : PHP / HTML5 / CSS3 / jQuery / Javascript / Swiper.js / fullpage.js / 그누보드 / 카페24
+                                                <br>
+                                                기간 : 3일 + 검수기간 2일
+                                                <br>
+                                                참여율 : 100%
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="prj_img_box">
+                                    <a href="http://ecomonster.co.kr/" target="_blank">
+                                        <div class="prj_img">
+                                            <img src="/images/prj_2022/ecomonster.com.png" alt="에코몬스터">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide prj_cards_item">
+                            <div class="prj_info">
+                                <a href="http://brainpcb.co.kr/" target="_blank">
+                                    <div class="prj_txt">
+                                        <div class="txtbox">
+                                            <h2>
+                                                브레인테크 (반응형)
+                                                <br>
+                                                www.brainpcb.co.kr
+                                            </h2>
+                                            <br>
+                                            <p>
+                                                사용기술 : PHP / HTML5 / CSS3 / jQuery / Javascript / Swiper.js / fullpage.js / 그누보드 / 카페24
+                                                <br>
+                                                기간 : 21일 + 검수기간 7일
+                                                <br>
+                                                참여율 : 100%
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="prj_img_box">
+                                    <a href="http://brainpcb.co.kr/" target="_blank">
+                                        <div class="prj_img">
+                                            <img src="/images/prj_2022/brainpcb_screen.png" alt="브레인테크">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide prj_cards_item">
+                            <div class="prj_info">
+                                <a href="http://seoulface21.com/" target="_blank">
+                                    <div class="prj_txt">
+                                        <div class="txtbox">
+                                            <h2>
+                                                서울페이스21치과병원 (반응형)
+                                                <br>
+                                                www.seoulface21.com
+                                            </h2>
+                                            <br>
+                                            <p>
+                                                사용기술 : PHP / HTML5 / CSS3 / jQuery / Javascript / Swiper.js / fullpage.js / 그누보드 / 카페24
+                                                <br>
+                                                기간 : 40일 + 검수기간 14일
+                                                <br>
+                                                참여율 : 80%
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="prj_img_box">
+                                    <a href="http://seoulface21.com/" target="_blank">
+                                        <div class="prj_img">
+                                            <img src="/images/prj_2022/seoulface21.png" alt="서울페이스21치과병원">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide prj_cards_item">
+                            <div class="prj_info">
+                                <a href="https://www.doctors365.co.kr/" target="_blank">
+                                    <div class="prj_txt">
+                                        <div class="txtbox">
+                                            <h2>
+                                                닥터스피부과 (반응형)
+                                                <br>
+                                                www.doctors365.co.kr
+                                            </h2>
+                                            <br>
+                                            <p>
+                                                사용기술 : PHP / HTML5 / CSS3 / jQuery / Javascript / Swiper.js / fullpage.js / 그누보드 / 카페24
+                                                <br>
+                                                기간 : 3개월
+                                                <br>
+                                                참여율 : 50%
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="prj_img_box">
+                                    <a href="https://www.doctors365.co.kr/" target="_blank">
+                                        <div class="prj_img">
+                                            <img src="/images/prj_2022/doctors365.png" alt="닥터스피부과">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-slide prj_cards_item">
+                            <img src="/images/prj_2022/brainpcb_screen.png" alt="에코몬스터">
+                        </div>
+                        <div class="swiper-slide prj_cards_item">
+                            <img src="/images/prj_2022/ecomonster.com.png" alt="에코몬스터">
+                        </div>
+                        <div class="swiper-slide prj_cards_item">
+                            <img src="/images/prj_2022/ecomonster.com.png" alt="에코몬스터">
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -351,12 +481,6 @@
                 
             </div> -->
         </section>
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-              effect: "cards",
-              grabCursor: true,
-            });
-          </script>
     </div>
 <!-- </div> -->
     <div class="division__line"></div>

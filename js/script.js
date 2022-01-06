@@ -152,6 +152,15 @@ $(function(){
     })
     
 
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        autoplay: {
+            delay: 3000,
+        },
+        speed: 1500
+    });
+
 });
 
 
