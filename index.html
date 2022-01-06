@@ -24,6 +24,9 @@
     <script src="./js/script.js"></script>
     <script src="./js/plugin/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>박소영 포트폴리오 사이트</title>
     </head>
 <body>
@@ -108,7 +111,7 @@
                     </div>
                 </div>
                 <div class="home__about_button">
-                    <a href="./resume-1.pdf" class="resume-link home__about_item" download="resume" target="_blank">
+                    <a href="./resume-202201.pdf" class="resume-link home__about_item" download="resume" target="_blank">
                         <i class="xi-file-text-o"></i>
                         이력서
                     </a>
@@ -128,7 +131,7 @@
         <section class="skills wrap" id="skills">
             <h1 class="section__title--wrap">Skills</h1>
             <h3 class="section__subtitle section__title--wrap">
-                7일 42시간 프로그램 공부를 하고 있습니다.
+                웹 표준 & 다양한 효과 구현 & 협업 모두 지키는 사람
             </h3>
             <div class="skills__container flex">
                 <div class="skills__desc_container">
@@ -258,7 +261,7 @@
                             <li class="skill__progress">
                                 <div class="skill__titles">
                                     <h3>Git</h3>
-                                    <span>55%</span>
+                                    <span>80%</span>
                                 </div>
                                 <div class="skill__bar">
                                     <span class="skill_percent">
@@ -297,29 +300,63 @@
             <h3 class="section__subtitle section__title--wrap">
                 #세심함 #창의성 #진솔함
             </h3>
-            <div class="about__container flex">
+
+            <div class="prj_cards_cnt">
+                <div class="swiper mySwiperprj_cards_box">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="about__container flex">
                 <div class="about__desc flex">
                     <h2>서두르지 말고, 그러나 쉬지는 말고</h2>
                     <p>
                         시멘틱 마크업 원칙에 따라 웹 문서화 코딩하는 것을 중요하게 생각합니다. 
-                        이를 기반으로 <span>원만한 팀 협업을 위해 기술과 소통을 중요시 하겠습니다.</span>
-                         함께 하는 회사 속에서 적극적인 자세로 피드백을 수용하며 저의 개발을 멈추지 않고 
+                        이를 기반으로 
+                        <span>원만한 팀 협업을 위해 기술과 소통을 중요시 하겠습니다.</span>
+                        함께 하는 회사 속에서 적극적인 자세로 피드백을 수용하며 저의 개발을 멈추지 않고 
                         끊임없이 새로운 기술을 습득하여 더 성장하는 모습을 보여드리겠습니다.
                         <br>
                         <br>
-                        <span>계단을 오르듯 6개월간 쉬지 않고 꾸준히 하드 코딩 및 디자인 작업을 이어왔습니다.</span>
-                         다양한 환경에 반응하도록 UX를 고려하여 구현 하였으며 사용자 모두가 접근 가능한 
-                        웹사이트를 만드는 데 열정을 쏟고 있습니다.
-                        
+                        <span>
+                            다양한 프로젝트를 진행하며 협업, 스케줄 관리가 중요하다는 것을 알았고 꾸준히 하드 코딩 연습과 디자이너와 원활한 소통을 위해 디자인 공부를 해왔습니다.
+                        </span>
+                        다양한 환경에 반응하도록 UX를 고려하여 구현 하였으며 사용자 모두가 접근 가능한 웹사이트를 만드는 데 열정을 쏟고 있습니다.
                     </p>
                 </div>
+                여기 진행한 프로젝트 slider 
                 <div class="about__pic">
                     <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <img src="./images/about_img2.jpg" alt="자기소개 이미지 두번째">
+                    </div> 
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                
+            </div> -->
         </section>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "cards",
+              grabCursor: true,
+            });
+          </script>
     </div>
 <!-- </div> -->
     <div class="division__line"></div>
