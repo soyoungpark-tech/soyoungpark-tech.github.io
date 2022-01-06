@@ -121,24 +121,8 @@ em,
 strong {
   font-weight: 700;
 }
-/* body a, body .btn {
-	transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-moz-transition:0.5s all;
-	-o-transition:0.5s all;
-	-ms-transition:0.5s all;
-}
-body a:hover, body .btn {  transition:0.5s all;
- -webkit-transition:0.5s all;
- -moz-transition:0.5s all;
- -o-transition:0.5s all;
- -ms-transition:0.5s all;}
- 
-.soft {transition:0.5s all;
- -webkit-transition:0.5s all;
- -moz-transition:0.5s all;
- -o-transition:0.5s all;
- -ms-transition:0.5s all;} */
+.wbr {display: block;}
+.mbr {display: none;}
 
 /* ========================= reusable, common css ========================= */
 .section__title--wrap {

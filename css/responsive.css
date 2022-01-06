@@ -187,4 +187,6 @@
     display: block;
     font-weight: var(--font-semi-bold);
   }
+  .wbr {display: none;}
+  .mbr {display: block;}
 }
