@@ -565,10 +565,10 @@ header {
   font-family: unicons-line;
 }
 .slick-prev:after {
-  content: "\ec49";
+  content: "\e93b";
 }
 .slick-next:after {
-  content: "\eb9f";
+  content: "\e93e";
 }
 .slider-nav {
   margin: 0 auto;
