@@ -708,3 +708,74 @@ header {
   border: 1px solid #eee;
   cursor: pointer;
 }
+
+
+/* slide title animation */
+.sldani_txt {visibility:hidden; font-weight: 500; letter-spacing: -1.5px; }
+@keyframes slide {
+  0% {
+      opacity: 0;
+      transform: translateY(10%);
+      -webkit-transform: translateY(10%);
+      -moz-transform: translateY(10%);
+      -ms-transform: translateY(10%);
+      -o-transform: translateY(10%);
+} 
+  100% {
+      opacity: 1;
+      transform: translateY(0%);
+  } 
+}
+@-webkit-keyframes slide {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateY(5%);
+  } 
+  100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+  }
+}
+.cnt01.active .slide_txt { 
+  animation-name: slide;
+    -webkit-animation-name: slide; 
+    animation-duration: 3s; 
+    -webkit-animation-duration: 1.8s;
+    visibility: visible; 
+}
+/* translate 사용한 cntents */
+@keyframes slide_ban {
+  0% {
+      opacity: 0;
+      transform: translateY(-30%);
+      -webkit-transform: translateY(-30%);
+      -moz-transform: translateY(-30%);
+      -ms-transform: translateY(-30%);
+      -o-transform: translateY(-30%);
+} 
+  100% {
+      opacity: 1;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+} 
+}
+  @-webkit-keyframes slide_ban {
+      0% {
+          opacity: 0;
+          -webkit-transform: translateY(5%);
+      } 
+      100% {
+          opacity: 1;
+          -webkit-transform: translateY(0%);
+      }
+}
+.slick-list .slick-track .img-wrap.slick-slide.slick-active .sldani_txt {
+  animation-name: slide_ban;
+  -webkit-animation-name: slide_ban; 
+  animation-duration: 3s; 
+  -webkit-animation-duration: 1.8s;
+  visibility: visible; 
+}
