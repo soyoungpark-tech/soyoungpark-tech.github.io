@@ -9,6 +9,7 @@
   --primary-color: #fbd46d;
   --secondary-color: #ffcf09;
   --primary-dark-color: #2b2301;
+  --primary-dark-opa-color: #2b230163;
   --green-color: #599c0b;
   --white-color: #fff;
   --font-color: #2b2b28;
@@ -138,7 +139,7 @@ strong {
 }
 /* ========================= layout ========================= */
 .wrap {
-  padding: 0 12px;
+  padding: 80px 0;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -167,20 +168,23 @@ footer {
 .primary_color__bg {
   background: var(--primary-color);
 }
+.footer_box {
+  text-align: center;
+}
 /* ========================= scroll up ========================= */
 .scrollup {
   position: fixed;
   right: 1rem;
   bottom: -20%;
   opacity: 0.8;
-  padding: 0.4rem 0.6rem 0 0.6rem;
+  padding: 0.6rem;
   border-radius: 0.5rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
-  background: var(--primary-dark-color);
+  background: var(--primary-dark-opa-color);
 }
 .scrollup__icon {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #fff;
 }
 .scrollup.visible {
@@ -200,6 +204,7 @@ footer {
 }
 .footer__links a {
   transition: 0.3s;
+  display: inherit;
 }
 .footer__links a:nth-child(1):hover {
   color: #f0f8ff;
