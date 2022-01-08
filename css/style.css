@@ -575,8 +575,8 @@ header {
 }
 /* resusable css */
 .slider__container {
-  margin: var(--mb-2);
   padding: var(--mb-2);
+  align-items: center;
 }
 .slider__link {
   cursor: pointer;
