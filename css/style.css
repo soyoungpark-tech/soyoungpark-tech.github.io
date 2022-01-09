@@ -126,6 +126,23 @@ header {
   margin: var(--mb-2) 0;
   line-height: 2.5rem;
 }
+.home__about-desc p span {
+  position: relative;
+}
+.home__about-desc p span:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background: #589c0b82;
+}
+.home__about-desc p:hover span::after {
+  width: 100%;
+  transition: width .3s;
+}
 /* --------------- button ---------------- */
 .home__about_item {
   position: relative;

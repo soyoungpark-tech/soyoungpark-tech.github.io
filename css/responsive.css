@@ -154,6 +154,9 @@
   .home__about-desc p {
     padding: var(--mb-0-5);
   }
+  .home__about-desc p span:after {
+    display: none;
+  }
   .skills__item {
     padding-left: var(--mb-1-5);
   }
