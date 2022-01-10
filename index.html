@@ -34,13 +34,10 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- load js -->
     <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
-    <!-- smooth scroll js -->
-    <script src="./js/plugin/smooth-scroll.js"></script>
     <title>박소영 포트폴리오 사이트</title>
 </head>
 
 <body>
-    <!-- <a id="skip" href="#about" tabindex="1">본문 바로가기</a> -->
     <header class="header" id="header">
         <div class="flex">
             <div class="icon nav-icon-7">
@@ -96,6 +93,7 @@
         </div>
     </header>
     <main>
+        <div class="pointer"></div>
         <section class="home flex wrap" id="home">
             <div class="home__pic">
                 <div data-aos="fade-right">
@@ -287,98 +285,98 @@
                 </div>
             </section>
         </div>
-        <!-- </div> -->
-        <!-- <div class="division__line"></div>
-<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-    <section class="qualification wrap" id="qualification">
-        <h1 class="section__title--wrap">Qualification</h1>
-        <div class="qualification__container">
-            <div class="qualification__info flex-center-space-between">
-                <div>
-                    <h2 class="qualification__info--title stoudyCount">720</h2>
-                    <span class="qualification__info--name">학습 시간</span>
+            <!-- </div> -->
+            <!-- <div class="division__line"></div>
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <section class="qualification wrap" id="qualification">
+            <h1 class="section__title--wrap">Qualification</h1>
+            <div class="qualification__container">
+                <div class="qualification__info flex-center-space-between">
+                    <div>
+                        <h2 class="qualification__info--title stoudyCount">720</h2>
+                        <span class="qualification__info--name">학습 시간</span>
+                    </div>
+                    <div>
+                        <h2 class="qualification__info--title pracCount">100</h2>
+                        <span class="qualification__info--name">실습 시간</span>
+                    </div>
+                    <div>
+                        <h2 class="qualification__info--title projectCount">08</h2>
+                        <span class="qualification__info--name">사용 툴</span>
+                    </div>
                 </div>
-                <div>
-                    <h2 class="qualification__info--title pracCount">100</h2>
-                    <span class="qualification__info--name">실습 시간</span>
-                </div>
-                <div>
-                    <h2 class="qualification__info--title projectCount">08</h2>
-                    <span class="qualification__info--name">사용 툴</span>
+                <div class="qualification__history">
+                    <div class="qualification__container flex">
+                        <div class="qualification__item flex">
+                            <div class="qualification__puble--icon">
+                                <img src="./images/icon-html.png" alt="html 아이콘" class="qualification__tech">
+                            </div>
+                            <div class="qualification__divider flex">
+                                <div class="qualification__line"></div>
+                                <div class="qualification__month">2월</div>
+                                <div class="qualification__line qualification__item-bg"></div>
+                            </div>
+                            <div class="qualification__design--icon">
+                                <img src="./images/icon-photoshop.png" alt="포토샵 아이콘" class="qualification__design">
+                            </div>
+                        </div>
+                        <div class="qualification__item flex">
+                            <div class="qualification__puble--icon">
+                                <img src="./images/icon-css.png" alt="css 아이콘" class="qualification__tech">
+                            </div>
+                            <div class="qualification__divider flex">
+                                <div class="qualification__line"></div>
+                                <div class="qualification__month">3월</div>
+                                <div class="qualification__line"></div>
+                            </div>
+                            <div class="qualification__design--icon">
+                                <img src="./images/icon-illustrator.png" alt="일러스트 아이콘" class="qualification__design">
+                            </div>
+                        </div>
+                        <div class="qualification__item flex">
+                            <div class="qualification__puble--icon">
+                                <img src="./images/icon-github.png" alt="깃헙 아이콘" class="qualification__tech github-icon">
+                            </div>
+                            <div class="qualification__divider flex">
+                                <div class="qualification__line"></div>
+                                <div class="qualification__month">4월</div>
+                                <div class="qualification__line"></div>
+                            </div>
+                            <div class="qualification__design--icon">
+                                <img src="./images/icon-gtq.png" alt="그래픽기술자격 아이콘" class="gtq-icon">
+                            </div>
+                        </div>
+                        <div class="qualification__item flex">
+                            <div class="qualification__puble--icon">
+                                <img src="./images/icon-javaScript.png" alt="자바스크립트 아이콘" class="qualification__tech">
+                            </div>
+                            <div class="qualification__divider flex">
+                                <div class="qualification__line"></div>
+                                <div class="qualification__month">5월</div>
+                                <div class="qualification__line"></div>
+                            </div>
+                            <div class="qualification__design--icon">
+                                <img src="./images/icon-indesign.png" alt="인디자인 아이콘" class="qualification__design">
+                            </div>
+                        </div>
+                        <div class="qualification__item flex">
+                            <div class="qualification__puble--icon">
+                                <img src="./images/icon-jQuery.png" alt="제이쿼리 아이콘" class="jquery-icon">
+                            </div>
+                            <div class="qualification__divider flex">
+                                <div class="qualification__line qualification__item-bg"></div>
+                                <div class="qualification__month">6월</div>
+                                <div class="qualification__line"></div>
+                            </div>
+                            <div class="qualification__design--icon">
+                                <img src="./images/icon-developer.png" alt="개발자 아이콘" class="qualification__design">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="qualification__history">
-                <div class="qualification__container flex">
-                    <div class="qualification__item flex">
-                        <div class="qualification__puble--icon">
-                            <img src="./images/icon-html.png" alt="html 아이콘" class="qualification__tech">
-                        </div>
-                        <div class="qualification__divider flex">
-                            <div class="qualification__line"></div>
-                            <div class="qualification__month">2월</div>
-                            <div class="qualification__line qualification__item-bg"></div>
-                        </div>
-                        <div class="qualification__design--icon">
-                            <img src="./images/icon-photoshop.png" alt="포토샵 아이콘" class="qualification__design">
-                        </div>
-                    </div>
-                    <div class="qualification__item flex">
-                        <div class="qualification__puble--icon">
-                            <img src="./images/icon-css.png" alt="css 아이콘" class="qualification__tech">
-                        </div>
-                        <div class="qualification__divider flex">
-                            <div class="qualification__line"></div>
-                            <div class="qualification__month">3월</div>
-                            <div class="qualification__line"></div>
-                        </div>
-                        <div class="qualification__design--icon">
-                            <img src="./images/icon-illustrator.png" alt="일러스트 아이콘" class="qualification__design">
-                        </div>
-                    </div>
-                    <div class="qualification__item flex">
-                        <div class="qualification__puble--icon">
-                            <img src="./images/icon-github.png" alt="깃헙 아이콘" class="qualification__tech github-icon">
-                        </div>
-                        <div class="qualification__divider flex">
-                            <div class="qualification__line"></div>
-                            <div class="qualification__month">4월</div>
-                            <div class="qualification__line"></div>
-                        </div>
-                        <div class="qualification__design--icon">
-                            <img src="./images/icon-gtq.png" alt="그래픽기술자격 아이콘" class="gtq-icon">
-                        </div>
-                    </div>
-                    <div class="qualification__item flex">
-                        <div class="qualification__puble--icon">
-                            <img src="./images/icon-javaScript.png" alt="자바스크립트 아이콘" class="qualification__tech">
-                        </div>
-                        <div class="qualification__divider flex">
-                            <div class="qualification__line"></div>
-                            <div class="qualification__month">5월</div>
-                            <div class="qualification__line"></div>
-                        </div>
-                        <div class="qualification__design--icon">
-                            <img src="./images/icon-indesign.png" alt="인디자인 아이콘" class="qualification__design">
-                        </div>
-                    </div>
-                    <div class="qualification__item flex">
-                        <div class="qualification__puble--icon">
-                            <img src="./images/icon-jQuery.png" alt="제이쿼리 아이콘" class="jquery-icon">
-                        </div>
-                        <div class="qualification__divider flex">
-                            <div class="qualification__line qualification__item-bg"></div>
-                            <div class="qualification__month">6월</div>
-                            <div class="qualification__line"></div>
-                        </div>
-                        <div class="qualification__design--icon">
-                            <img src="./images/icon-developer.png" alt="개발자 아이콘" class="qualification__design">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div> -->
+        </section>
+    </div> -->
         <div class="division__line"></div>
         <section class="works wrap" id="works">
             <div data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-in-sine">
@@ -689,9 +687,6 @@
     </footer>
     <script>
         AOS.init();
-    </script>
-    <script type="text/javascript">
-        smoothScroll.init();
     </script>
 </body>
 
