@@ -157,6 +157,9 @@
   .home__about-desc p span:after {
     display: none;
   }
+  .home__about .home__skills {
+    text-align: center;
+  }
   .skills__item {
     padding-left: var(--mb-1-5);
   }

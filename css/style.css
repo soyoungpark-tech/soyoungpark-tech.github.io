@@ -197,6 +197,15 @@ header {
 .home__about_button i {
   vertical-align: bottom;
 }
+.home__about .home__skills {
+  padding: 30px 0;
+}
+.home__about .home__skills h3 {}
+.home__about .home__skills p {
+  font-size: var(--h3-font-size);
+  line-height: 2rem;
+  letter-spacing: .5px;
+}
 /* ========================= skills desc section ========================= */
 .skills {
   margin-bottom: var(--mb-3);
