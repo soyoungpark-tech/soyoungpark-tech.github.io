@@ -102,6 +102,9 @@ header {
   display: none;
 }
 /* ========================= home page ========================= */
+.w3c_mark {
+  margin: 0;
+}
 .home {
   padding: 4rem 0;
 }
