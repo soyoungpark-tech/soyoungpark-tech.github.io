@@ -218,6 +218,15 @@ footer {
   transform: scale(1.03);
   color: #2db400;
 }
+/* cursor */
+.circle {
+  position: absolute;
+  border: solid 1.5px rgba(0, 0, 0, 0.645);
+  width: 60px; 
+  height: 60px; 
+  border-radius: 50%;  
+  z-index: -1;
+}
 /* layouts (공공재) */
 .l_wrapper {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
