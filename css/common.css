@@ -221,7 +221,7 @@ footer {
 /* cursor */
 .circle {
   position: absolute;
-  border: solid 1.5px rgba(0, 0, 0, 0.645);
+  border: solid 1.5px rgba(0, 0, 0, 0.72);
   width: 60px; 
   height: 60px; 
   border-radius: 50%;  
